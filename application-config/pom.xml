@@ -6,7 +6,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>application-config</artifactId>
-
+  <packaging>jar</packaging>
   <parent>
     <groupId>org.springframework.cloud</groupId>
     <artifactId>spring-cloud-starter-parent</artifactId>
@@ -15,7 +15,7 @@
   </parent>
 
   <dependencies>
-    <!--Spring Cloud Config 服务端依赖-->
+
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-config-server</artifactId>
