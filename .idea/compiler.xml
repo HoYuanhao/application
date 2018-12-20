@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="application-common" />
         <module name="application-config" />
         <module name="application-console" />
+        <module name="application-es-server" />
+        <module name="application-index" />
+        <module name="application-spider-server" />
       </profile>
     </annotationProcessing>
   </component>
