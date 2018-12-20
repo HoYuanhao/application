@@ -1,0 +1,14 @@
+server:
+  port: 7777
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/HoYuanhao/application
+          search-paths: config
+          username: 727869774@qq.com   #账号密码写真实的快一些我觉得，不使用也能访问有点慢
+          password: hyh18248531520
