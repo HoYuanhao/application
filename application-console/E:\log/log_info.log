@@ -528,3 +528,106 @@ INFO  [2018-12-21 18:37:51,632][] org.springframework.boot.StartupInfoLogger:59 
 INFO  [2018-12-21 18:37:56,419][] org.apache.juli.logging.DirectJDKLog:180 - Initializing Spring FrameworkServlet 'dispatcherServlet' 
 INFO  [2018-12-21 18:37:56,419][] org.springframework.web.servlet.FrameworkServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started 
 INFO  [2018-12-21 18:37:56,441][] org.springframework.web.servlet.FrameworkServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms 
+INFO  [2018-12-21 19:03:13,996][] ?:? - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter 
+INFO  [2018-12-21 19:03:13,998][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2018-12-21 19:03:14,008][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2018-12-21 19:03:14,345][] org.springframework.context.support.AbstractApplicationContext:588 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7cc9fb70: startup date [Fri Dec 21 19:03:14 CST 2018]; root of context hierarchy 
+INFO  [2018-12-21 19:03:14,935][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:326 - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$34417e10] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2018-12-21 19:03:15,184][] com.alibaba.boot.dubbo.context.event.AwaitingNonWebApplicationListener$1:61 -  [Dubbo] Current Spring Boot Application is await... 
+INFO  [2018-12-21 19:03:15,277][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2018-12-21 19:03:15,278][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2018-12-21 19:03:15,331][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:205 - Fetching config from server at : http://localhost:8888 
+INFO  [2018-12-21 19:04:19,991][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:149 - Located environment: name=console, profiles=[dev], label=null, version=c913cc8149df66d07dc127ec8a1929d29a35341e, state=null 
+INFO  [2018-12-21 19:04:19,993][] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:98 - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource@1396541790 {name='configClient', properties={config.client.version=c913cc8149df66d07dc127ec8a1929d29a35341e}}, MapPropertySource@1194425080 {name='https://github.com/HoYuanhao/application/config/console-dev.properties', properties={spring.dubbo.application.name=application-console-consumer, spring.dubbo.protocol.port=20880, spring.dubbo.protocol.name=dubbo, spring.dubbo.application.id=application-console-consumer, spring.redis.port=6379 , spring.dubbo.server=true, spring.dubbo.registry.address=zookeeper://127.0.0.1:2181, spring.redis.host=localhost  }}]} 
+INFO  [2018-12-21 19:04:20,008][] org.springframework.boot.SpringApplication:654 - No active profile set, falling back to default profiles: default 
+INFO  [2018-12-21 19:04:20,050][] org.springframework.context.support.AbstractApplicationContext:588 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2db12470: startup date [Fri Dec 21 19:04:20 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7cc9fb70 
+INFO  [2018-12-21 19:04:20,938][] org.springframework.beans.factory.support.DefaultListableBeanFactory:821 - Overriding bean definition for bean 'sessionRepository' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.session.data.redis.config.annotation.web.server.RedisWebSessionConfiguration; factoryMethodName=sessionRepository; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.session.data.redis.config.annotation.web.server.RedisWebSessionConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration; factoryMethodName=sessionRepository; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration] 
+INFO  [2018-12-21 19:04:21,757][] org.springframework.data.repository.config.RepositoryConfigurationDelegate:172 - Multiple Spring Data modules found, entering strict repository configuration mode! 
+INFO  [2018-12-21 19:04:22,035][] com.alibaba.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor:190 -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 172.28.3.230 
+INFO  [2018-12-21 19:04:22,035][] com.alibaba.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor:192 -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 172.28.3.230 
+INFO  [2018-12-21 19:04:22,692][] org.springframework.cloud.context.scope.GenericScope:294 - BeanFactory id=b926aebf-998d-379b-b84e-c4dbae671047 
+INFO  [2018-12-21 19:04:22,983][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:326 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$34417e10] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2018-12-21 19:04:23,632][] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91 - Tomcat initialized with port(s): 8088 (http) 
+INFO  [2018-12-21 19:04:23,658][] org.apache.juli.logging.DirectJDKLog:180 - Initializing ProtocolHandler ["http-nio-8088"] 
+INFO  [2018-12-21 19:04:23,672][] org.apache.juli.logging.DirectJDKLog:180 - Starting service [Tomcat] 
+INFO  [2018-12-21 19:04:23,672][] org.apache.juli.logging.DirectJDKLog:180 - Starting Servlet Engine: Apache Tomcat/8.5.34 
+INFO  [2018-12-21 19:04:23,682][] org.apache.juli.logging.DirectJDKLog:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/yuanhaohe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] 
+INFO  [2018-12-21 19:04:23,779][] org.apache.juli.logging.DirectJDKLog:180 - Initializing Spring embedded WebApplicationContext 
+INFO  [2018-12-21 19:04:23,780][] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285 - Root WebApplicationContext: initialization completed in 3730 ms 
+INFO  [2018-12-21 19:04:25,636][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*] 
+INFO  [2018-12-21 19:04:25,637][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'webMvcMetricsFilter' to: [/*] 
+INFO  [2018-12-21 19:04:25,637][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'sessionRepositoryFilter' to: [/*] 
+INFO  [2018-12-21 19:04:25,637][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+INFO  [2018-12-21 19:04:25,637][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+INFO  [2018-12-21 19:04:25,637][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*] 
+INFO  [2018-12-21 19:04:25,638][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'httpTraceFilter' to: [/*] 
+INFO  [2018-12-21 19:04:25,638][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'corsFilter' to: [/*] 
+INFO  [2018-12-21 19:04:25,638][] org.springframework.boot.web.servlet.ServletRegistrationBean:187 - Servlet dispatcherServlet mapped to [/] 
+INFO  [2018-12-21 19:04:25,981][] com.alibaba.dubbo.config.spring.beans.factory.annotation.AbstractAnnotationConfigBeanBuilder:79 - <dubbo:reference singleton="true" interface="com.open.application.common.service.LoginService" uniqueServiceName="com.open.application.common.service.LoginService" generic="false" id="com.open.application.common.service.LoginService" /> has been built. 
+INFO  [2018-12-21 19:04:26,108][] org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171 - Initializing ExecutorService 'threadPoolTaskScheduler' 
+INFO  [2018-12-21 19:04:26,122][] org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208 - Shutting down ExecutorService 'threadPoolTaskScheduler' 
+INFO  [2018-12-21 19:04:26,150][] com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor:242 - <dubbo:reference singleton="true" interface="com.open.application.common.service.LoginService" uniqueServiceName="com.open.application.common.service.LoginService" generic="false" id="com.open.application.common.service.LoginService" /> was destroying! 
+INFO  [2018-12-21 19:04:26,151][] com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor:251 - class com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying! 
+INFO  [2018-12-21 19:04:26,153][] org.apache.juli.logging.DirectJDKLog:180 - Stopping service [Tomcat] 
+INFO  [2018-12-21 19:09:46,671][] ?:? - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter 
+INFO  [2018-12-21 19:09:46,673][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2018-12-21 19:09:46,679][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2018-12-21 19:09:46,903][] org.springframework.context.support.AbstractApplicationContext:588 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@235c4ad2: startup date [Fri Dec 21 19:09:46 CST 2018]; root of context hierarchy 
+INFO  [2018-12-21 19:09:47,373][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:326 - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2cd79cc1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2018-12-21 19:09:47,608][] com.alibaba.boot.dubbo.context.event.AwaitingNonWebApplicationListener$1:61 -  [Dubbo] Current Spring Boot Application is await... 
+INFO  [2018-12-21 19:09:47,689][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2018-12-21 19:09:47,690][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2018-12-21 19:09:47,735][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:205 - Fetching config from server at : http://localhost:8888 
+INFO  [2018-12-21 19:09:54,490][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:149 - Located environment: name=console, profiles=[dev], label=null, version=c913cc8149df66d07dc127ec8a1929d29a35341e, state=null 
+INFO  [2018-12-21 19:09:54,491][] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:98 - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource@1069008836 {name='configClient', properties={config.client.version=c913cc8149df66d07dc127ec8a1929d29a35341e}}, MapPropertySource@937353530 {name='https://github.com/HoYuanhao/application/config/console-dev.properties', properties={spring.dubbo.application.name=application-console-consumer, spring.dubbo.protocol.port=20880, spring.dubbo.protocol.name=dubbo, spring.dubbo.application.id=application-console-consumer, spring.redis.port=6379 , spring.dubbo.server=true, spring.dubbo.registry.address=zookeeper://127.0.0.1:2181, spring.redis.host=localhost  }}]} 
+INFO  [2018-12-21 19:09:54,500][] org.springframework.boot.SpringApplication:654 - No active profile set, falling back to default profiles: default 
+INFO  [2018-12-21 19:09:54,522][] org.springframework.context.support.AbstractApplicationContext:588 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1b376868: startup date [Fri Dec 21 19:09:54 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@235c4ad2 
+INFO  [2018-12-21 19:09:55,633][] org.springframework.data.repository.config.RepositoryConfigurationDelegate:172 - Multiple Spring Data modules found, entering strict repository configuration mode! 
+INFO  [2018-12-21 19:09:55,849][] com.alibaba.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor:190 -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 172.28.3.230 
+INFO  [2018-12-21 19:09:55,849][] com.alibaba.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor:192 -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 172.28.3.230 
+INFO  [2018-12-21 19:09:56,227][] org.springframework.cloud.context.scope.GenericScope:294 - BeanFactory id=5f89c5e2-99c0-3c74-bffa-18c183288d7a 
+INFO  [2018-12-21 19:09:56,407][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:326 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2cd79cc1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2018-12-21 19:09:57,104][] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91 - Tomcat initialized with port(s): 8088 (http) 
+INFO  [2018-12-21 19:09:57,124][] org.apache.juli.logging.DirectJDKLog:180 - Initializing ProtocolHandler ["http-nio-8088"] 
+INFO  [2018-12-21 19:09:57,137][] org.apache.juli.logging.DirectJDKLog:180 - Starting service [Tomcat] 
+INFO  [2018-12-21 19:09:57,137][] org.apache.juli.logging.DirectJDKLog:180 - Starting Servlet Engine: Apache Tomcat/8.5.34 
+INFO  [2018-12-21 19:09:57,149][] org.apache.juli.logging.DirectJDKLog:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/yuanhaohe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] 
+INFO  [2018-12-21 19:09:57,243][] org.apache.juli.logging.DirectJDKLog:180 - Initializing Spring embedded WebApplicationContext 
+INFO  [2018-12-21 19:09:57,244][] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285 - Root WebApplicationContext: initialization completed in 2722 ms 
+INFO  [2018-12-21 19:09:59,214][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*] 
+INFO  [2018-12-21 19:09:59,215][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'webMvcMetricsFilter' to: [/*] 
+INFO  [2018-12-21 19:09:59,215][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'sessionRepositoryFilter' to: [/*] 
+INFO  [2018-12-21 19:09:59,215][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+INFO  [2018-12-21 19:09:59,216][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+INFO  [2018-12-21 19:09:59,216][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*] 
+INFO  [2018-12-21 19:09:59,216][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'httpTraceFilter' to: [/*] 
+INFO  [2018-12-21 19:09:59,216][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'corsFilter' to: [/*] 
+INFO  [2018-12-21 19:09:59,216][] org.springframework.boot.web.servlet.ServletRegistrationBean:187 - Servlet dispatcherServlet mapped to [/] 
+INFO  [2018-12-21 19:09:59,512][] com.alibaba.dubbo.config.spring.beans.factory.annotation.AbstractAnnotationConfigBeanBuilder:79 - <dubbo:reference singleton="true" interface="com.open.application.common.service.LoginService" uniqueServiceName="com.open.application.common.service.LoginService" generic="false" id="com.open.application.common.service.LoginService" /> has been built. 
+INFO  [2018-12-21 19:09:59,632][] org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171 - Initializing ExecutorService 'threadPoolTaskScheduler' 
+INFO  [2018-12-21 19:09:59,823][] io.netty.util.internal.logging.Slf4JLogger:101 - Starting without optional epoll library 
+INFO  [2018-12-21 19:09:59,824][] io.netty.util.internal.logging.Slf4JLogger:101 - Starting without optional kqueue library 
+INFO  [2018-12-21 19:10:00,975][] org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208 - Shutting down ExecutorService 'threadPoolTaskScheduler' 
+INFO  [2018-12-21 19:10:02,104][] com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor:242 - <dubbo:reference singleton="true" interface="com.open.application.common.service.LoginService" uniqueServiceName="com.open.application.common.service.LoginService" generic="false" id="com.open.application.common.service.LoginService" /> was destroying! 
+INFO  [2018-12-21 19:10:02,105][] com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor:251 - class com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying! 
+INFO  [2018-12-21 19:10:02,106][] org.apache.juli.logging.DirectJDKLog:180 - Stopping service [Tomcat] 
