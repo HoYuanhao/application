@@ -1,5 +1,6 @@
 package com.open.application.common.models;
 
+import java.io.Serializable;
 import java.util.Date;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,7 +13,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class UserInfo {
+public class UserInfo implements Serializable {
   private String id;
   private String username;
   private String role;
