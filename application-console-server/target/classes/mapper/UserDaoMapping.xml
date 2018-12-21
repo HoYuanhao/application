@@ -4,7 +4,7 @@
 <select id="getUserInfoByUserNameAndPassword" resultType="UserInfo">
   select
   id,username,create_time as createTime,
-  is_deleted as isDeleted,is_banned as isBanned,token,role
+  is_deleted as isDeleted,is_banned as isBanned,role
   from user
   where username=#{userName} and password=#{password}
 </select>

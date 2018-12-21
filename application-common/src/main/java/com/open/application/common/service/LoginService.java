@@ -6,4 +6,6 @@ public interface LoginService {
 
   public UserInfo login(String username,String password);
 
+  public UserInfo getUserInfo(String token);
+
 }

@@ -1,13 +1,13 @@
 package com.open.application.console.server;
 
 
-import com.alibaba.dubbo.config.spring.context.annotation.EnableDubboConfig;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.context.annotation.ImportResource;
 
 @MapperScan("com.open.application.console.server.dao")
-@EnableDubboConfig
+@ImportResource(locations={"classpath:application-dubbo.xml"})
 @SpringBootApplication
 public class App {
   public static void main(String[] args){

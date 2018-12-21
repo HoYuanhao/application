@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+        ">
+    <dubbo:application name="${spring.dubbo.application.name}" />
+    <dubbo:registry  protocol="zookeeper" address="${spring.dubbo.registry.address}" />
+    <dubbo:protocol name="${spring.dubbo.protocol.name}" port="${spring.dubbo.protocol.port}" />
+    <bean id="loginService" class="com.open.application.console.server.service.impl.LoginServiceImpl" />
+    <!-- 和本地bean一样实现服务 -->
+    <dubbo:service interface="com.open.application.common.service.LoginService"  ref="loginService" />
+  </beans>

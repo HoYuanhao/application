@@ -5,15 +5,10 @@ import com.alibaba.dubbo.config.spring.context.annotation.EnableDubboConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.session.config.annotation.web.http.EnableSpringHttpSession;
-import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
-import org.springframework.session.data.redis.config.annotation.web.server.EnableRedisWebSession;
-
+import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication
-@EnableDubbo
-@EnableDubboConfig
-@EnableRedisHttpSession
+@ImportResource(locations={"classpath:application-dubbo.xml"})
 public class App {
 
   public static void main(String[] args) {

@@ -10,15 +10,15 @@ const user = {
     name: '',
     avatar: '',
     introduction: '',
+    id: '',
     roles: [],
-    id:'',
     setting: {
       articlePlatform: []
     }
   },
 
   mutations: {
-    SET_ID:(state, id) => {
+    SET_ID:(state, id)=>{
       state.id = id
     },
     SET_CODE: (state, code) => {
@@ -54,10 +54,21 @@ const user = {
       return new Promise((resolve, reject) => {
         loginByUsername(username, userInfo.password).then(response => {
           const data = response.data
+          if(data.status==200){
           commit('SET_TOKEN', data.token)
-          setToken(response.data.token)
+          setToken(data.token)
           resolve()
+        }else if(data.status==400){
+          reject('用户名或密码错误!')
+          commit('SET_ID', '0')
+          resolve()
+        }else {
+          commit('SET_ID', '')
+          reject('服务器异常')
+          resolve()
+        }
         }).catch(error => {
+          commit('SET_ID', '')
           reject(error)
         })
       })
@@ -67,20 +78,19 @@ const user = {
     GetUserInfo({ commit, state }) {
       return new Promise((resolve, reject) => {
         getUserInfo(state.token).then(response => {
-          if (!response.data) { // 由于mockjs 不支持自定义状态码只能这样hack
-            reject('error')
-          }
-          const data = response.data
-
-          if (data.roles && data.roles.length > 0) { // 验证返回的roles是否是一个非空数组
-            commit('SET_ROLES', data.roles)
-          } else {
-            reject('getInfo: roles must be a non-null array !')
-          }
-
-          commit('SET_NAME', data.name)
-          commit('SET_AVATAR', data.avatar)
-          commit('SET_INTRODUCTION', data.introduction)
+            if(response.data.status==200){
+          const data = response.data.userInfo
+          const role=['admin','editor']
+          commit('SET_ROLES', role)
+          commit('SET_NAME', data.userName)
+          commit('SET_AVATAR', "https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif")
+          commit('SET_INTRODUCTION', "空")
+        }else if(response.data.status==400){
+          reject('没有权限')
+        }else{
+          reject('未知异常')
+          commit('SET_ID', '')
+        }
           resolve(response)
         }).catch(error => {
           reject(error)
@@ -131,11 +141,11 @@ const user = {
         commit('SET_TOKEN', role)
         setToken(role)
         getUserInfo(role).then(response => {
-          const data = response.data
-          commit('SET_ROLES', data.roles)
-          commit('SET_NAME', data.name)
-          commit('SET_AVATAR', data.avatar)
-          commit('SET_INTRODUCTION', data.introduction)
+          const data = response.data.userInfo
+          commit('SET_ROLES', role)
+          commit('SET_NAME', data.userName)
+          commit('SET_AVATAR', "https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif")
+          commit('SET_INTRODUCTION', "空")
           dispatch('GenerateRoutes', data) // 动态修改权限后 重绘侧边菜单
           resolve()
         })

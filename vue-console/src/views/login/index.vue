@@ -66,13 +66,13 @@
 import { isvalidUsername } from '@/utils/validate'
 import LangSelect from '@/components/LangSelect'
 import SocialSign from './socialsignin'
-
+import store from '@/store'
 export default {
   name: 'Login',
   components: { LangSelect, SocialSign },
   data() {
     const validateUsername = (rule, value, callback) => {
-     if (value.length < 6) {
+       if (value.length < 6) {
         callback(new Error('The username can not be less than 6 digits'))
       } else {
         callback()
@@ -97,7 +97,8 @@ export default {
       passwordType: 'password',
       loading: false,
       showDialog: false,
-      redirect: undefined
+      redirect: undefined,
+
     }
   },
   watch: {
@@ -128,9 +129,26 @@ export default {
           this.loading = true
           this.$store.dispatch('LoginByUsername', this.loginForm).then(() => {
             this.loading = false
+            this.$message({
+              type: 'success',
+              message: `登录成功`
+            });
             this.$router.push({ path: this.redirect || '/' })
           }).catch(() => {
             this.loading = false
+            if(store.getters.id=='0'){
+              this.$alert('用户名或密码错误', '提示', {
+          confirmButtonText: '确定',
+          callback: action => {
+          }
+        });
+            }else{
+                this.$alert('服务器繁忙', '提示', {
+          confirmButtonText: '确定',
+          callback: action => {
+          }
+        });
+            }
           })
         } else {
           console.log('error submit!!')

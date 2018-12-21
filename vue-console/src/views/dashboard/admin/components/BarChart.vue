@@ -66,7 +66,7 @@ export default {
         },
         xAxis: [{
           type: 'category',
-          data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+          data: ['20日', '21日', '22日', '23日', '24日', '25日', '26日'],
           axisTick: {
             alignWithLabel: true
           }

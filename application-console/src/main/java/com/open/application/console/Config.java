@@ -30,9 +30,10 @@ public class Config {
   }
   private CorsConfiguration buildConfig() {
     CorsConfiguration corsConfiguration = new CorsConfiguration();
-    corsConfiguration.addAllowedOrigin("*");
+    corsConfiguration.addAllowedOrigin("http://127.0.0.1:9527");
     corsConfiguration.addAllowedHeader("*");
     corsConfiguration.addAllowedMethod("*");
+    corsConfiguration.setAllowCredentials(false);
     return corsConfiguration;
   }
 
