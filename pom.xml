@@ -6,8 +6,8 @@
   <parent>
     <groupId>org.springframework.cloud</groupId>
     <artifactId>spring-cloud-starter-parent</artifactId>
-    <version>Dalston.SR5</version>
-    <relativePath/>
+    <version>Finchley.SR2</version>
+
   </parent>
 
   <groupId>com.open</groupId>
@@ -21,6 +21,7 @@
     <module>application-spider-server</module>
     <module>application-common</module>
     <module>application-index</module>
+    <module>application-console-server</module>
   </modules>
 
 

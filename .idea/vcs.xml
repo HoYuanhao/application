@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/application-common" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/application-config" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/application-console" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/application-console-server" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/application-es-server" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/application-index" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/application-spider-server" vcs="svn" />
+  </component>
+</project>

@@ -9,10 +9,21 @@
         <module name="application-common" />
         <module name="application-config" />
         <module name="application-console" />
+        <module name="application-console-server" />
         <module name="application-es-server" />
         <module name="application-index" />
         <module name="application-spider-server" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="application" target="1.8" />
+      <module name="application-common" target="1.5" />
+      <module name="application-config" target="1.8" />
+      <module name="application-console" target="1.8" />
+      <module name="application-console-server" target="1.8" />
+      <module name="application-es-server" target="1.8" />
+      <module name="application-index" target="1.8" />
+      <module name="application-spider-server" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
