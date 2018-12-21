@@ -11,12 +11,16 @@ const user = {
     avatar: '',
     introduction: '',
     roles: [],
+    id:'',
     setting: {
       articlePlatform: []
     }
   },
 
   mutations: {
+    SET_ID:(state, id) => {
+      state.id = id
+    },
     SET_CODE: (state, code) => {
       state.code = code
     },

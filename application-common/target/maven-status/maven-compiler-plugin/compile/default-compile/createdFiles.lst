@@ -1,0 +1,5 @@
+com/open/application/common/service/LoginService.class
+com/open/application/common/models/LoginInfo$LoginInfoBuilder.class
+com/open/application/common/models/UserInfo.class
+com/open/application/common/models/UserInfo$UserInfoBuilder.class
+com/open/application/common/models/LoginInfo.class

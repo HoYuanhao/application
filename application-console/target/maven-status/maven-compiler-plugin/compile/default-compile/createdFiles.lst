@@ -1,2 +1,3 @@
-com/open/application/console/controller/LoginController.class
+com/open/application/console/Config.class
 com/open/application/console/App.class
+com/open/application/console/controller/LoginController.class
