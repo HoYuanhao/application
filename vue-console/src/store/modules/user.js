@@ -56,6 +56,7 @@ const user = {
           const data = response.data
           if(data.status==200){
           commit('SET_TOKEN', data.token)
+          commit('SET_ID', data.id)
           setToken(data.token)
           resolve()
         }else if(data.status==400){
@@ -63,8 +64,8 @@ const user = {
           commit('SET_ID', '0')
           resolve()
         }else {
-          commit('SET_ID', '')
           reject('服务器异常')
+          commit('SET_ID', '1')
           resolve()
         }
         }).catch(error => {
@@ -83,6 +84,7 @@ const user = {
           const role=['admin','editor']
           commit('SET_ROLES', role)
           commit('SET_NAME', data.userName)
+          commit('SET_ID', data.id)
           commit('SET_AVATAR', "https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif")
           commit('SET_INTRODUCTION', "空")
         }else if(response.data.status==400){

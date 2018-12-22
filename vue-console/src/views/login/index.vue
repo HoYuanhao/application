@@ -137,17 +137,15 @@ export default {
           }).catch(() => {
             this.loading = false
             if(store.getters.id=='0'){
-              this.$alert('用户名或密码错误', '提示', {
-          confirmButtonText: '确定',
-          callback: action => {
-          }
-        });
-            }else{
-                this.$alert('服务器繁忙', '提示', {
-          confirmButtonText: '确定',
-          callback: action => {
-          }
-        });
+        this.$message({
+              type: 'warn',
+              message: `用户名或密码错误`
+            });
+            }else if(store.getters.id=='1'){
+            this.$message({
+              type: 'error',
+              message: `服务器繁忙`
+            });
             }
           })
         } else {

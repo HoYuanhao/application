@@ -5,3 +5,14 @@ WARN  [2018-12-22 01:21:05,999][] com.zaxxer.hikari.util.DriverDataSource:68 - R
 WARN  [2018-12-22 01:51:45,686][] com.zaxxer.hikari.pool.HikariPool$HouseKeeper:758 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m8s791ms). 
 WARN  [2018-12-22 02:15:56,694][] com.zaxxer.hikari.pool.HikariPool$HouseKeeper:758 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m41s). 
 WARN  [2018-12-22 02:32:51,769][] com.zaxxer.hikari.pool.HikariPool$HouseKeeper:758 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m25s64ms). 
+WARN  [2018-12-22 03:03:45,722][] com.zaxxer.hikari.pool.HikariPool$HouseKeeper:758 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=26m52s627ms). 
+WARN  [2018-12-22 03:41:35,903][] com.zaxxer.hikari.pool.HikariPool$HouseKeeper:758 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=37m20s146ms). 
+WARN  [2018-12-22 04:13:24,555][] com.zaxxer.hikari.pool.HikariPool$HouseKeeper:758 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m18s642ms). 
+WARN  [2018-12-22 06:43:21,874][] com.zaxxer.hikari.pool.HikariPool$HouseKeeper:758 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h26s977ms). 
+WARN  [2018-12-22 09:13:19,126][] com.zaxxer.hikari.pool.HikariPool$HouseKeeper:758 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h26s910ms). 
+WARN  [2018-12-22 10:13:42,574][] com.zaxxer.hikari.pool.HikariPool$HouseKeeper:758 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m52s330ms). 
+WARN  [2018-12-22 10:14:12,399][] com.zaxxer.hikari.pool.HikariPool$HouseKeeper:750 - HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s825ms), soft-evicting connections from pool. 
+WARN  [2018-12-22 12:44:08,981][] com.zaxxer.hikari.pool.HikariPool$HouseKeeper:758 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h26s247ms). 
+WARN  [2018-12-22 14:04:12,591][] com.zaxxer.hikari.pool.HikariPool$HouseKeeper:758 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50m33s283ms). 
+WARN  [2018-12-22 16:30:09,249][] org.springframework.context.annotation.ConfigurationClassPostProcessor:381 - Cannot enhance @Configuration bean definition 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'. 
+WARN  [2018-12-22 16:33:29,505][] com.zaxxer.hikari.util.DriverDataSource:68 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation. 

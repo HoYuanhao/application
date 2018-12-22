@@ -1,11 +1,21 @@
 <template>
   <el-table :data="list" style="width: 100%;padding-top: 15px;">
-    <el-table-column label="Order_No" min-width="200">
+    <el-table-column label="Number" width="280">
       <template slot-scope="scope">
         {{ scope.row.order_no | orderNoFilter }}
       </template>
     </el-table-column>
-    <el-table-column label="Price" width="195" align="center">
+    <el-table-column label="Type" width="100" align="center">
+      <template slot-scope="scope">
+        ¥{{ scope.row.price | toThousandFilter }}
+      </template>
+    </el-table-column>
+        <el-table-column label="Name" width="200" align="center">
+      <template slot-scope="scope">
+        ¥{{ scope.row.price | toThousandFilter }}
+      </template>
+    </el-table-column>
+            <el-table-column label="Describe" min-width="200" align="center">
       <template slot-scope="scope">
         ¥{{ scope.row.price | toThousandFilter }}
       </template>
@@ -26,12 +36,14 @@ export default {
     statusFilter(status) {
       const statusMap = {
         success: 'success',
-        pending: 'danger'
+        pending: 'info',
+        error: 'warning',
+        exception:'danger'
       }
       return statusMap[status]
     },
     orderNoFilter(str) {
-      return str.substring(0, 30)
+      return str.substring(0, 32)
     }
   },
   data() {
@@ -45,7 +57,7 @@ export default {
   methods: {
     fetchData() {
       fetchList().then(response => {
-        this.list = response.data.items.slice(0, 8)
+        this.list = response.data.items.slice(0, 10)
       })
     }
   }

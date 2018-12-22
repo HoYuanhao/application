@@ -2,9 +2,9 @@ const steps = [
   {
     element: '.hamburger-container',
     popover: {
-      title: 'Hamburger',
-      description: 'Open && Close sidebar',
-      position: 'bottom'
+      title: '首页',
+      description: '这里可以看见爬虫爬取的数据统计信息以及错误日志',
+      position: 'right'
     }
   },
   {
@@ -12,7 +12,7 @@ const steps = [
     popover: {
       title: 'Breadcrumb',
       description: 'Indicate the current page location',
-      position: 'bottom'
+      position: 'left'
     }
   },
   {

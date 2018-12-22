@@ -47,9 +47,21 @@ export default {
     this.chart = null
   },
   methods: {
+      GetDateStr(AddDayCount) {
+   var dd = new Date();  
+   dd.setDate(dd.getDate()+AddDayCount);//获取AddDayCount天后的日期
+   var d = dd.getDate()<10?"0"+dd.getDate():dd.getDate();//获取当前几号，不足10补0
+   return d+"日";   
+},
     initChart() {
       this.chart = echarts.init(this.$el, 'macarons')
-
+      var day7=this.GetDateStr(-6);
+        var day6=this.GetDateStr(-5);
+        var day5=this.GetDateStr(-4);
+        var day4=this.GetDateStr(-3);
+        var day3=this.GetDateStr(-2);
+        var day2=this.GetDateStr(-1);
+        var day1=this.GetDateStr(0);
       this.chart.setOption({
         tooltip: {
           trigger: 'axis',
@@ -66,7 +78,7 @@ export default {
         },
         xAxis: [{
           type: 'category',
-          data: ['20日', '21日', '22日', '23日', '24日', '25日', '26日'],
+          data: [day7, day6, day5, day4, day3, day2, day1],
           axisTick: {
             alignWithLabel: true
           }
