@@ -1201,3 +1201,11 @@ INFO  [2018-12-22 20:10:18,896][] org.apache.juli.logging.DirectJDKLog:180 - Sta
 INFO  [2018-12-22 20:10:18,897][] org.apache.juli.logging.DirectJDKLog:180 - Using a shared selector for servlet write/read 
 INFO  [2018-12-22 20:10:18,924][] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206 - Tomcat started on port(s): 8088 (http) with context path '' 
 INFO  [2018-12-22 20:10:18,929][] org.springframework.boot.StartupInfoLogger:59 - Started App in 24.378 seconds (JVM running for 107.236) 
+INFO  [2018-12-22 20:11:49,902][] org.apache.juli.logging.DirectJDKLog:180 - Initializing Spring FrameworkServlet 'dispatcherServlet' 
+INFO  [2018-12-22 20:11:49,902][] org.springframework.web.servlet.FrameworkServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started 
+INFO  [2018-12-22 20:11:49,994][] org.springframework.web.servlet.FrameworkServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 91 ms 
+INFO  [2018-12-22 20:11:50,252][] com.open.application.console.controller.LoginController:54 - get username=root123 and id =aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa info 
+INFO  [2018-12-22 20:12:50,675][] com.open.application.console.controller.LoginController:54 - get username=root123 and id =aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa info 
+INFO  [2018-12-22 20:13:06,108][] com.open.application.console.controller.LoginController:54 - get username=root123 and id =aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa info 
+INFO  [2018-12-22 20:13:23,578][] com.open.application.console.controller.LoginController:54 - get username=root123 and id =aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa info 
+INFO  [2018-12-22 20:13:45,914][] com.open.application.console.controller.LoginController:54 - get username=root123 and id =aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa info 

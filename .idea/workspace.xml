@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="626046df-d6b0-4ab6-8f14-9da5268a3dd9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-console/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue-console/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-console/src/components/GithubCorner/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-console/src/components/GithubCorner/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-console/src/store/modules/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-console/src/store/modules/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-console/src/views/dashboard/admin/components/BarChart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-console/src/views/dashboard/admin/components/BarChart.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-console/src/views/dashboard/admin/components/LineChart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-console/src/views/dashboard/admin/components/LineChart.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-console/src/views/dashboard/admin/components/PanelGroup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-console/src/views/dashboard/admin/components/PanelGroup.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-console/src/views/dashboard/admin/components/TransactionTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-console/src/views/dashboard/admin/components/TransactionTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/consoleServer-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/consoleServer-dev.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-console/src/views/dashboard/admin/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-console/src/views/dashboard/admin/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-console/src/views/guide/defineSteps.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-console/src/views/guide/defineSteps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-console/src/views/layout/components/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-console/src/views/layout/components/Navbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-console/src/views/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-console/src/views/login/index.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -82,7 +72,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="consoleServer-dev.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/consoleServer-dev.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="74" selection-start-line="6" selection-start-column="74" selection-end-line="6" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application-console/src/main/java/com/open/application/console/controller/IndexController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
@@ -104,6 +103,9 @@
     </option>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>shoppings</find>
+    </findStrings>
     <replaceStrings>
       <replace>tasks</replace>
     </replaceStrings>
@@ -147,13 +149,13 @@
         <option value="$PROJECT_DIR$/application-console-server/src/main/java/com/open/application/console/server/App.java" />
         <option value="$PROJECT_DIR$/application-console-server/src/main/java/com/open/application/console/server/RedisConfig.java" />
         <option value="$PROJECT_DIR$/application-common/src/main/java/com/open/application/common/service/LoginService.java" />
-        <option value="$PROJECT_DIR$/config/consoleServer-dev.properties" />
         <option value="$PROJECT_DIR$/application-console/src/main/java/com/open/application/console/Config.java" />
         <option value="$PROJECT_DIR$/application-console-server/src/main/java/com/open/application/console/server/service/impl/LoginServiceImpl.java" />
         <option value="$PROJECT_DIR$/application-config/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/application-console/src/main/java/com/open/application/console/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/application-console/src/main/java/com/open/application/console/controller/DateController.java" />
         <option value="$PROJECT_DIR$/application-console/src/main/java/com/open/application/console/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/config/consoleServer-dev.properties" />
       </list>
     </option>
   </component>
@@ -185,8 +187,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="70" />
-    <option name="y" value="23" />
+    <option name="x" value="165" />
+    <option name="y" value="173" />
     <option name="width" value="1370" />
     <option name="height" value="877" />
   </component>
@@ -323,6 +325,11 @@
               <item name="application" type="b2602c69:ProjectViewProjectNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="application" type="b2602c69:ProjectViewProjectNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="vue-console" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -523,15 +530,15 @@
       <workItem from="1545320648910" duration="149000" />
       <workItem from="1545321051293" duration="4918000" />
       <workItem from="1545358255059" duration="19539000" />
-      <workItem from="1545404816169" duration="15035000" />
+      <workItem from="1545404816169" duration="15734000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39641000" />
+    <option name="totallyTimeSpent" value="40340000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="70" y="23" width="1370" height="877" extended-state="0" />
+    <frame x="165" y="173" width="1370" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -554,10 +561,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43974358" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.43974358" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3474359" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27710843" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3474359" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27710843" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="3" side_tool="true" />
       <window_info anchor="right" id="SciView" order="3" weight="0.3297568" />
@@ -853,13 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/consoleServer-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application-console/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -937,6 +937,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/consoleServer-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="74" selection-start-line="6" selection-start-column="74" selection-end-line="6" selection-end-column="74" />
         </state>
       </provider>
     </entry>

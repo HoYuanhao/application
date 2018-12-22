@@ -28,7 +28,7 @@
     </el-row>
 
     <el-row :gutter="8">
-      <el-col :xs="{span: 100}" :sm="{span: 100}" :md="{span: 100}" :lg="{span: 100}" :xl="{span: 100}" style="padding-right:8px;margin-bottom:30px;">
+      <el-col :xs="{span: 50}" :sm="{span: 50}" :md="{span: 50}" :lg="{span: 12}" :xl="{span: 12}" style="padding-right:8px;margin-bottom:30px;">
         <transaction-table/>
       </el-col>
       <!-- <el-col :xs="{span: 24}" :sm="{span: 12}" :md="{span: 12}" :lg="{span: 6}" :xl="{span: 6}" style="margin-bottom:30px;">
