@@ -9,18 +9,18 @@
       <line-chart :chart-data="lineChartData"/>
     </el-row>
 
-    <el-row :gutter="20">
-      <!-- <el-col :xs="24" :sm="24" :lg="8">
+    <el-row :gutter="30">
+       <!-- <el-col :xs="24" :sm="24" :lg="8">
         <div class="chart-wrapper">
           <raddar-chart/>
         </div>
-      </el-col> -->
-      <el-col :xs="24" :sm="24" :lg="8">
+      </el-col>  -->
+      <el-col :xs="30" :sm="30" :lg="12">
         <div class="chart-wrapper">
           <pie-chart/>
         </div>
       </el-col>
-      <el-col :xs="24" :sm="24" :lg="8">
+      <el-col :xs="30" :sm="30" :lg="12">
         <div class="chart-wrapper">
           <bar-chart/>
         </div>
@@ -28,15 +28,9 @@
     </el-row>
 
     <el-row :gutter="8">
-      <el-col :xs="{span: 50}" :sm="{span: 50}" :md="{span: 50}" :lg="{span: 12}" :xl="{span: 12}" style="padding-right:8px;margin-bottom:30px;">
+      <el-col :xs="{span: 40}" :sm="{span: 40}" :md="{span: 24}" :lg="{span: 24}" :xl="{span: 12}" style="padding-right:8px;margin-bottom:30px;">
         <transaction-table/>
       </el-col>
-      <!-- <el-col :xs="{span: 24}" :sm="{span: 12}" :md="{span: 12}" :lg="{span: 6}" :xl="{span: 6}" style="margin-bottom:30px;">
-        <todo-list/>
-      </el-col>
-      <el-col :xs="{span: 24}" :sm="{span: 12}" :md="{span: 12}" :lg="{span: 6}" :xl="{span: 6}" style="margin-bottom:30px;">
-        <box-card/>
-      </el-col> -->
     </el-row>
 
   </div>

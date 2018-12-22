@@ -1,23 +1,28 @@
 <template>
-  <el-table :data="list" style="width: 100%;padding-top: 15px;">
+  <el-table v-loading="loading"  :data="list" border=true style="width: 100%;padding-top: 15px;">
     <el-table-column label="Number" width="280">
       <template slot-scope="scope">
-        {{ scope.row.order_no | orderNoFilter }}
+        {{ scope.row.id | orderNoFilter }}
       </template>
     </el-table-column>
     <el-table-column label="Type" width="100" align="center">
       <template slot-scope="scope">
-        ¥{{ scope.row.price | toThousandFilter }}
+        {{ scope.row.type  }}
       </template>
     </el-table-column>
-        <el-table-column label="Name" width="200" align="center">
+        <el-table-column label="Name" width="100" align="center">
       <template slot-scope="scope">
-        ¥{{ scope.row.price | toThousandFilter }}
+        {{ scope.row.name  }}
       </template>
     </el-table-column>
-            <el-table-column label="Describe" min-width="200" align="center">
+            <el-table-column label="Describe" width="200" align="center">
       <template slot-scope="scope">
-        ¥{{ scope.row.price | toThousandFilter }}
+        {{ scope.row.describe  }}
+      </template>
+    </el-table-column>
+            <el-table-column label="CreateTime" min-width="200" align="center" >
+      <template slot-scope="scope">
+        {{scope.row.createTime | dateFormat}}
       </template>
     </el-table-column>
     <el-table-column label="Status" width="100" align="center">
@@ -29,10 +34,15 @@
 </template>
 
 <script>
-import { fetchList } from '@/api/transaction'
+import store from '@/store'
+import {showTransactionTableData} from '@/api/api'
+import { formatTime } from '@/utils';
 
 export default {
   filters: {
+    dateFormat(stamp) {
+      return formatTime(stamp, '{y}-{m}-{d} {h}:{i}:{s}')
+    },
     statusFilter(status) {
       const statusMap = {
         success: 'success',
@@ -56,10 +66,16 @@ export default {
   },
   methods: {
     fetchData() {
-      fetchList().then(response => {
-        this.list = response.data.items.slice(0, 10)
-      })
-    }
+      const param={
+      id:store.getters.id,
+      token:store.getters.token
+      }
+    showTransactionTableData(param).then(res=>{
+      this.list=res.data
+    });
+
+    },
+     
   }
 }
 </script>

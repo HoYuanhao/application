@@ -14,3 +14,27 @@ export function showPanelGroupData(query) {
     params: query
   })
 }
+
+  export function showPieChartData(query) {
+    return request({
+      url: '/data/showPieChartData',
+      method: 'get',
+      params: query
+    })
+}
+
+export function showBarChartData(query) {
+  return request({
+    url: '/data/showBarChartData',
+    method: 'get',
+    params: query
+  })
+}
+
+export function showTransactionTableData(query) {
+  return request({
+    url: '/data/showTransactionTableData',
+    method: 'get',
+    params: query
+  })
+}
