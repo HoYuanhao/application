@@ -20,9 +20,14 @@
         {{ scope.row.describe  }}
       </template>
     </el-table-column>
-            <el-table-column label="CreateTime" min-width="200" align="center" >
+            <el-table-column label="CreateTime" min-width="150" align="center" >
       <template slot-scope="scope">
         {{scope.row.createTime | dateFormat}}
+      </template>
+    </el-table-column>
+       <el-table-column label="EndTime" min-width="150" align="center" >
+      <template slot-scope="scope">
+        {{scope.row.endTime | dateFormat}}
       </template>
     </el-table-column>
     <el-table-column label="Status" width="100" align="center">
@@ -41,14 +46,14 @@ import { formatTime } from '@/utils';
 export default {
   filters: {
     dateFormat(stamp) {
-      return formatTime(stamp, '{y}-{m}-{d} {h}:{i}:{s}')
+      return formatTime(stamp)
     },
     statusFilter(status) {
       const statusMap = {
         success: 'success',
         pending: 'info',
-        error: 'warning',
-        exception:'danger'
+        exception: 'warning',
+        error:'danger'
       }
       return statusMap[status]
     },

@@ -909,68 +909,261 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="229" parent="2" name="user">
+    <table id="229" parent="2" name="exception">
       <Engine>InnoDB</Engine>
       <Collation>utf8mb4_general_ci</Collation>
     </table>
-    <column id="230" parent="229" name="id">
+    <table id="230" parent="2" name="process">
+      <Engine>InnoDB</Engine>
+      <Collation>utf8mb4_general_ci</Collation>
+    </table>
+    <table id="231" parent="2" name="task">
+      <Engine>InnoDB</Engine>
+      <Collation>utf8mb4_general_ci</Collation>
+    </table>
+    <table id="232" parent="2" name="user">
+      <Engine>InnoDB</Engine>
+      <Collation>utf8mb4_general_ci</Collation>
+    </table>
+    <column id="233" parent="229" name="eid">
+      <Position>1</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="234" parent="229" name="type">
+      <Position>2</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="235" parent="229" name="detailed">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="236" parent="229" name="throw_time">
+      <Position>4</Position>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="237" parent="229" name="uid">
+      <Position>5</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="238" parent="229" name="pid">
+      <Position>6</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="239" parent="229" name="tid">
+      <Position>7</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="240" parent="229" name="throw_time_index">
+      <ColNames>throw_time</ColNames>
+    </index>
+    <index id="241" parent="229" name="uid_pid_tid_index">
+      <ColNames>uid
+pid
+tid</ColNames>
+    </index>
+    <index id="242" parent="229" name="uid_pid_index">
+      <ColNames>uid
+pid</ColNames>
+    </index>
+    <index id="243" parent="229" name="uid_tid_index">
+      <ColNames>uid
+tid</ColNames>
+    </index>
+    <index id="244" parent="229" name="uid_index">
+      <ColNames>uid</ColNames>
+    </index>
+    <key id="245" parent="229" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>eid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="246" parent="230" name="pid">
+      <Position>1</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="247" parent="230" name="tid">
+      <Position>2</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="248" parent="230" name="is_active">
+      <Position>3</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;1&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="249" parent="230" name="create_time">
+      <Position>4</Position>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="250" parent="230" name="end_time">
+      <Position>5</Position>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="251" parent="230" name="has_error">
+      <Position>6</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="252" parent="230" name="hsa_exception">
+      <Position>7</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="253" parent="230" name="uid">
+      <Position>8</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="254" parent="230" name="pid_tid_uid_index">
+      <ColNames>pid
+tid
+uid</ColNames>
+    </index>
+    <index id="255" parent="230" name="pid_uid_index">
+      <ColNames>pid
+uid</ColNames>
+    </index>
+    <index id="256" parent="230" name="tid_uid_index">
+      <ColNames>tid
+uid</ColNames>
+    </index>
+    <index id="257" parent="230" name="uid_index">
+      <ColNames>uid</ColNames>
+    </index>
+    <key id="258" parent="230" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>pid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="259" parent="231" name="tid">
+      <Position>1</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="260" parent="231" name="name">
+      <Position>2</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="261" parent="231" name="describe">
+      <Position>3</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="262" parent="231" name="create_time">
+      <Position>4</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="263" parent="231" name="end_time">
+      <Position>5</Position>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="264" parent="231" name="type">
+      <Position>6</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="265" parent="231" name="process_num">
+      <Position>7</Position>
+      <DataType>int(11)|0s</DataType>
+      <DefaultExpression>&apos;1&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="266" parent="231" name="uid">
+      <Position>8</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="267" parent="231" name="tid_uid_index">
+      <ColNames>tid
+uid</ColNames>
+    </index>
+    <index id="268" parent="231" name="uid_index">
+      <ColNames>uid</ColNames>
+    </index>
+    <key id="269" parent="231" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>tid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="270" parent="232" name="uid">
       <Position>1</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="231" parent="229" name="username">
+    <column id="271" parent="232" name="username">
       <Position>2</Position>
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="232" parent="229" name="password">
+    <column id="272" parent="232" name="password">
       <Position>3</Position>
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="233" parent="229" name="create_time">
+    <column id="273" parent="232" name="create_time">
       <Position>4</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="234" parent="229" name="is_deleted">
+    <column id="274" parent="232" name="is_deleted">
       <Position>5</Position>
       <Comment>0未删除 1删除</Comment>
       <DataType>tinyint(1)|0s</DataType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="235" parent="229" name="is_banned">
+    <column id="275" parent="232" name="is_banned">
       <Position>6</Position>
       <Comment>0 noban 1 ban</Comment>
       <DataType>tinyint(1)|0s</DataType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="236" parent="229" name="token">
+    <column id="276" parent="232" name="role">
       <Position>7</Position>
-      <DataType>varchar(32)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="237" parent="229" name="role">
-      <Position>8</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="238" parent="229" name="id_taken_index">
-      <ColNames>id
-token</ColNames>
+    <index id="277" parent="232" name="id_taken_index">
+      <ColNames>uid</ColNames>
     </index>
-    <index id="239" parent="229" name="token_index">
-      <ColNames>token</ColNames>
+    <index id="278" parent="232" name="username_index">
+      <ColNames>username</ColNames>
     </index>
-    <key id="240" parent="229" name="PRIMARY">
+    <key id="279" parent="232" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>uid</ColNames>
       <Primary>1</Primary>
     </key>
   </database-model>

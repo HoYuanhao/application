@@ -24,7 +24,7 @@ private RedisTemplate<String,String> redisTemplate;
     UserInfo userInfo=userDao.getUserInfoByUserNameAndPassword(username,password);
     if(userInfo!=null) {
       long time = System.currentTimeMillis();
-      String token = DigestUtils.md5DigestAsHex((userInfo.getId() + time).getBytes());
+      String token = DigestUtils.md5DigestAsHex((userInfo.getUid() + time).getBytes());
       redisTemplate.opsForValue().set(token, JSON.toJSONString(userInfo));
       redisTemplate.expire(token, 30, TimeUnit.MINUTES);
       userInfo.setToken(token);

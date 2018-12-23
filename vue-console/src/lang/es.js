@@ -81,10 +81,6 @@ export default {
     thirdparty: 'Conectar con',
     thirdpartyTips: 'No se puede simular en local, así que combine su propia simulación de negocios. ! !'
   },
-  documentation: {
-    documentation: 'Documentación',
-    github: 'Repositorio Github'
-  },
   permission: {
     roles: 'Tus permisos',
     switchRoles: 'Cambiar permisos'
@@ -141,6 +137,21 @@ export default {
   zip: {
     export: 'Exportar',
     placeholder: 'Por favor escribe un nombre de fichero'
+  },
+  taskconsole:{
+    id:'Números',
+    name:"Nombre",
+    description:"Descripción",
+    status:'Estado',
+    action:'Acción',
+    createTime:'Tiempo De Creacion',
+    startTime:'Hora De Inicio',
+    endTime:'Hora Final',
+    type:'Tipo',
+    processNum:'Número De Procesos',
+    add:'Nuevo',
+    alarm:'Activar Alertas De Correo Electrónico',
+    run:'Tarea En Ejecución'
   },
   theme: {
     change: 'Cambiar tema',

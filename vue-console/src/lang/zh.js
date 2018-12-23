@@ -2,7 +2,7 @@ export default {
   route: {
     dashboard: '首页',
     introduction: '简述',
-    documentation: '文档',
+    documentation: '任务控制台',
     guide: '引导页',
     permission: '权限测试页',
     pagePermission: '页面权限',
@@ -81,9 +81,20 @@ export default {
     thirdparty: '第三方登录',
     thirdpartyTips: '本地不能模拟，请结合自己业务进行模拟！！！'
   },
-  documentation: {
-    documentation: '文档',
-    github: 'Github 地址'
+  taskconsole:{
+    id:'序号',
+    name:"名称",
+    description:"描述",
+    status:'状态',
+    action:'操作',
+    createTime:'创建时间',
+    startTime:'开始时间',
+    endTime:'结束时间',
+    type:'类型',
+    processNum:'进程数',
+    add:'新建',
+    alarm:'开启邮件提醒',
+    run:'正在运行的任务'
   },
   permission: {
     roles: '你的权限',

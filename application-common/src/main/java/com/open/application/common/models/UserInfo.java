@@ -14,7 +14,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 public class UserInfo implements Serializable {
-  private String id;
+  private String uid;
   private String username;
   private String role;
   private Date createTime;

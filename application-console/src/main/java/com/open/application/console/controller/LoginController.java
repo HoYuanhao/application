@@ -51,7 +51,7 @@ public class LoginController {
     }else{
       jsonObject.put("status",200);
       jsonObject.put("userInfo",userInfo);
-      log.info("get username={} and id ={} info",userInfo.getUsername(),userInfo.getId());
+      log.info("get username={} and id ={} info",userInfo.getUsername(),userInfo.getUid());
     }
     return  jsonObject;
   }

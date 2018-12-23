@@ -3,7 +3,7 @@
 <mapper namespace="com.open.application.console.server.dao.UserDao">
 <select id="getUserInfoByUserNameAndPassword" resultType="UserInfo">
   select
-  id,username,create_time as createTime,
+  uid,username,create_time as createTime,
   is_deleted as isDeleted,is_banned as isBanned,role
   from user
   where username=#{userName} and password=#{password}

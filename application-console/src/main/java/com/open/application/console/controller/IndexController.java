@@ -165,7 +165,8 @@ public class IndexController {
           .id(UUID.randomUUID().toString().replace("-",""))
           .type(i%3==1?"music":"ticket")
           .describe("Test! It's a task message! and it's so long ")
-          .createTime(new Date())
+          .createTime(new Date(System.currentTimeMillis()-1000000000L))
+          .endTime(new Date(System.currentTimeMillis()-1000000L))
           .name("task"+i)
           .status(i%2==0?"error":"exception")
           .build());

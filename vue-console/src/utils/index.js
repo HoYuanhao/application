@@ -36,7 +36,7 @@ export function parseTime(time, cFormat) {
 }
 
 export function formatTime(time, option) {
-  time = +time * 1000
+    time = +time * 1000
   const d = new Date(time)
   const now = Date.now()
 

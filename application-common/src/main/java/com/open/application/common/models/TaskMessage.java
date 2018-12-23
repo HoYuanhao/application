@@ -16,6 +16,7 @@ public class TaskMessage {
  private String name;
  private String describe;
  private Date createTime;
+ private Date endTime;
  private String status;
 
 }

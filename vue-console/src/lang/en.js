@@ -2,7 +2,7 @@ export default {
   route: {
     dashboard: 'Dashboard',
     introduction: 'Introduction',
-    documentation: 'Documentation',
+    documentation: 'TaskConsole',
     guide: 'Guide',
     permission: 'Permission',
     pagePermission: 'Page Permission',
@@ -81,10 +81,6 @@ export default {
     thirdparty: 'Or connect with',
     thirdpartyTips: 'Can not be simulated on local, so please combine you own business simulation! ! !'
   },
-  documentation: {
-    documentation: 'Documentation',
-    github: 'Github Repository'
-  },
   permission: {
     roles: 'Your roles',
     switchRoles: 'Switch roles'
@@ -92,6 +88,21 @@ export default {
   guide: {
     description: 'The guide page is useful for some people who entered the project for the first time. You can briefly introduce the features of the project. Demo is based on ',
     button: 'Show Guide'
+  },
+  taskconsole:{
+    id:'ID',
+    name:"Name",
+    description:"Description",
+    status:'Status',
+    action:'Actions',
+    createTime:'CreateTime',
+    startTime:'StartTime',
+    endTime:'EndTime',
+    type:'Type',
+    processNum:'ProcessNumber',
+    add:'Add',
+    alarm:'Enable Email Alerts',
+    run:'Running Task'
   },
   components: {
     documentation: 'Documentation',
