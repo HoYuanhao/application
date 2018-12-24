@@ -3,6 +3,7 @@ com/open/application/common/models/LoginInfo$LoginInfoBuilder.class
 com/open/application/common/models/PieChart.class
 com/open/application/common/models/Tooltip.class
 com/open/application/common/models/LoginInfo.class
+com/open/application/common/util/EsUtil.class
 com/open/application/common/service/LoginService.class
 com/open/application/common/models/Legend$LegendBuilder.class
 com/open/application/common/models/Tooltip$TooltipBuilder.class

@@ -25,4 +25,5 @@ public class Task implements Serializable {
   private String uid;
   private Integer isDelete;
   private Integer status;
+  private Integer alarm;
 }
