@@ -1035,133 +1035,151 @@ tid</ColNames>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="254" parent="230" name="pid_tid_uid_index">
-      <ColNames>pid
-tid
-uid</ColNames>
-    </index>
-    <index id="255" parent="230" name="pid_uid_index">
-      <ColNames>pid
-uid</ColNames>
-    </index>
-    <index id="256" parent="230" name="tid_uid_index">
+    <column id="254" parent="230" name="state">
+      <Position>9</Position>
+      <Comment>0未运行 1就绪 2运行</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="255" parent="230" name="tid_uid_index">
       <ColNames>tid
 uid</ColNames>
     </index>
-    <index id="257" parent="230" name="uid_index">
+    <index id="256" parent="230" name="uid_index">
       <ColNames>uid</ColNames>
     </index>
-    <key id="258" parent="230" name="PRIMARY">
+    <key id="257" parent="230" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>pid</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="259" parent="231" name="tid">
+    <column id="258" parent="231" name="tid">
       <Position>1</Position>
       <DataType>varchar(32)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="260" parent="231" name="name">
+    <column id="259" parent="231" name="name">
       <Position>2</Position>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="261" parent="231" name="describe">
+    <column id="260" parent="231" name="describe">
       <Position>3</Position>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="262" parent="231" name="create_time">
+    <column id="261" parent="231" name="create_time">
       <Position>4</Position>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="263" parent="231" name="end_time">
+    <column id="262" parent="231" name="start_time">
       <Position>5</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="264" parent="231" name="type">
+    <column id="263" parent="231" name="end_time">
       <Position>6</Position>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="264" parent="231" name="type">
+      <Position>7</Position>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="265" parent="231" name="process_num">
-      <Position>7</Position>
+      <Position>8</Position>
       <DataType>int(11)|0s</DataType>
       <DefaultExpression>&apos;1&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="266" parent="231" name="uid">
-      <Position>8</Position>
+      <Position>9</Position>
       <DataType>varchar(32)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="267" parent="231" name="tid_uid_index">
-      <ColNames>tid
-uid</ColNames>
-    </index>
-    <index id="268" parent="231" name="uid_index">
+    <column id="267" parent="231" name="is_delete">
+      <Position>10</Position>
+      <Comment>1删除 0未删除</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="268" parent="231" name="status">
+      <Position>11</Position>
+      <Comment>0未运行 1正常运行 2运行且有异常 3错误停止运行 4执行完成</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="269" parent="231" name="uid_index">
       <ColNames>uid</ColNames>
     </index>
-    <key id="269" parent="231" name="PRIMARY">
+    <key id="270" parent="231" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>tid</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="270" parent="232" name="uid">
+    <column id="271" parent="232" name="uid">
       <Position>1</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="271" parent="232" name="username">
+    <column id="272" parent="232" name="username">
       <Position>2</Position>
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="272" parent="232" name="password">
+    <column id="273" parent="232" name="password">
       <Position>3</Position>
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="273" parent="232" name="create_time">
+    <column id="274" parent="232" name="create_time">
       <Position>4</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="274" parent="232" name="is_deleted">
+    <column id="275" parent="232" name="is_deleted">
       <Position>5</Position>
       <Comment>0未删除 1删除</Comment>
       <DataType>tinyint(1)|0s</DataType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="275" parent="232" name="is_banned">
+    <column id="276" parent="232" name="is_banned">
       <Position>6</Position>
       <Comment>0 noban 1 ban</Comment>
       <DataType>tinyint(1)|0s</DataType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="276" parent="232" name="role">
+    <column id="277" parent="232" name="role">
       <Position>7</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="277" parent="232" name="id_taken_index">
+    <column id="278" parent="232" name="email">
+      <Position>8</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="279" parent="232" name="id_taken_index">
       <ColNames>uid</ColNames>
     </index>
-    <index id="278" parent="232" name="username_index">
+    <index id="280" parent="232" name="username_index">
       <ColNames>username</ColNames>
     </index>
-    <key id="279" parent="232" name="PRIMARY">
+    <key id="281" parent="232" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>uid</ColNames>
       <Primary>1</Primary>

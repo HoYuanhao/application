@@ -7,13 +7,13 @@ import com.open.application.common.models.UserInfo;
 import com.open.application.common.service.LoginService;
 import com.open.application.console.server.dao.UserDao;
 import java.util.concurrent.TimeUnit;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.util.DigestUtils;
 
-@Service(interfaceClass = LoginService.class)
-@Component
+@Slf4j
 public class LoginServiceImpl implements LoginService {
 @Autowired
 private UserDao userDao;

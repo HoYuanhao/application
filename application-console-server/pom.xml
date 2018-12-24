@@ -73,6 +73,7 @@
       <artifactId>application-common</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
+
     <!-- web的依赖，必须加 -->
     <dependency>
       <groupId>org.springframework.boot</groupId>

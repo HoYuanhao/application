@@ -38,3 +38,11 @@ export function showTransactionTableData(query) {
     params: query
   })
 }
+
+export function showTaskData(query) {
+  return request({
+    url: '/task/showTaskData',
+    method: 'get',
+    params: query
+  })
+}

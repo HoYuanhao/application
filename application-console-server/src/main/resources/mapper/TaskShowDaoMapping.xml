@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.open.application.console.server.dao.TaskShowDao">
+  <select id="getTaskByUid" resultType="Task">
+SELECT
+	tid,
+	NAME,
+	`describe`,
+	create_time AS createTime,
+	start_time AS startTime,
+	end_time AS endTime,
+	type,
+	process_num AS processNum,
+	`status`
+FROM
+	task
+WHERE
+	uid = #{uid}
+AND is_delete = 0
+order by create_time
+limit #{offset},#{limit}
+</select>
+
+	<select id="getCountTaskDataByUid" resultType="java.lang.Integer">
+		SELECT count(1) from task where uid=#{uid}
+	</select>
+</mapper>

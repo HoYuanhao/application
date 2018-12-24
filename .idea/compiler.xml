@@ -10,7 +10,6 @@
         <module name="application-config" />
         <module name="application-console" />
         <module name="application-console-server" />
-        <module name="application-es-server" />
         <module name="application-index" />
         <module name="application-spider-server" />
       </profile>

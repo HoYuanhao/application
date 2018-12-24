@@ -17,7 +17,6 @@
   <modules>
     <module>application-config</module>
     <module>application-console</module>
-    <module>application-es-server</module>
     <module>application-spider-server</module>
     <module>application-common</module>
     <module>application-index</module>

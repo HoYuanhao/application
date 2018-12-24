@@ -1,20 +1,18 @@
 <template>
   <div class="app-container">
     <div class="filter-container">
-      <el-input :placeholder="$t('table.title')" v-model="listQuery.title" style="width: 200px;" class="filter-item" @keyup.enter.native="handleFilter"/>
-      <el-select v-model="listQuery.importance" :placeholder="$t('table.importance')" clearable style="width: 90px" class="filter-item">
-        <el-option v-for="item in importanceOptions" :key="item" :label="item" :value="item"/>
-      </el-select>
+      <el-input :placeholder="$t('taskconsole.name')" v-model="listQuery.title" style="width: 200px;" class="filter-item" @keyup.enter.native="handleFilter"/>
+    <el-input :placeholder="$t('taskconsole.description')" v-model="listQuery.description" style="width: 200px;" class="filter-item" @keyup.enter.native="handleFilter"/>
       <el-select v-model="listQuery.type" :placeholder="$t('table.type')" clearable class="filter-item" style="width: 130px">
-        <el-option v-for="item in calendarTypeOptions" :key="item.key" :label="item.display_name+'('+item.key+')'" :value="item.key"/>
+        <el-option v-for="item in calendarTypeOptions" :key="item.key" :label="item.display_name" :value="item.key"/>
       </el-select>
-      <el-select v-model="listQuery.sort" style="width: 140px" class="filter-item" @change="handleFilter">
-        <el-option v-for="item in sortOptions" :key="item.key" :label="item.label" :value="item.key"/>
+      <el-select v-model="listQuery.status" style="width: 140px" class="filter-item" @change="handleFilter">
+        <el-option v-for="item in statusSelect" :key="item.key" :label="item.label" :value="item.key"/>
       </el-select>
       <el-button v-waves class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('table.search') }}</el-button>
       <el-button class="filter-item" style="margin-left: 10px;" type="primary" icon="el-icon-edit" @click="handleCreate">{{ $t('taskconsole.add') }}</el-button>
-      <el-button v-waves :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('table.export') }}</el-button>
-      <el-checkbox v-model="showReviewer" class="filter-item" style="margin-left:15px;" @change="tableKey=tableKey+1">{{ $t('taskconsole.run') }}</el-checkbox>
+      <!-- <el-button v-waves :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('table.export') }}</el-button> -->
+      <el-checkbox v-model="showReviewer" class="filter-item" style="margin-left:15px;" @change="tableKey=tableKey+1">{{ $t('taskconsole.running') }}</el-checkbox>
     </div>
 
     <el-table
@@ -26,60 +24,57 @@
       highlight-current-row
       style="width: 100%;"
       @sort-change="sortChange">
-      <el-table-column :label="$t('taskconsole.id')" prop="id" sortable="custom" align="center" width="65">
+      <el-table-column :label="$t('taskconsole.id')" prop="id" sortable="custom" align="center" width="100">
         <template slot-scope="scope">
-          <span>{{ scope.row.id }}</span>
+          <span>{{ scope.row.tid }}</span>
         </template>
       </el-table-column>
       <el-table-column :label="$t('taskconsole.name')" width="100px" align="center">
         <template slot-scope="scope">
-          <span>{{ scope.row.timestamp|dateFormat}}</span>
+          <span>{{ scope.row.name}}</span>
         </template>
       </el-table-column>
       <el-table-column :label="$t('taskconsole.description')" min-width="150px">
-        <template slot-scope="scope">
-          <span class="link-type" @click="handleUpdate(scope.row)">{{ scope.row.title }}</span>
-          <el-tag>{{ scope.row.type | typeFilter }}</el-tag>
+          <template slot-scope="scope">
+          <span>{{ scope.row.describe}}</span>
         </template>
       </el-table-column>
-      <el-table-column :label="$t('taskconsole.processNum')" width="110px" align="center">
+      <el-table-column :label="$t('taskconsole.processNum')" width="70px" align="center">
         <template slot-scope="scope">
-          <span>{{ scope.row.author }}</span>
+          <span>{{ scope.row.processNum }}</span>
         </template>
       </el-table-column>
       <el-table-column  :label="$t('taskconsole.createTime')" width="110px" align="center">
         <template slot-scope="scope">
-             <span>{{ scope.row.timestamp|dateFormat}}</span>
+             <span>{{ scope.row.createTime|dateFormat}}</span>
         </template>
       </el-table-column>
       <el-table-column :label="$t('taskconsole.startTime')" width="80px">
         <template slot-scope="scope">
-          <span>{{ scope.row.timestamp|dateFormat}}</span>
+          <span>{{ scope.row.startTime|dateFormat}}</span>
         </template>
       </el-table-column>
       <el-table-column :label="$t('taskconsole.endTime')" align="center" width="95">
         <template slot-scope="scope">
-          <span>{{ scope.row.timestamp|dateFormat}}</span>
+          <span>{{ scope.row.endTime|dateFormat}}</span>
         </template>
       </el-table-column>
       <el-table-column :label="$t('taskconsole.status')" class-name="status-col" width="100">
         <template slot-scope="scope">
-          <el-tag :type="scope.row.status | statusFilter">{{ scope.row.status }}</el-tag>
+          <el-tag :type="scope.row.status | statusFilter">{{ scope.row.status|statusNameFilter}}</el-tag>
         </template>
       </el-table-column>
       
       <el-table-column :label="$t('taskconsole.type')" class-name="status-col" width="100">
         <template slot-scope="scope">
-          <el-tag :type="scope.row.status | statusFilter">{{ scope.row.status }}</el-tag>
+          <el-tag :type="scope.row.type|typeStatusFilter">{{ scope.row.type}}</el-tag>
         </template>
       </el-table-column>
       <el-table-column :label="$t('taskconsole.action')" align="center" width="150" class-name="small-padding fixed-width">
         <template slot-scope="scope">
-          <el-button type="primary" size="mini" @click="handleUpdate(scope.row)">{{ $t('table.edit') }}</el-button>
-          <el-button v-if="scope.row.status!='published'" size="mini" type="success" @click="handleModifyStatus(scope.row,'published')">{{ $t('table.publish') }}
-          </el-button>
-          <el-button v-if="scope.row.status!='draft'" size="mini" @click="handleModifyStatus(scope.row,'draft')">{{ $t('table.draft') }}
-          </el-button>
+           <el-button v-if="scope.row.status==0||scope.row.status==3||scope.row.status==4" size="mini" type="success" @click="handleModifyStatus(scope.row,'published')">{{ $t('taskconsole.run') }}</el-button>
+          <el-button v-if="scope.row.status==1||scope.row.status==2" size="mini" type="info" @click="handleModifyStatus(scope.row,'published')">{{ $t('taskconsole.stop') }}</el-button>
+          <el-button type="danger" size="mini" @click="handleUpdate(scope.row)">{{ $t('taskconsole.delete') }}</el-button>
         </template>
       </el-table-column>
     </el-table>
@@ -141,10 +136,11 @@ import { fetchList, fetchPv, createArticle, updateArticle } from '@/api/article'
 import waves from '@/directive/waves' // Waves directive
 import { formatTime } from '@/utils'
 import Pagination from '@/components/Pagination' // Secondary package based on el-pagination
-
+import{showTaskData} from '@/api/api'
+import store from '@/store'
 const calendarTypeOptions = [
-  { key: 'CN', display_name: 'MUSIC' },
-  { key: 'US', display_name: 'TICKET' },
+  { key: 'MS', display_name: 'MUSIC' },
+  { key: 'TK', display_name: 'TICKET' },
 ]
 
 // arr to obj ,such as { CN : "China", US : "USA" }
@@ -159,13 +155,35 @@ export default {
   directives: { waves },
   filters: {
       dateFormat(stamp) {
+        if(stamp==null||stamp==''){
+          return '未开始'
+        }
       return formatTime(stamp)
     },
     statusFilter(status) {
       const statusMap = {
-        published: 'success',
-        draft: 'info',
-        deleted: 'danger'
+        0: 'info',
+        1: 'success',
+        2: 'danger',
+        3: 'warning',
+        4: 'error'
+      }
+      return statusMap[status]
+    },
+      statusNameFilter(status) {
+      const statusMap = {
+        0: 'Stop',
+        1: 'Running',
+        2: 'Exception',
+        3: 'Error',
+        4: 'Finish'
+      }
+      return statusMap[status]
+    },
+     typeStatusFilter(status) {
+      const statusMap = {
+        TICKET: 'success',
+        MUSIC: 'error',
       }
       return statusMap[status]
     },
@@ -186,11 +204,17 @@ export default {
         importance: undefined,
         title: undefined,
         type: undefined,
-        sort: '+id'
+        status: ''
       },
       importanceOptions: [1, 2, 3],
       calendarTypeOptions,
-      sortOptions: [{ label: 'ID Ascending', key: '+id' }, { label: 'ID Descending', key: '-id' }],
+      statusSelect: [
+        { label: 'Running', key: 'run' },
+         { label: 'Error', key: 'error' },
+         {label:'Stop',key:'stop'}, 
+         { label: 'Exception', key: 'exception' },
+           { label: 'Finish', key: 'finish' }],
+         
       statusOptions: ['published', 'draft', 'deleted'],
       showReviewer: false,
       temp: {
@@ -227,15 +251,18 @@ export default {
 },
     getList() {
       this.listLoading = true
-      fetchList(this.listQuery).then(response => {
-        this.list = response.data.items
-        this.total = response.data.total
-
-        // Just to simulate the time of the request
-        setTimeout(() => {
-          this.listLoading = false
-        }, 1.5 * 1000)
-      })
+        const param={
+          id:store.getters.id,
+          token:store.getters.token,
+          limit:this.listQuery.limit,
+          page:this.listQuery.page
+        }
+          showTaskData(param).then(res=>{
+           this.list=res.data.tasks
+           this.total=res.data.total
+             this.listLoading = false
+          })
+    
     },
     alarmChange(){
         if(this.alarm==false){

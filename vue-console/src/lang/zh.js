@@ -94,7 +94,11 @@ export default {
     processNum:'进程数',
     add:'新建',
     alarm:'开启邮件提醒',
-    run:'正在运行的任务'
+    running:'正在运行的任务',
+    run:'运行',
+    stop:'停止',
+    delete:'删除'
+
   },
   permission: {
     roles: '你的权限',

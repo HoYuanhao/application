@@ -11,4 +11,5 @@
     <dubbo:registry  protocol="zookeeper" address="${spring.dubbo.registry.address}" />
     <dubbo:protocol name="${spring.dubbo.protocol.name}" port="${spring.dubbo.protocol.port}" />
   <dubbo:reference id="loginService" interface="com.open.application.common.service.LoginService" />
-  </beans>
+  <dubbo:reference id="taskShowService" interface="com.open.application.common.service.TaskShowService" />
+</beans>

@@ -151,7 +151,10 @@ export default {
     processNum:'Número De Procesos',
     add:'Nuevo',
     alarm:'Activar Alertas De Correo Electrónico',
-    run:'Tarea En Ejecución'
+    running:'Tarea En Ejecución',
+    run:'Corriendo',
+    stop:'Parar',
+    delete:'Eliminar'
   },
   theme: {
     change: 'Cambiar tema',

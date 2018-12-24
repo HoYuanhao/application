@@ -1,4 +1,6 @@
 /Users/yuanhaohe/workspace/application/application-console-server/src/main/java/com/open/application/console/server/service/impl/LoginServiceImpl.java
+/Users/yuanhaohe/workspace/application/application-console-server/src/main/java/com/open/application/console/server/dao/TaskShowDao.java
 /Users/yuanhaohe/workspace/application/application-console-server/src/main/java/com/open/application/console/server/dao/UserDao.java
 /Users/yuanhaohe/workspace/application/application-console-server/src/main/java/com/open/application/console/server/App.java
 /Users/yuanhaohe/workspace/application/application-console-server/src/main/java/com/open/application/console/server/RedisConfig.java
+/Users/yuanhaohe/workspace/application/application-console-server/src/main/java/com/open/application/console/server/service/impl/TaskShowServiceImpl.java

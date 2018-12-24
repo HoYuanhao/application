@@ -2,3 +2,5 @@ com/open/application/console/server/App.class
 com/open/application/console/server/RedisConfig.class
 com/open/application/console/server/service/impl/LoginServiceImpl.class
 com/open/application/console/server/dao/UserDao.class
+com/open/application/console/server/service/impl/TaskShowServiceImpl.class
+com/open/application/console/server/dao/TaskShowDao.class

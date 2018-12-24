@@ -102,7 +102,11 @@ export default {
     processNum:'ProcessNumber',
     add:'Add',
     alarm:'Enable Email Alerts',
-    run:'Running Task'
+    running:'Running Task',
+    run:'Run',
+    stop:'Stop',
+    delete:'Delete'
+
   },
   components: {
     documentation: 'Documentation',
