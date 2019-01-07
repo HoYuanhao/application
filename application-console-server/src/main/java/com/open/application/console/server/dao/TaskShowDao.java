@@ -3,6 +3,7 @@ package com.open.application.console.server.dao;
 import com.open.application.common.models.Task;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.cursor.Cursor;
 
 public interface TaskShowDao {
 
@@ -10,5 +11,8 @@ public interface TaskShowDao {
       @Param("limit") Integer limit);
 
   Integer getCountTaskDataByUid(@Param("uid")String uid);
+
+  Cursor<String> getTaskIDsByUid(@Param("uid")String uid);
+  
 
 }

@@ -1,20 +1,19 @@
 <template>
   <div class="app-container">
     <div class="filter-container">
-      <el-input :placeholder="$t('taskconsole.name')" v-model="listQuery.title" style="width: 200px;" class="filter-item" @keyup.enter.native="handleFilter"/>
-    <el-input :placeholder="$t('taskconsole.description')" v-model="listQuery.description" style="width: 200px;" class="filter-item" @keyup.enter.native="handleFilter"/>
+      <el-input :placeholder="$t('taskconsole.name')" v-model="listQuery.name" style="width: 200px;" class="filter-item" @keyup.enter.native="search"/>
+    <el-input :placeholder="$t('taskconsole.description')" v-model="listQuery.describe" style="width: 200px;" class="filter-item" @keyup.enter.native="search"/>
       <el-select v-model="listQuery.type" :placeholder="$t('table.type')" clearable class="filter-item" style="width: 130px">
-        <el-option v-for="item in calendarTypeOptions" :key="item.key" :label="item.display_name" :value="item.key"/>
+        <el-option v-for="item in calendarTypeOptions" :key="item.key" :label="item.display_name" :value="item.key" />
       </el-select>
-      <el-select v-model="listQuery.status" style="width: 140px" class="filter-item" @change="handleFilter">
+      <el-select v-model="listQuery.status" style="width: 140px" class="filter-item" @change="search">
         <el-option v-for="item in statusSelect" :key="item.key" :label="item.label" :value="item.key"/>
       </el-select>
-      <el-button v-waves class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('table.search') }}</el-button>
+      <el-button v-waves class="filter-item" type="primary" icon="el-icon-search" @click="search">{{ $t('table.search') }}</el-button>
       <el-button class="filter-item" style="margin-left: 10px;" type="primary" icon="el-icon-edit" @click="handleCreate">{{ $t('taskconsole.add') }}</el-button>
       <!-- <el-button v-waves :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('table.export') }}</el-button> -->
       <el-checkbox v-model="showReviewer" class="filter-item" style="margin-left:15px;" @change="tableKey=tableKey+1">{{ $t('taskconsole.running') }}</el-checkbox>
     </div>
-
     <el-table
       v-loading="listLoading"
       :key="tableKey"
@@ -34,7 +33,7 @@
           <span>{{ scope.row.name}}</span>
         </template>
       </el-table-column>
-      <el-table-column :label="$t('taskconsole.description')" min-width="150px">
+      <el-table-column :label="$t('taskconsole.description')" min-width="140px">
           <template slot-scope="scope">
           <span>{{ scope.row.describe}}</span>
         </template>
@@ -44,33 +43,38 @@
           <span>{{ scope.row.processNum }}</span>
         </template>
       </el-table-column>
-      <el-table-column  :label="$t('taskconsole.createTime')" width="110px" align="center">
+      <el-table-column  :label="$t('taskconsole.createTime')" width="100px" align="center">
         <template slot-scope="scope">
              <span>{{ scope.row.createTime|dateFormat}}</span>
         </template>
       </el-table-column>
-      <el-table-column :label="$t('taskconsole.startTime')" width="80px">
+      <el-table-column :label="$t('taskconsole.startTime')" align="center" width="100px">
         <template slot-scope="scope">
           <span>{{ scope.row.startTime|dateFormat}}</span>
         </template>
       </el-table-column>
-      <el-table-column :label="$t('taskconsole.endTime')" align="center" width="95">
+      <el-table-column :label="$t('taskconsole.endTime')" align="center" width="100px">
         <template slot-scope="scope">
           <span>{{ scope.row.endTime|dateFormat}}</span>
         </template>
       </el-table-column>
-      <el-table-column :label="$t('taskconsole.status')" class-name="status-col" width="100">
+      <el-table-column :label="$t('taskconsole.status')" class-name="status-col" width="90px">
         <template slot-scope="scope">
           <el-tag :type="scope.row.status | statusFilter">{{ scope.row.status|statusNameFilter}}</el-tag>
         </template>
       </el-table-column>
       
-      <el-table-column :label="$t('taskconsole.type')" class-name="status-col" width="100">
+      <el-table-column :label="$t('taskconsole.type')" class-name="status-col" width="90px">
         <template slot-scope="scope">
           <el-tag :type="scope.row.type|typeStatusFilter">{{ scope.row.type}}</el-tag>
         </template>
       </el-table-column>
-      <el-table-column :label="$t('taskconsole.action')" align="center" width="150" class-name="small-padding fixed-width">
+        <el-table-column :label="$t('taskconsole.alarm')" class-name="status-col" width="90px">
+        <template slot-scope="scope">
+          <el-tag :type="scope.row.alarm|alarmStatusFilter">{{ scope.row.alarm|alarmFilter}}</el-tag>
+        </template>
+      </el-table-column>
+      <el-table-column :label="$t('taskconsole.action')" align="center" width="160px" class-name="small-padding fixed-width">
         <template slot-scope="scope">
            <el-button v-if="scope.row.status==0||scope.row.status==3||scope.row.status==4" size="mini" type="success" @click="handleModifyStatus(scope.row,'published')">{{ $t('taskconsole.run') }}</el-button>
           <el-button v-if="scope.row.status==1||scope.row.status==2" size="mini" type="info" @click="handleModifyStatus(scope.row,'published')">{{ $t('taskconsole.stop') }}</el-button>
@@ -82,10 +86,10 @@
     <pagination v-show="total>0" :total="total" :page.sync="listQuery.page" :limit.sync="listQuery.limit" @pagination="getList" />
 
     <el-dialog :title="textMap[dialogStatus]" :visible.sync="dialogFormVisible">
-      <el-form ref="dataForm" :rules="rules" :model="temp" label-position="right" label-width="100px" style="width: 400px; margin-left:0px;">
+      <el-form ref="dataForm" :rules="rules" :model="temp" label-position="right" label-width="100px" style="width: 600px; margin-left:0px;">
         <el-form-item :label="$t('taskconsole.type')" prop="type">
-          <el-select v-model="temp.type" class="filter-item" placeholder="任务类型">
-            <el-option v-for="item in calendarTypeOptions" :key="item.key" :label="item.display_name" :value="item.key"/>
+          <el-select v-model="temp.type" class="filter-item" placeholder="任务类型" @change="checkType">
+            <el-option v-for="item in calendarTypeOptions" :key="item.key" :label="item.display_name" :value="item.key" />
           </el-select>
         </el-form-item>
 
@@ -98,19 +102,24 @@
         </el-form-item>
  <el-form-item :label="$t('taskconsole.alarm')">  
                         <el-switch
-                            on-text ="是"
                             off-text = "否"
+                            on-text ="是"
                             on-color="#5B7BFA"
                             off-color="#dadde5"
-                            v-model="temp.check" 
-                            @change="alarmChange"
+                            v-model="alarm"
+                            @change="alarmChange" 
                             >
                         </el-switch>
                   
      </el-form-item>    
         <el-form-item :label="$t('taskconsole.description')">
-          <el-input :autosize="{ minRows: 2, maxRows: 4}" v-model="temp.remark" type="textarea" placeholder="Please input"/>
+          <el-input :autosize="{ minRows: 2, maxRows: 4}" v-model="temp.describe" type="textarea" placeholder="Please input"/>
         </el-form-item>
+        <el-form-item    v-if="temp.source!=null" :label="$t('taskconsole.source')">
+          <div class="editor-container">
+        <json-editor ref="jsonEditor" v-model="temp.source" />
+          </div>
+         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
         <el-button @click="dialogFormVisible = false">{{ $t('table.cancel') }}</el-button>
@@ -136,11 +145,12 @@ import { fetchList, fetchPv, createArticle, updateArticle } from '@/api/article'
 import waves from '@/directive/waves' // Waves directive
 import { formatTime } from '@/utils'
 import Pagination from '@/components/Pagination' // Secondary package based on el-pagination
-import{showTaskData} from '@/api/api'
+import{showTaskData,newTask,searchTask} from '@/api/api'
 import store from '@/store'
+import JsonEditor from '@/components/JsonEditor'
 const calendarTypeOptions = [
-  { key: 'MS', display_name: 'MUSIC' },
-  { key: 'TK', display_name: 'TICKET' },
+  { key: 'MUSIC', display_name: 'MUSIC' },
+  { key: 'TICKET', display_name: 'TICKET' }
 ]
 
 // arr to obj ,such as { CN : "China", US : "USA" }
@@ -151,7 +161,8 @@ const calendarTypeKeyValue = calendarTypeOptions.reduce((acc, cur) => {
 
 export default {
   name: 'ComplexTable',
-  components: { Pagination },
+  type:undefined,
+  components: { Pagination ,JsonEditor},
   directives: { waves },
   filters: {
       dateFormat(stamp) {
@@ -159,6 +170,20 @@ export default {
           return '未开始'
         }
       return formatTime(stamp)
+    },
+     alarmFilter(status) {
+      const statusMap = {
+        0: '关闭',
+        1: '启用',
+      }
+      return statusMap[status]
+    },
+     alarmStatusFilter(status) {
+      const statusMap = {
+        0: 'error',
+        1: 'success',
+      }
+      return statusMap[status]
     },
     statusFilter(status) {
       const statusMap = {
@@ -199,32 +224,34 @@ export default {
       total: 0,
       listLoading: true,
       listQuery: {
+        id:store.getters.id,
         page: 1,
         limit: 20,
-        importance: undefined,
-        title: undefined,
+        describe: undefined,
+        name: undefined,
         type: undefined,
-        status: ''
+        status: undefined,
+        source:undefined
       },
       importanceOptions: [1, 2, 3],
       calendarTypeOptions,
       statusSelect: [
-        { label: 'Running', key: 'run' },
-         { label: 'Error', key: 'error' },
-         {label:'Stop',key:'stop'}, 
-         { label: 'Exception', key: 'exception' },
-           { label: 'Finish', key: 'finish' }],
+        { label: 'Running', key: '1' },
+         { label: 'Error', key: '3' },
+         {label:'Stop',key:'0'}, 
+         { label: 'Exception', key: '2' },
+           { label: 'Finish', key: '4' }],
          
       statusOptions: ['published', 'draft', 'deleted'],
       showReviewer: false,
       temp: {
-        id: undefined,
-        importance: 1,
-        remark: '',
-        timestamp: new Date(),
-        title: '',
         type: '',
-        status: 'published'
+        name: '',
+        processNum: '',
+        alarm: '0',
+        describe: '',
+        uid:store.getters.id,
+        source:undefined,
       },
       dialogFormVisible: false,
       dialogStatus: '',
@@ -265,23 +292,36 @@ export default {
     
     },
     alarmChange(){
-        if(this.alarm==false){
-        this.alarm=true;
+        if(this.alarm){
+         this.temp.alarm=1
          this.$message({
               type: 'success',
               message: `邮件告警已启用！若未设置邮箱地址，设置将失效。`
             });
         }else{
-          this.alarm=false;
+             this.temp.alarm=0
            this.$message({
               type: 'success',
               message: `邮件告警已关闭！`
             });
         }
     },
-    handleFilter() {
+    search() {
       this.listQuery.page = 1
-      this.getList()
+     searchTask(this.listQuery).then(res=>{
+        this.list=res.data.taskList
+        this.total=res.data.totalHits
+     })
+    },
+    checkType(type){
+      this.type=type;
+      if(type=='MUSIC'){
+        const jsonData='{"musicID":""}'
+        this.temp.source=JSON.parse(jsonData);
+      }else if(type=='TICKET'){
+        const jsonData='{"from":"","to":""}'
+        this.temp.source=JSON.parse(jsonData);
+      }
     },
     handleModifyStatus(row, status) {
       this.$message({
@@ -306,14 +346,15 @@ export default {
     },
     resetTemp() {
       this.temp = {
-        id: undefined,
-        importance: 1,
-        remark: '',
-        timestamp: new Date(),
-        title: '',
-        status: 'published',
-        type: ''
+        type: '',
+        name: '',
+        processNum: '',
+        alarm: '0',
+        describe: '',
+        uid:store.getters.id,
+        source:undefined
       }
+      this.alarm=false
     },
     handleCreate() {
       this.resetTemp()
@@ -326,18 +367,17 @@ export default {
     createData() {
       this.$refs['dataForm'].validate((valid) => {
         if (valid) {
-          this.temp.id = parseInt(Math.random() * 100) + 1024 // mock a id
-          this.temp.author = 'vue-element-admin'
-          createArticle(this.temp).then(() => {
-            this.list.unshift(this.temp)
+    
+          newTask(this.temp).then(res=>{
+               this.$notify({
+          title: '成功',
+         message: '新建成功',
+          type: 'success',
+          duration: 2000
+      })
             this.dialogFormVisible = false
-            this.$notify({
-              title: '成功',
-              message: '创建成功',
-              type: 'success',
-              duration: 2000
-            })
-          })
+          this.getList()
+          });
         }
       })
     },
@@ -416,3 +456,11 @@ export default {
   }
 }
 </script>
+<style scoped>
+.editor-container{
+  position: relative;
+  height: 100%;
+  
+}
+</style>
+

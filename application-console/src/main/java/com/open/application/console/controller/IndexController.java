@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * 首页数据展示控制器
  *
- * @author
+ * @author HeYuanHao
  */
 @RestController
 @Slf4j
@@ -143,12 +143,14 @@ public class IndexController {
         .yAxis(Arrays.asList(Axis.builder().type("value").axisTick(new HashMap<String, Object>() {{
           put("show", false);
         }}).build()))
-        .series(Arrays.asList(Series.builder()
+        .series(Arrays.asList(
+            Series.builder()
             .name("music").type("bar")
             .stack("vistors").barWidth("60%")
             .data(Arrays.asList(10222220, 22222200, 30112210, 1122222, 2232233, 33332233, 12222211))
             .animationDuration(3000)
-            .build(), Series.builder()
+            .build(),
+             Series.builder()
             .name("ticket").type("bar")
             .stack("vistors").barWidth("60%")
             .data(Arrays.asList(2422244, 122222, 3322233, 12222222, 3422255, 23342225, 222112332))
@@ -168,7 +170,10 @@ public class IndexController {
           .createTime(new Date(System.currentTimeMillis()-1000000000L))
           .endTime(new Date(System.currentTimeMillis()-1000000L))
           .name("task"+i)
-          .status(i%2==0?"error":"exception")
+          .alarm(i%2)
+          .processNum(i)
+          .startTime(new Date())
+          .status(i%5)
           .build());
     }
     return list;

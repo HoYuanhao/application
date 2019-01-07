@@ -1118,68 +1118,81 @@ uid</ColNames>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="269" parent="231" name="uid_index">
+    <column id="269" parent="231" name="alarm">
+      <Position>12</Position>
+      <Comment>1告警 0不告警</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="270" parent="231" name="source">
+      <Position>13</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="271" parent="231" name="uid_index">
       <ColNames>uid</ColNames>
     </index>
-    <key id="270" parent="231" name="PRIMARY">
+    <key id="272" parent="231" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>tid</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="271" parent="232" name="uid">
+    <column id="273" parent="232" name="uid">
       <Position>1</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="272" parent="232" name="username">
+    <column id="274" parent="232" name="username">
       <Position>2</Position>
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="273" parent="232" name="password">
+    <column id="275" parent="232" name="password">
       <Position>3</Position>
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="274" parent="232" name="create_time">
+    <column id="276" parent="232" name="create_time">
       <Position>4</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="275" parent="232" name="is_deleted">
+    <column id="277" parent="232" name="is_deleted">
       <Position>5</Position>
       <Comment>0未删除 1删除</Comment>
       <DataType>tinyint(1)|0s</DataType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="276" parent="232" name="is_banned">
+    <column id="278" parent="232" name="is_banned">
       <Position>6</Position>
       <Comment>0 noban 1 ban</Comment>
       <DataType>tinyint(1)|0s</DataType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="277" parent="232" name="role">
+    <column id="279" parent="232" name="role">
       <Position>7</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="278" parent="232" name="email">
+    <column id="280" parent="232" name="email">
       <Position>8</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="279" parent="232" name="id_taken_index">
+    <index id="281" parent="232" name="id_taken_index">
       <ColNames>uid</ColNames>
     </index>
-    <index id="280" parent="232" name="username_index">
+    <index id="282" parent="232" name="username_index">
       <ColNames>username</ColNames>
     </index>
-    <key id="281" parent="232" name="PRIMARY">
+    <key id="283" parent="232" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>uid</ColNames>
       <Primary>1</Primary>

@@ -1,6 +1,6 @@
 <template>
   <el-table v-loading="loading"  :data="list" border=true style="width: 100%;padding-top: 15px;">
-    <el-table-column label="Number" width="280">
+    <el-table-column label="Number" width="120">
       <template slot-scope="scope">
         {{ scope.row.id | orderNoFilter }}
       </template>
@@ -25,14 +25,30 @@
         {{scope.row.createTime | dateFormat}}
       </template>
     </el-table-column>
+         <el-table-column label="StartTime" min-width="150" align="center" >
+      <template slot-scope="scope">
+        {{scope.row.startTime | dateFormat}}
+      </template>
+    </el-table-column>
        <el-table-column label="EndTime" min-width="150" align="center" >
       <template slot-scope="scope">
         {{scope.row.endTime | dateFormat}}
       </template>
     </el-table-column>
+         <el-table-column label="Process" width="100" align="center">
+      <template slot-scope="scope">
+        {{ scope.row.processNum }}
+      </template>
+    </el-table-column>
+      <el-table-column label="Alarm" width="100" align="center">
+      <template slot-scope="scope">
+           <el-tag :type="scope.row.alarm |alarmTagFilter">     {{ scope.row.alarm  |alarmFilter}}</el-tag>
+    
+      </template>
+    </el-table-column>
     <el-table-column label="Status" width="100" align="center">
       <template slot-scope="scope">
-        <el-tag :type="scope.row.status | statusFilter"> {{ scope.row.status }}</el-tag>
+        <el-tag :type="scope.row.status | statusFilter"> {{ scope.row.status |statusNameFilter}}</el-tag>
       </template>
     </el-table-column>
   </el-table>
@@ -48,14 +64,39 @@ export default {
     dateFormat(stamp) {
       return formatTime(stamp)
     },
+    alarmFilter(stamp){
+        const map={
+            0: '关闭',
+            1: '启用',
+        }
+        return map[stamp]
+    },
     statusFilter(status) {
       const statusMap = {
-        success: 'success',
-        pending: 'info',
-        exception: 'warning',
-        error:'danger'
+        0: 'info',
+        1: 'success',
+        2: 'danger',
+        3: 'warning',
+        4: 'error'
       }
       return statusMap[status]
+    },
+    alarmTagFilter(status){
+      const map={
+        0:'success',
+        1:'error'
+      }
+      return map[status]
+    },
+    statusNameFilter(status){
+      const map={
+        0:'Stop',
+        1:'Running',
+        2:'Exception',
+        3:'Error',
+        4:'Finish'
+      }
+      return map[status]
     },
     orderNoFilter(str) {
       return str.substring(0, 32)

@@ -3,9 +3,8 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.open.application.console.server.dao.TaskOperateDao">
 <insert id="insertNewTask" parameterType="Task">
-	insert into task(tid,name,describe,type,process_num,alarm,create_time)values (
-	#{tid},#{name},#{describe},#{type},#{processNum},#{alarm},#{createTime}
-	)
+	insert into task(`tid`,`name`,`describe`,`type`,`process_num`,`alarm`,`create_time`,`uid`,`source`)
+	values(#{tid},#{name},#{describe},#{type},#{processNum},#{alarm},#{createTime},#{uid},#{source})
 </insert>
 
 </mapper>

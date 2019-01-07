@@ -1,9 +1,11 @@
 package com.open.application.console.server.es.service.impl;
 
 import com.alibaba.fastjson.JSON;
+import com.open.application.common.models.ExceptionModel;
 import com.open.application.common.models.Task;
-import com.open.application.common.util.EsUtil;
 import com.open.application.console.server.es.service.ElasticSearchService;
+import com.open.application.console.server.util.EsUtil;
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
@@ -28,6 +30,7 @@ import org.elasticsearch.search.SearchHits;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightField;
+import org.elasticsearch.search.sort.SortOrder;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -50,58 +53,55 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
     client = new RestHighLevelClient(RestClient.builder(EsUtil.getHttpHost(address, scheme)));
   }
 
+
   @Override
   public void insertTask(Task task) throws IOException {
-    IndexRequest indexRequest = new IndexRequest(EsUtil.getIndex(task.getTid(), "task", "index"))
+    IndexRequest indexRequest = new IndexRequest(EsUtil.getIndex(task.getUid(), "task", "index"))
         .type(EsUtil.getType());
     indexRequest.source(JSON.toJSONString(task), XContentType.JSON);
     client.index(indexRequest, RequestOptions.DEFAULT);
   }
 
-
   @Override
-  public Map<String, Object> searchTaskByLikeNameAndDescribe(String uid,
+  public Map<String, Object> searchException(String uid, String tid, String type, String key,
       Integer offset,
-      Integer limit, String name, String describe) throws IOException {
-    List<Task> taskList = new ArrayList<>();
-    Map<String, Object> param = new HashMap<>(2);
-    param.put("taskList", taskList);
-    SearchRequest searchRequest = new SearchRequest(EsUtil.getIndex(uid, "task", "index"));
-    searchRequest.types(EsUtil.getType());
+      Integer limit) throws IOException {
+    List<ExceptionModel> list = new ArrayList<>();
+    Map<String, Object> result = new HashMap<>();
+    result.put("exceptions", list);
+
+    SearchRequest searchRequest = new SearchRequest("exception_" + uid + "_" + tid + "_index");
     SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
     BoolQueryBuilder boolQueryBuilder = QueryBuilders.boolQuery()
-        .must(QueryBuilders.termQuery("uid", uid));
-    if (name != null && !name.trim().equals("")) {
-      boolQueryBuilder.must(QueryBuilders.wildcardQuery("name", name));
+        .must(QueryBuilders.termQuery("uid", uid))
+        .must(QueryBuilders.termQuery("tid", tid));
+    if (type != null && !type.trim().equals("")) {
+      boolQueryBuilder.must(QueryBuilders.termQuery("type", type));
     }
-
-    if (describe != null && !describe.trim().equals("")) {
-      boolQueryBuilder.must(QueryBuilders.wildcardQuery("describe", describe));
+    if (key != null && !key.trim().equals("")) {
+      boolQueryBuilder.must(QueryBuilders.matchPhrasePrefixQuery("detail", key));
     }
-    searchSourceBuilder.from(offset);
     searchSourceBuilder.size(limit);
+    searchSourceBuilder.from(offset);
+    // 设置是否按查询匹配度排序
     searchSourceBuilder.explain(true);
-    HighlightBuilder highlightBuilder = new HighlightBuilder().requireFieldMatch(true)
-        .preTags("<span style=\"color:red\">").postTags("</span>");
-
-    if (describe != null && !describe.trim().equals("")) {
-      highlightBuilder.field("describe");
-    }
-    if (name != null && !name.trim().equals("")) {
-      highlightBuilder.field("name");
-    }
+    HighlightBuilder highlightBuilder = new HighlightBuilder();
+    highlightBuilder.field("detail");
+    highlightBuilder.field("type");
+    highlightBuilder.requireFieldMatch(true);
+    highlightBuilder.preTags("<span style=\"color:red\">");
+    highlightBuilder.postTags("</span>");
     searchSourceBuilder.highlighter(highlightBuilder);
-    searchSourceBuilder.query(boolQueryBuilder);
     searchRequest.source(searchSourceBuilder);
     SearchResponse response = client.search(searchRequest, RequestOptions.DEFAULT);
     SearchHits searchHits = response.getHits();
     SearchHit[] hits = searchHits.getHits();
-    param.put("totalHits", hits.length);
+    result.put("totalHits", searchHits.totalHits);
     for (int i = 0; i < hits.length; i++) {
       SearchHit hit = hits[i];
-      Map<String, HighlightField> result = hit.getHighlightFields();
-      if (result != null && result.size() > 0) {
-        for (Map.Entry entry : result.entrySet()) {
+      Map<String, HighlightField> highlightFields = hit.getHighlightFields();
+      if (highlightFields != null && highlightFields.size() > 0) {
+        for (Map.Entry entry : highlightFields.entrySet()) {
           HighlightField field = (HighlightField) entry.getValue();
           if (field != null) {
             // 取得定义的高亮标签
@@ -121,23 +121,90 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
           }
         }
       }
-      Map<String, Object> sourceAsMap = hit.getSourceAsMap();
+      Map<String, Object> stringObjectMap = hit.getSourceAsMap();
+      list.add(ExceptionModel.builder()
+          .eid((String) stringObjectMap.get("eid"))
+          .pid((String) stringObjectMap.get("pid"))
+          .detail((String) stringObjectMap.get("detail"))
+          .throwTime(new Date((Long) stringObjectMap.get("throwTime")))
+          .tid((String) stringObjectMap.get("tid"))
+          .type((String) stringObjectMap.get("type"))
+          .uid((String) stringObjectMap.get("uid"))
+          .build());
+    }
+    return result;
+  }
 
-      taskList.add(Task.builder()
+  @Override
+  public void insertException(ExceptionModel exceptionModel) throws Exception{
+    IndexRequest indexRequest = new IndexRequest("exception_" + exceptionModel.getUid() + "_" + exceptionModel.getTid() + "_index")
+        .type(EsUtil.getType());
+    indexRequest.source(JSON.toJSONString(exceptionModel), XContentType.JSON);
+    client.index(indexRequest, RequestOptions.DEFAULT);
+  }
+
+
+  @Override
+  public Map<String, Object> searchTaskByLikeNameAndDescribe(String uid,
+      Integer offset,
+      Integer limit, String name, String describe, Integer status, String type) throws IOException {
+    List<Task> taskList = new ArrayList<>();
+    Map<String, Object> param = new HashMap<>(2);
+    param.put("taskList", taskList);
+    SearchRequest searchRequest = new SearchRequest(EsUtil.getIndex(uid, "task", "index"));
+    searchRequest.types(EsUtil.getType());
+    SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
+    BoolQueryBuilder boolQueryBuilder = QueryBuilders.boolQuery()
+        .must(QueryBuilders.termQuery("uid", uid));
+    if (status != null) {
+      boolQueryBuilder.must(QueryBuilders.matchQuery("status", status));
+    }
+    if (type != null && !type.trim().equals("")) {
+      boolQueryBuilder.must(QueryBuilders.matchQuery("type", type));
+    }
+    if (name != null && !name.trim().equals("")) {
+      boolQueryBuilder.must(QueryBuilders.matchPhrasePrefixQuery("name", name));
+    }
+    if (describe != null && !describe.trim().equals("")) {
+      boolQueryBuilder.must(QueryBuilders.matchPhrasePrefixQuery("describe", describe));
+    }
+    searchSourceBuilder.from(offset);
+    searchSourceBuilder.size(limit);
+    searchSourceBuilder.explain(true);
+    searchSourceBuilder.query(boolQueryBuilder);
+    searchSourceBuilder.sort("createTime", SortOrder.DESC);
+    searchRequest.source(searchSourceBuilder);
+    SearchResponse response = client.search(searchRequest, RequestOptions.DEFAULT);
+    SearchHits searchHits = response.getHits();
+    SearchHit[] hits = searchHits.getHits();
+    param.put("totalHits", searchHits.totalHits);
+    for (int i = 0; i < hits.length; i++) {
+      SearchHit hit = hits[i];
+      Map<String, Object> sourceAsMap = hit.getSourceAsMap();
+      Task.TaskBuilder taskBuilder = Task.builder()
           .tid((String) sourceAsMap.get("tid"))
           .name((String) sourceAsMap.get("name"))
           .describe((String) sourceAsMap.get("describe"))
-          .createTime((Date) sourceAsMap.get("createTime"))
-          .startTime((Date) sourceAsMap.get("startTime"))
-          .endTime((Date) sourceAsMap.get("endTime"))
+          .createTime(new Date((Long) sourceAsMap.get("createTime")))
           .type((String) sourceAsMap.get("type"))
-          .processNum((Integer) sourceAsMap.get("processNum"))
           .uid((String) sourceAsMap.get("uid"))
+          .processNum((Integer) sourceAsMap.get("processNum"))
           .isDelete((Integer) sourceAsMap.get("isDelete"))
           .status((Integer) sourceAsMap.get("status"))
           .alarm((Integer) sourceAsMap.get("alarm"))
-          .build());
+          .source((String) sourceAsMap.get("source"));
+      Object startTime = sourceAsMap.get("startTime");
+      Object endTime = sourceAsMap.get("endTIme");
+      if (endTime != null) {
+        taskBuilder.endTime(new Date((Long) endTime));
+      }
+      if (startTime != null) {
+        taskBuilder.startTime(new Date((Long) startTime));
+      }
+      taskList.add(taskBuilder.build());
     }
+    log.info("uid:{} offset:{} limit:{} name:{} describe:{} status:{} type:{}", uid, offset, limit,
+        name, describe, status, type);
     return param;
   }
 

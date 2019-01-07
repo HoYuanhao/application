@@ -12,17 +12,21 @@ SELECT
 	end_time AS endTime,
 	type,
 	process_num AS processNum,
-	`status`
+	`status`,
+	`alarm`
 FROM
 	task
 WHERE
 	uid = #{uid}
 AND is_delete = 0
-order by create_time
+order by create_time desc
 limit #{offset},#{limit}
 </select>
 
 	<select id="getCountTaskDataByUid" resultType="java.lang.Integer">
 		SELECT count(1) from task where uid=#{uid}
+	</select>
+	<select id="getTaskIDsByUid" resultType="java.lang.String" fetchSize="100">
+select tid from task where uid=#{uid} and is_delete = 0 order by tid
 	</select>
 </mapper>

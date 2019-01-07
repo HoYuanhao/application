@@ -2,8 +2,8 @@ export default {
   route: {
     dashboard: 'Dashboard',
     introduction: 'Introduction',
-    documentation: 'TaskConsole',
-    guide: 'Guide',
+    documentation: 'Task Console',
+    guide: 'Exception Center',
     permission: 'Permission',
     pagePermission: 'Page Permission',
     directivePermission: 'Directive Permission',
@@ -86,8 +86,12 @@ export default {
     switchRoles: 'Switch roles'
   },
   guide: {
-    description: 'The guide page is useful for some people who entered the project for the first time. You can briefly introduce the features of the project. Demo is based on ',
-    button: 'Show Guide'
+    taskID:'Task ID',
+    type:'Exception Type',
+    key:'Exception Search Key',
+    search:'Search',
+    record:'Record',
+    result:'Result'
   },
   taskconsole:{
     id:'ID',
@@ -105,7 +109,8 @@ export default {
     running:'Running Task',
     run:'Run',
     stop:'Stop',
-    delete:'Delete'
+    delete:'Delete',
+    source:'Source'
 
   },
   components: {

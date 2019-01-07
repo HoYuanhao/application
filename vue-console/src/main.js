@@ -18,8 +18,9 @@ import './icons' // icon
 import './errorLog' // error log
 import './permission' // permission control
 import './mock' // simulation data
-
+import JsonViewer from 'vue-json-viewer'
 import * as filters from './filters' // global filters
+Vue.use(JsonViewer)
 Vue.use(Element, {
   size: Cookies.get('size') || 'medium', // set element-ui default size
   i18n: (key, value) => i18n.t(key, value)

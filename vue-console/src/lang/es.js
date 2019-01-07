@@ -2,8 +2,8 @@ export default {
   route: {
     dashboard: 'Panel de control',
     introduction: 'Introducción',
-    documentation: 'Documentación',
-    guide: 'Guía',
+    documentation: 'Consola De Tareas',
+    guide: 'Centro Anormal',
     permission: 'Permisos',
     pagePermission: 'Permisos de la página',
     directivePermission: 'Permisos de la directiva',
@@ -86,8 +86,12 @@ export default {
     switchRoles: 'Cambiar permisos'
   },
   guide: {
-    description: 'The guide page is useful for some people who entered the project for the first time. You can briefly introduce the features of the project. Demo is based on ',
-    button: 'Ver guía'
+    taskID:'Tarea ID',
+    type:'Tipo De Excepción',
+    key:'Palabra Clave De Búsqueda Anormal',
+    search:'Búsqueda',
+    record:'Grabar',
+    result:'Resultado'
   },
   components: {
     documentation: 'Documentación',
@@ -154,7 +158,8 @@ export default {
     running:'Tarea En Ejecución',
     run:'Corriendo',
     stop:'Parar',
-    delete:'Eliminar'
+    delete:'Eliminar',
+    source:'Source'
   },
   theme: {
     change: 'Cambiar tema',

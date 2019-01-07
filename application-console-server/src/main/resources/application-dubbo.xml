@@ -12,7 +12,8 @@
     <dubbo:protocol name="${spring.dubbo.protocol.name}" port="${spring.dubbo.protocol.port}" />
     <bean id="loginService" class="com.open.application.console.server.service.impl.LoginServiceImpl"/>
   <bean id="taskShowService" class="com.open.application.console.server.service.impl.TaskShowServiceImpl"/>
-
+  <bean id="exceptionService" class="com.open.application.console.server.service.impl.ExceptionServiceImpl" />
     <dubbo:service interface="com.open.application.common.service.LoginService"  ref="loginService" />
-    <dubbo:service interface="com.open.application.common.service.TaskShowService" ref="taskShowService"/>
+    <dubbo:service interface="com.open.application.common.service.TaskShowService" ref="taskShowService" timeout="3000" retries="0"/>
+  <dubbo:service interface="com.open.application.common.service.ExceptionService" ref="exceptionService" timeout="3000" retries="0"/>
 </beans>

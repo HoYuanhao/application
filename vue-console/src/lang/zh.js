@@ -3,7 +3,7 @@ export default {
     dashboard: '首页',
     introduction: '简述',
     documentation: '任务控制台',
-    guide: '引导页',
+    guide: '异常中心',
     permission: '权限测试页',
     pagePermission: '页面权限',
     directivePermission: '指令权限',
@@ -93,11 +93,12 @@ export default {
     type:'类型',
     processNum:'进程数',
     add:'新建',
-    alarm:'开启邮件提醒',
+    alarm:'邮件提醒',
     running:'正在运行的任务',
     run:'运行',
     stop:'停止',
-    delete:'删除'
+    delete:'删除',
+    source:'源'
 
   },
   permission: {
@@ -105,8 +106,12 @@ export default {
     switchRoles: '切换权限'
   },
   guide: {
-    description: '引导页对于一些第一次进入项目的人很有用，你可以简单介绍下项目的功能。本 Demo 是基于',
-    button: '打开引导'
+    taskID:'任务序号',
+    type:'异常类型',
+    key:'异常关键字',
+    search:'搜索',
+    record:'记录',
+    result:'结果'
   },
   components: {
     documentation: '文档',

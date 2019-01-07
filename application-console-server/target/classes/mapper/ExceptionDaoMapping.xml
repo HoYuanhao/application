@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.open.application.console.server.dao.ExceptionDao">
+<select id="getExceptionTypesByTidAndUid" resultType="java.lang.String">
+select `type` from exception where tid=#{tid} and uid=#{uid}
+</select>
+  <insert id="insertException" parameterType="ExceptionModel">
+  insert into exception(eid,type,detail,throwTime,uid,pid,tid)
+  values(#{eid},#{type},#{detail},#{throwTime},#{uid},#{pid},#{tid})
+  </insert>
+</mapper>
+

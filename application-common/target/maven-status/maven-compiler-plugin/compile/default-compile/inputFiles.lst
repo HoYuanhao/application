@@ -7,8 +7,10 @@
 /Users/yuanhaohe/workspace/application/application-common/src/main/java/com/open/application/common/service/TaskShowService.java
 /Users/yuanhaohe/workspace/application/application-common/src/main/java/com/open/application/common/models/Series.java
 /Users/yuanhaohe/workspace/application/application-common/src/main/java/com/open/application/common/models/PieChart.java
+/Users/yuanhaohe/workspace/application/application-common/src/main/java/com/open/application/common/models/ExceptionModel.java
 /Users/yuanhaohe/workspace/application/application-common/src/main/java/com/open/application/common/models/BarChart.java
 /Users/yuanhaohe/workspace/application/application-common/src/main/java/com/open/application/common/models/Task.java
 /Users/yuanhaohe/workspace/application/application-common/src/main/java/com/open/application/common/models/Tooltip.java
 /Users/yuanhaohe/workspace/application/application-common/src/main/java/com/open/application/common/util/DateUtil.java
 /Users/yuanhaohe/workspace/application/application-common/src/main/java/com/open/application/common/models/LoginInfo.java
+/Users/yuanhaohe/workspace/application/application-common/src/main/java/com/open/application/common/service/ExceptionService.java

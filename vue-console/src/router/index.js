@@ -97,7 +97,7 @@ export const constantRouterMap = [
         path: 'index',
         component: () => import('@/views/guide/index'),
         name: 'Guide',
-        meta: { title: 'guide', icon: 'guide', noCache: true }
+        meta: { title: 'guide', icon: 'bug', noCache: true }
       }
     ]
   }

@@ -26,4 +26,5 @@ public class Task implements Serializable {
   private Integer isDelete;
   private Integer status;
   private Integer alarm;
+  private String source;
 }

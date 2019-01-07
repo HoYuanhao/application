@@ -1,9 +1,12 @@
+com/open/application/console/server/util/EsUtil.class
 com/open/application/console/server/RedisConfig.class
+com/open/application/console/server/service/impl/ExceptionServiceImpl.class
 com/open/application/console/server/dao/UserDao.class
 com/open/application/console/server/dao/TaskOperateDao.class
 com/open/application/console/server/dao/TaskShowDao.class
 com/open/application/console/server/App.class
 com/open/application/console/server/es/service/ElasticSearchService.class
 com/open/application/console/server/service/impl/LoginServiceImpl.class
+com/open/application/console/server/dao/ExceptionDao.class
 com/open/application/console/server/es/service/impl/ElasticSearchServiceImpl.class
 com/open/application/console/server/service/impl/TaskShowServiceImpl.class

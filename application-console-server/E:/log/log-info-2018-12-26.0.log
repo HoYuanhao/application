@@ -1,0 +1,516 @@
+INFO  [2018-12-26 10:46:23,160][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2018-12-26 10:46:23,168][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2018-12-26 10:46:23,734][] org.springframework.context.support.AbstractApplicationContext:588 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@461aa69b: startup date [Wed Dec 26 10:46:23 CST 2018]; root of context hierarchy 
+INFO  [2018-12-26 10:46:24,344][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:326 - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$67a84323] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2018-12-26 10:46:24,649][] com.alibaba.boot.dubbo.context.event.AwaitingNonWebApplicationListener$1:61 -  [Dubbo] Current Spring Boot Application is await... 
+INFO  [2018-12-26 10:46:24,792][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2018-12-26 10:46:24,794][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2018-12-26 10:46:24,851][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:205 - Fetching config from server at : http://localhost:8888 
+INFO  [2018-12-26 10:48:15,709][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:149 - Located environment: name=consoleServer, profiles=[dev], label=null, version=32d6b45574cf3a539a70b2b828cecd1cd819fafc, state=null 
+INFO  [2018-12-26 10:48:15,710][] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:98 - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource@322966941 {name='configClient', properties={config.client.version=32d6b45574cf3a539a70b2b828cecd1cd819fafc}}, MapPropertySource@139079595 {name='https://github.com/HoYuanhao/application/config/consoleServer-dev.properties', properties={spring.dubbo.registry.address=zookeeper://127.0.0.1:2181, spring.datasource.connectionProperties=druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000, spring.datasource.maxWait=60000, spring.redis.pool.max-idle=10, spring.datasource.url=jdbc:mysql://127.0.0.1:3306/application?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true, spring.redis.timeout=2000, spring.redis.pool.max-wait=-1, spring.datasource.validationQuery=SELECT 1, spring.dubbo.protocol.name=dubbo, spring.datasource.minEvictableIdleTimeMillis=300000, spring.datasource.filters=stat,wall,log4j, spring.datasource.testOnBorrow=false, elasticsearch.address=127.0.0.1:9200,127.0.0.1:9201, spring.redis.pool.min-idle=8, spring.datasource.testOnReturn=false, spring.datasource.initialSize=30, spring.datasource.password=HeYuanHao1!, spring.datasource.driver-class-name=com.mysql.jdbc.Driver, elasticsearch.scheme=http, spring.datasource.maxActive=100, spring.datasource.username=root, spring.redis.port=6379, spring.datasource.maxPoolPreparedStatementPerConnectionSize=20, spring.datasource.poolPreparedStatements=true, spring.dubbo.application.id=application-consoleServer-provider, spring.datasource.testWhileIdle=true, spring.redis.host=127.0.0.1, spring.datasource.timeBetweenEvictionRunsMillis=60000, spring.dubbo.protocol.port=20880, spring.dubbo.server=true, spring.dubbo.application.name=application-consoleServer-provider, spring.redis.pool.max-active=60, spring.datasource.minIdle=10, spring.redis.database=0, dubbo.scan.basePackages=com.open.application.console.server.service.impl}}]} 
+INFO  [2018-12-26 10:48:15,733][] org.springframework.boot.SpringApplication:654 - No active profile set, falling back to default profiles: default 
+INFO  [2018-12-26 10:48:15,769][] org.springframework.context.support.AbstractApplicationContext:588 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@22156a3d: startup date [Wed Dec 26 10:48:15 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@461aa69b 
+INFO  [2018-12-26 10:48:16,893][] org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [application-dubbo.xml] 
+INFO  [2018-12-26 10:48:18,550][] org.springframework.data.repository.config.RepositoryConfigurationDelegate:172 - Multiple Spring Data modules found, entering strict repository configuration mode! 
+INFO  [2018-12-26 10:48:19,647][] org.springframework.beans.factory.support.DefaultListableBeanFactory:821 - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] 
+INFO  [2018-12-26 10:48:20,055][] org.springframework.cloud.context.scope.GenericScope:294 - BeanFactory id=45bd747e-cbad-34d5-a416-3ef72162c12f 
+INFO  [2018-12-26 10:48:20,335][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:326 - Bean 'redisConfig' of type [com.open.application.console.server.RedisConfig$$EnhancerBySpringCGLIB$$94788029] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2018-12-26 10:48:20,350][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4b8e4026] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2018-12-26 10:48:20,476][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:326 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$67a84323] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2018-12-26 10:48:21,548][] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http) 
+INFO  [2018-12-26 10:48:21,580][] org.apache.juli.logging.DirectJDKLog:180 - Initializing ProtocolHandler ["http-nio-8081"] 
+INFO  [2018-12-26 10:48:21,596][] org.apache.juli.logging.DirectJDKLog:180 - Starting service [Tomcat] 
+INFO  [2018-12-26 10:48:21,597][] org.apache.juli.logging.DirectJDKLog:180 - Starting Servlet Engine: Apache Tomcat/8.5.34 
+INFO  [2018-12-26 10:48:21,613][] org.apache.juli.logging.DirectJDKLog:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/yuanhaohe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] 
+INFO  [2018-12-26 10:48:21,779][] org.apache.juli.logging.DirectJDKLog:180 - Initializing Spring embedded WebApplicationContext 
+INFO  [2018-12-26 10:48:21,780][] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285 - Root WebApplicationContext: initialization completed in 6011 ms 
+INFO  [2018-12-26 10:48:27,716][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*] 
+INFO  [2018-12-26 10:48:27,718][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'webMvcMetricsFilter' to: [/*] 
+INFO  [2018-12-26 10:48:27,718][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+INFO  [2018-12-26 10:48:27,718][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+INFO  [2018-12-26 10:48:27,718][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*] 
+INFO  [2018-12-26 10:48:27,718][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'httpTraceFilter' to: [/*] 
+INFO  [2018-12-26 10:48:27,718][] org.springframework.boot.web.servlet.ServletRegistrationBean:187 - Servlet dispatcherServlet mapped to [/] 
+INFO  [2018-12-26 10:48:29,401][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2018-12-26 10:48:30,039][] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:588 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@22156a3d: startup date [Wed Dec 26 10:48:15 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@461aa69b 
+INFO  [2018-12-26 10:48:30,224][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:549 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+INFO  [2018-12-26 10:48:30,225][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:549 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+INFO  [2018-12-26 10:48:30,322][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2018-12-26 10:48:30,323][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2018-12-26 10:48:32,009][] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:59 - Exposing 2 endpoint(s) beneath base path '/actuator' 
+INFO  [2018-12-26 10:48:32,036][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:549 - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>) 
+INFO  [2018-12-26 10:48:32,039][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:549 - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>) 
+INFO  [2018-12-26 10:48:32,040][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:549 - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+INFO  [2018-12-26 10:48:32,187][] org.springframework.jmx.export.MBeanExporter:433 - Registering beans for JMX exposure on startup 
+INFO  [2018-12-26 10:48:32,191][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure 
+INFO  [2018-12-26 10:48:32,199][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'environmentManager' has been autodetected for JMX exposure 
+INFO  [2018-12-26 10:48:32,201][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'refreshScope' has been autodetected for JMX exposure 
+INFO  [2018-12-26 10:48:32,202][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure 
+INFO  [2018-12-26 10:48:32,206][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager] 
+INFO  [2018-12-26 10:48:32,216][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope] 
+INFO  [2018-12-26 10:48:32,227][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=22156a3d,type=ConfigurationPropertiesRebinder] 
+INFO  [2018-12-26 10:48:32,234][] org.springframework.jmx.export.MBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource] 
+INFO  [2018-12-26 10:48:32,953][] org.apache.curator.utils.Compatibility:41 - Running in ZooKeeper 3.4.x compatibility mode 
+INFO  [2018-12-26 10:48:33,002][] org.apache.curator.framework.imps.CuratorFrameworkImpl:290 - Starting 
+INFO  [2018-12-26 10:48:33,013][] org.apache.zookeeper.Environment:100 - Client environment:zookeeper.version=3.4.13-2d71af4dbe22557fda74f9a9b4309b15a7487f03, built on 06/29/2018 00:39 GMT 
+INFO  [2018-12-26 10:48:33,013][] org.apache.zookeeper.Environment:100 - Client environment:host.name=10.0.2.69 
+INFO  [2018-12-26 10:48:33,013][] org.apache.zookeeper.Environment:100 - Client environment:java.version=1.8.0_131 
+INFO  [2018-12-26 10:48:33,013][] org.apache.zookeeper.Environment:100 - Client environment:java.vendor=Oracle Corporation 
+INFO  [2018-12-26 10:48:33,013][] org.apache.zookeeper.Environment:100 - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre 
+INFO  [2018-12-26 10:48:33,013][] org.apache.zookeeper.Environment:100 - Client environment:java.class.path=/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar 
+INFO  [2018-12-26 10:48:33,014][] org.apache.zookeeper.Environment:100 - Client environment:java.library.path=/Users/yuanhaohe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:. 
+INFO  [2018-12-26 10:48:33,014][] org.apache.zookeeper.Environment:100 - Client environment:java.io.tmpdir=/var/folders/gp/tgklgs252tl0k2w8d6t3gk400000gn/T/ 
+INFO  [2018-12-26 10:48:33,014][] org.apache.zookeeper.Environment:100 - Client environment:java.compiler=<NA> 
+INFO  [2018-12-26 10:48:33,014][] org.apache.zookeeper.Environment:100 - Client environment:os.name=Mac OS X 
+INFO  [2018-12-26 10:48:33,014][] org.apache.zookeeper.Environment:100 - Client environment:os.arch=x86_64 
+INFO  [2018-12-26 10:48:33,014][] org.apache.zookeeper.Environment:100 - Client environment:os.version=10.13.6 
+INFO  [2018-12-26 10:48:33,014][] org.apache.zookeeper.Environment:100 - Client environment:user.name=yuanhaohe 
+INFO  [2018-12-26 10:48:33,015][] org.apache.zookeeper.Environment:100 - Client environment:user.home=/Users/yuanhaohe 
+INFO  [2018-12-26 10:48:33,015][] org.apache.zookeeper.Environment:100 - Client environment:user.dir=/Users/yuanhaohe/workspace/application/application-console-server 
+INFO  [2018-12-26 10:48:33,016][] org.apache.zookeeper.ZooKeeper:442 - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@46f5fb89 
+INFO  [2018-12-26 10:48:33,042][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:48:33,051][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:48:33,054][] org.apache.curator.framework.imps.CuratorFrameworkImpl:332 - Default schema 
+INFO  [2018-12-26 10:48:34,157][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:48:34,159][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:48:35,266][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:48:35,267][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:48:36,373][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:48:36,374][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:48:37,483][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:48:37,483][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:48:38,591][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:48:38,592][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:48:39,699][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:48:39,700][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:48:40,809][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:48:40,810][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:48:41,916][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:48:41,916][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:48:43,024][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:48:43,025][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:48:44,131][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:48:44,132][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:48:45,237][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:48:45,237][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:48:46,343][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:48:46,344][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:48:47,450][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:48:47,451][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:48:48,557][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:48:48,558][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:48:49,665][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:48:49,668][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:48:50,773][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:48:50,774][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:48:51,884][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:48:51,885][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:48:52,993][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:48:52,994][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:48:54,100][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:48:54,100][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:48:55,209][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:48:55,209][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:48:56,318][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:48:56,319][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:48:57,426][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:48:57,428][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:48:58,537][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:48:58,537][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:48:59,645][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:48:59,670][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:48:59,777][] org.apache.juli.logging.DirectJDKLog:180 - Stopping service [Tomcat] 
+INFO  [2018-12-26 10:48:59,832][] org.springframework.context.support.AbstractApplicationContext:991 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@22156a3d: startup date [Wed Dec 26 10:48:15 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@461aa69b 
+INFO  [2018-12-26 10:48:59,840][] org.springframework.jmx.export.MBeanExporter:451 - Unregistering JMX-exposed beans on shutdown 
+INFO  [2018-12-26 10:48:59,841][] org.springframework.jmx.support.MBeanRegistrationSupport:185 - Unregistering JMX-exposed beans 
+INFO  [2018-12-26 10:48:59,865][] com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor:251 - class com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying! 
+INFO  [2018-12-26 10:49:00,778][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:00,779][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:01,886][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:01,887][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:02,996][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:02,996][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:04,107][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:04,108][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:05,219][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:05,220][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:06,328][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:06,329][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:07,439][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:07,440][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:08,548][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:08,551][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:09,658][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:09,659][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:10,767][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:10,768][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:11,873][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:11,874][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:12,983][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:12,984][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:14,089][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:14,089][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:15,198][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:15,200][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:16,308][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:16,309][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:17,418][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:17,419][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:18,522][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:18,523][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:19,633][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:19,634][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:20,743][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:20,745][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:21,853][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:21,853][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:22,959][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:22,960][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:24,069][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:24,070][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:25,180][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:25,182][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:26,292][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:26,293][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:27,402][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:27,403][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:28,508][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:28,508][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:29,614][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:29,631][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:30,740][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:30,741][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:31,845][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:31,846][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:32,954][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:32,955][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:34,060][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:34,060][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:35,170][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:35,171][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:36,276][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:36,277][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:37,382][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:37,384][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:38,493][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:38,493][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:39,600][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:39,601][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:40,709][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:40,710][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:41,819][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:41,820][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:42,930][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:42,931][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:44,038][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:44,039][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:45,146][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:45,147][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:46,256][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:46,257][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:47,365][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:47,366][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:48,470][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:48,471][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:49,574][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:49,575][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:50,681][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:50,682][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:51,790][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:51,791][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:52,899][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:52,900][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:54,009][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:54,012][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:55,119][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:55,120][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:56,225][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:56,226][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:57,334][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:57,335][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:58,440][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:58,440][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:49:59,547][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:49:59,550][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:00,657][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:00,658][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:01,763][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:01,764][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:02,873][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:02,874][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:03,981][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:03,982][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:05,092][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:05,094][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:06,205][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:06,206][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:07,310][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:07,311][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:08,419][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:08,420][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:09,528][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:09,529][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:10,635][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:10,639][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:11,742][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:11,743][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:12,848][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:12,849][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:13,954][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:13,955][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:15,060][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:15,061][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:16,169][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:16,170][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:17,276][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:17,278][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:18,386][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:18,386][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:19,491][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:19,492][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:20,600][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:20,601][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:21,709][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:21,710][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:22,818][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:22,818][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:23,927][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:23,928][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:25,035][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:25,036][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:26,141][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:26,142][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:27,249][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:27,249][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:28,359][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:28,359][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:29,467][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:29,509][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:30,615][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:30,615][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:31,725][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:31,726][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:32,835][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:32,836][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:33,944][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:33,945][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:35,051][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:35,052][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:36,160][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:36,161][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:37,268][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:37,269][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:38,376][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:38,377][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:39,485][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:39,486][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:40,594][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:40,595][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:41,705][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:50:41,705][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:50:48,890][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2018-12-26 10:50:48,896][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2018-12-26 10:50:49,388][] org.springframework.context.support.AbstractApplicationContext:588 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@24b7e950: startup date [Wed Dec 26 10:50:49 CST 2018]; root of context hierarchy 
+INFO  [2018-12-26 10:50:49,799][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:326 - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a4bb6b86] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2018-12-26 10:50:50,050][] com.alibaba.boot.dubbo.context.event.AwaitingNonWebApplicationListener$1:61 -  [Dubbo] Current Spring Boot Application is await... 
+INFO  [2018-12-26 10:50:50,157][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2018-12-26 10:50:50,158][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2018-12-26 10:50:50,226][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:205 - Fetching config from server at : http://localhost:8888 
+INFO  [2018-12-26 10:50:59,710][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:149 - Located environment: name=consoleServer, profiles=[dev], label=null, version=32d6b45574cf3a539a70b2b828cecd1cd819fafc, state=null 
+INFO  [2018-12-26 10:50:59,711][] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:98 - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource@466414495 {name='configClient', properties={config.client.version=32d6b45574cf3a539a70b2b828cecd1cd819fafc}}, MapPropertySource@1109021631 {name='https://github.com/HoYuanhao/application/config/consoleServer-dev.properties', properties={spring.dubbo.registry.address=zookeeper://127.0.0.1:2181, spring.datasource.connectionProperties=druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000, spring.datasource.maxWait=60000, spring.redis.pool.max-idle=10, spring.datasource.url=jdbc:mysql://127.0.0.1:3306/application?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true, spring.redis.timeout=2000, spring.redis.pool.max-wait=-1, spring.datasource.validationQuery=SELECT 1, spring.dubbo.protocol.name=dubbo, spring.datasource.minEvictableIdleTimeMillis=300000, spring.datasource.filters=stat,wall,log4j, spring.datasource.testOnBorrow=false, elasticsearch.address=127.0.0.1:9200,127.0.0.1:9201, spring.redis.pool.min-idle=8, spring.datasource.testOnReturn=false, spring.datasource.initialSize=30, spring.datasource.password=HeYuanHao1!, spring.datasource.driver-class-name=com.mysql.jdbc.Driver, elasticsearch.scheme=http, spring.datasource.maxActive=100, spring.datasource.username=root, spring.redis.port=6379, spring.datasource.maxPoolPreparedStatementPerConnectionSize=20, spring.datasource.poolPreparedStatements=true, spring.dubbo.application.id=application-consoleServer-provider, spring.datasource.testWhileIdle=true, spring.redis.host=127.0.0.1, spring.datasource.timeBetweenEvictionRunsMillis=60000, spring.dubbo.protocol.port=20880, spring.dubbo.server=true, spring.dubbo.application.name=application-consoleServer-provider, spring.redis.pool.max-active=60, spring.datasource.minIdle=10, spring.redis.database=0, dubbo.scan.basePackages=com.open.application.console.server.service.impl}}]} 
+INFO  [2018-12-26 10:50:59,726][] org.springframework.boot.SpringApplication:654 - No active profile set, falling back to default profiles: default 
+INFO  [2018-12-26 10:50:59,750][] org.springframework.context.support.AbstractApplicationContext:588 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5be4904b: startup date [Wed Dec 26 10:50:59 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@24b7e950 
+INFO  [2018-12-26 10:51:00,514][] org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [application-dubbo.xml] 
+INFO  [2018-12-26 10:51:01,727][] org.springframework.data.repository.config.RepositoryConfigurationDelegate:172 - Multiple Spring Data modules found, entering strict repository configuration mode! 
+INFO  [2018-12-26 10:51:02,117][] org.springframework.beans.factory.support.DefaultListableBeanFactory:821 - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] 
+INFO  [2018-12-26 10:51:02,629][] org.springframework.cloud.context.scope.GenericScope:294 - BeanFactory id=45bd747e-cbad-34d5-a416-3ef72162c12f 
+INFO  [2018-12-26 10:51:02,839][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:326 - Bean 'redisConfig' of type [com.open.application.console.server.RedisConfig$$EnhancerBySpringCGLIB$$d18ba88c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2018-12-26 10:51:02,855][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$88a16889] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2018-12-26 10:51:02,993][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:326 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a4bb6b86] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2018-12-26 10:51:03,689][] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http) 
+INFO  [2018-12-26 10:51:03,714][] org.apache.juli.logging.DirectJDKLog:180 - Initializing ProtocolHandler ["http-nio-8081"] 
+INFO  [2018-12-26 10:51:03,729][] org.apache.juli.logging.DirectJDKLog:180 - Starting service [Tomcat] 
+INFO  [2018-12-26 10:51:03,730][] org.apache.juli.logging.DirectJDKLog:180 - Starting Servlet Engine: Apache Tomcat/8.5.34 
+INFO  [2018-12-26 10:51:03,744][] org.apache.juli.logging.DirectJDKLog:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/yuanhaohe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] 
+INFO  [2018-12-26 10:51:03,857][] org.apache.juli.logging.DirectJDKLog:180 - Initializing Spring embedded WebApplicationContext 
+INFO  [2018-12-26 10:51:03,858][] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285 - Root WebApplicationContext: initialization completed in 4109 ms 
+INFO  [2018-12-26 10:51:06,757][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*] 
+INFO  [2018-12-26 10:51:06,763][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'webMvcMetricsFilter' to: [/*] 
+INFO  [2018-12-26 10:51:06,764][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+INFO  [2018-12-26 10:51:06,765][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+INFO  [2018-12-26 10:51:06,765][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*] 
+INFO  [2018-12-26 10:51:06,765][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'httpTraceFilter' to: [/*] 
+INFO  [2018-12-26 10:51:06,765][] org.springframework.boot.web.servlet.ServletRegistrationBean:187 - Servlet dispatcherServlet mapped to [/] 
+INFO  [2018-12-26 10:51:08,117][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2018-12-26 10:51:08,656][] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:588 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5be4904b: startup date [Wed Dec 26 10:50:59 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@24b7e950 
+INFO  [2018-12-26 10:51:08,800][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:549 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+INFO  [2018-12-26 10:51:08,801][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:549 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+INFO  [2018-12-26 10:51:08,977][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2018-12-26 10:51:08,977][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2018-12-26 10:51:10,321][] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:59 - Exposing 2 endpoint(s) beneath base path '/actuator' 
+INFO  [2018-12-26 10:51:10,335][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:549 - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>) 
+INFO  [2018-12-26 10:51:10,336][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:549 - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>) 
+INFO  [2018-12-26 10:51:10,337][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:549 - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+INFO  [2018-12-26 10:51:10,452][] org.springframework.jmx.export.MBeanExporter:433 - Registering beans for JMX exposure on startup 
+INFO  [2018-12-26 10:51:10,456][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure 
+INFO  [2018-12-26 10:51:10,466][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'environmentManager' has been autodetected for JMX exposure 
+INFO  [2018-12-26 10:51:10,467][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'refreshScope' has been autodetected for JMX exposure 
+INFO  [2018-12-26 10:51:10,468][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure 
+INFO  [2018-12-26 10:51:10,473][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager] 
+INFO  [2018-12-26 10:51:10,485][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope] 
+INFO  [2018-12-26 10:51:10,498][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=5be4904b,type=ConfigurationPropertiesRebinder] 
+INFO  [2018-12-26 10:51:10,507][] org.springframework.jmx.export.MBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource] 
+INFO  [2018-12-26 10:51:11,060][] org.apache.curator.utils.Compatibility:41 - Running in ZooKeeper 3.4.x compatibility mode 
+INFO  [2018-12-26 10:51:11,096][] org.apache.curator.framework.imps.CuratorFrameworkImpl:290 - Starting 
+INFO  [2018-12-26 10:51:11,104][] org.apache.zookeeper.Environment:100 - Client environment:zookeeper.version=3.4.13-2d71af4dbe22557fda74f9a9b4309b15a7487f03, built on 06/29/2018 00:39 GMT 
+INFO  [2018-12-26 10:51:11,105][] org.apache.zookeeper.Environment:100 - Client environment:host.name=10.0.2.69 
+INFO  [2018-12-26 10:51:11,105][] org.apache.zookeeper.Environment:100 - Client environment:java.version=1.8.0_131 
+INFO  [2018-12-26 10:51:11,105][] org.apache.zookeeper.Environment:100 - Client environment:java.vendor=Oracle Corporation 
+INFO  [2018-12-26 10:51:11,105][] org.apache.zookeeper.Environment:100 - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre 
+INFO  [2018-12-26 10:51:11,105][] org.apache.zookeeper.Environment:100 - Client environment:java.class.path=/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar 
+INFO  [2018-12-26 10:51:11,105][] org.apache.zookeeper.Environment:100 - Client environment:java.library.path=/Users/yuanhaohe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:. 
+INFO  [2018-12-26 10:51:11,106][] org.apache.zookeeper.Environment:100 - Client environment:java.io.tmpdir=/var/folders/gp/tgklgs252tl0k2w8d6t3gk400000gn/T/ 
+INFO  [2018-12-26 10:51:11,106][] org.apache.zookeeper.Environment:100 - Client environment:java.compiler=<NA> 
+INFO  [2018-12-26 10:51:11,106][] org.apache.zookeeper.Environment:100 - Client environment:os.name=Mac OS X 
+INFO  [2018-12-26 10:51:11,106][] org.apache.zookeeper.Environment:100 - Client environment:os.arch=x86_64 
+INFO  [2018-12-26 10:51:11,106][] org.apache.zookeeper.Environment:100 - Client environment:os.version=10.13.6 
+INFO  [2018-12-26 10:51:11,106][] org.apache.zookeeper.Environment:100 - Client environment:user.name=yuanhaohe 
+INFO  [2018-12-26 10:51:11,107][] org.apache.zookeeper.Environment:100 - Client environment:user.home=/Users/yuanhaohe 
+INFO  [2018-12-26 10:51:11,107][] org.apache.zookeeper.Environment:100 - Client environment:user.dir=/Users/yuanhaohe/workspace/application/application-console-server 
+INFO  [2018-12-26 10:51:11,108][] org.apache.zookeeper.ZooKeeper:442 - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@11c65596 
+INFO  [2018-12-26 10:51:11,124][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:51:11,127][] org.apache.curator.framework.imps.CuratorFrameworkImpl:332 - Default schema 
+INFO  [2018-12-26 10:51:11,134][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:51:12,243][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:51:12,244][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:51:13,352][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:51:13,353][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:51:14,460][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:51:14,460][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:51:15,563][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:51:15,564][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2018-12-26 10:51:16,671][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 10:51:16,672][] org.apache.zookeeper.ClientCnxn$SendThread:879 - Socket connection established to localhost/127.0.0.1:2181, initiating session 
+INFO  [2018-12-26 10:51:16,696][] org.apache.zookeeper.ClientCnxn$SendThread:1303 - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x100001888600000, negotiated timeout = 40000 
+INFO  [2018-12-26 10:51:16,701][] org.apache.curator.framework.state.ConnectionStateManager:237 - State change: CONNECTED 
+INFO  [2018-12-26 10:51:16,799][] org.apache.juli.logging.DirectJDKLog:180 - Starting ProtocolHandler ["http-nio-8081"] 
+INFO  [2018-12-26 10:51:16,799][] org.apache.juli.logging.DirectJDKLog:180 - Using a shared selector for servlet write/read 
+INFO  [2018-12-26 10:51:16,817][] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path '' 
+INFO  [2018-12-26 10:51:16,821][] org.springframework.boot.StartupInfoLogger:59 - Started App in 28.584 seconds (JVM running for 33.894) 
+INFO  [2018-12-26 10:53:24,941][] com.zaxxer.hikari.HikariDataSource:110 - HikariPool-1 - Starting... 
+INFO  [2018-12-26 10:53:25,821][] com.zaxxer.hikari.HikariDataSource:123 - HikariPool-1 - Start completed. 
+INFO  [2018-12-26 10:53:26,473][] io.netty.util.internal.logging.Slf4JLogger:101 - Starting without optional epoll library 
+INFO  [2018-12-26 10:53:26,475][] io.netty.util.internal.logging.Slf4JLogger:101 - Starting without optional kqueue library 
+INFO  [2018-12-26 11:06:33,625][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2018-12-26 11:06:33,640][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2018-12-26 11:06:34,611][] org.springframework.context.support.AbstractApplicationContext:588 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4684ddb8: startup date [Wed Dec 26 11:06:34 CST 2018]; root of context hierarchy 
+INFO  [2018-12-26 11:06:36,102][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:326 - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$308ad3e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2018-12-26 11:06:36,547][] com.alibaba.boot.dubbo.context.event.AwaitingNonWebApplicationListener$1:61 -  [Dubbo] Current Spring Boot Application is await... 
+INFO  [2018-12-26 11:06:36,679][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2018-12-26 11:06:36,682][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2018-12-26 11:06:36,737][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:205 - Fetching config from server at : http://localhost:8888 
+INFO  [2018-12-26 11:06:51,972][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:149 - Located environment: name=consoleServer, profiles=[dev], label=null, version=32d6b45574cf3a539a70b2b828cecd1cd819fafc, state=null 
+INFO  [2018-12-26 11:06:51,976][] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:98 - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource@1716909852 {name='configClient', properties={config.client.version=32d6b45574cf3a539a70b2b828cecd1cd819fafc}}, MapPropertySource@1316417671 {name='https://github.com/HoYuanhao/application/config/consoleServer-dev.properties', properties={spring.dubbo.registry.address=zookeeper://127.0.0.1:2181, spring.datasource.connectionProperties=druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000, spring.datasource.maxWait=60000, spring.redis.pool.max-idle=10, spring.datasource.url=jdbc:mysql://127.0.0.1:3306/application?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true, spring.redis.timeout=2000, spring.redis.pool.max-wait=-1, spring.datasource.validationQuery=SELECT 1, spring.dubbo.protocol.name=dubbo, spring.datasource.minEvictableIdleTimeMillis=300000, spring.datasource.filters=stat,wall,log4j, spring.datasource.testOnBorrow=false, elasticsearch.address=127.0.0.1:9200,127.0.0.1:9201, spring.redis.pool.min-idle=8, spring.datasource.testOnReturn=false, spring.datasource.initialSize=30, spring.datasource.password=HeYuanHao1!, spring.datasource.driver-class-name=com.mysql.jdbc.Driver, elasticsearch.scheme=http, spring.datasource.maxActive=100, spring.datasource.username=root, spring.redis.port=6379, spring.datasource.maxPoolPreparedStatementPerConnectionSize=20, spring.datasource.poolPreparedStatements=true, spring.dubbo.application.id=application-consoleServer-provider, spring.datasource.testWhileIdle=true, spring.redis.host=127.0.0.1, spring.datasource.timeBetweenEvictionRunsMillis=60000, spring.dubbo.protocol.port=20880, spring.dubbo.server=true, spring.dubbo.application.name=application-consoleServer-provider, spring.redis.pool.max-active=60, spring.datasource.minIdle=10, spring.redis.database=0, dubbo.scan.basePackages=com.open.application.console.server.service.impl}}]} 
+INFO  [2018-12-26 11:06:51,995][] org.springframework.boot.SpringApplication:654 - No active profile set, falling back to default profiles: default 
+INFO  [2018-12-26 11:06:52,095][] org.springframework.context.support.AbstractApplicationContext:588 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2cbd766d: startup date [Wed Dec 26 11:06:52 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4684ddb8 
+INFO  [2018-12-26 11:06:54,316][] org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [application-dubbo.xml] 
+INFO  [2018-12-26 11:06:56,072][] org.springframework.data.repository.config.RepositoryConfigurationDelegate:172 - Multiple Spring Data modules found, entering strict repository configuration mode! 
+INFO  [2018-12-26 11:06:56,488][] org.springframework.beans.factory.support.DefaultListableBeanFactory:821 - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] 
+INFO  [2018-12-26 11:06:57,064][] org.springframework.cloud.context.scope.GenericScope:294 - BeanFactory id=45bd747e-cbad-34d5-a416-3ef72162c12f 
+INFO  [2018-12-26 11:06:57,338][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:326 - Bean 'redisConfig' of type [com.open.application.console.server.RedisConfig$$EnhancerBySpringCGLIB$$5d5b10e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2018-12-26 11:06:57,357][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1470d0e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2018-12-26 11:06:57,495][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:326 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$308ad3e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2018-12-26 11:06:58,451][] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http) 
+INFO  [2018-12-26 11:06:58,484][] org.apache.juli.logging.DirectJDKLog:180 - Initializing ProtocolHandler ["http-nio-8081"] 
+INFO  [2018-12-26 11:06:58,516][] org.apache.juli.logging.DirectJDKLog:180 - Starting service [Tomcat] 
+INFO  [2018-12-26 11:06:58,516][] org.apache.juli.logging.DirectJDKLog:180 - Starting Servlet Engine: Apache Tomcat/8.5.34 
+INFO  [2018-12-26 11:06:58,537][] org.apache.juli.logging.DirectJDKLog:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/yuanhaohe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] 
+INFO  [2018-12-26 11:06:58,675][] org.apache.juli.logging.DirectJDKLog:180 - Initializing Spring embedded WebApplicationContext 
+INFO  [2018-12-26 11:06:58,678][] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285 - Root WebApplicationContext: initialization completed in 6582 ms 
+INFO  [2018-12-26 11:07:02,463][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*] 
+INFO  [2018-12-26 11:07:02,463][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'webMvcMetricsFilter' to: [/*] 
+INFO  [2018-12-26 11:07:02,464][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+INFO  [2018-12-26 11:07:02,464][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+INFO  [2018-12-26 11:07:02,464][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*] 
+INFO  [2018-12-26 11:07:02,464][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'httpTraceFilter' to: [/*] 
+INFO  [2018-12-26 11:07:02,464][] org.springframework.boot.web.servlet.ServletRegistrationBean:187 - Servlet dispatcherServlet mapped to [/] 
+INFO  [2018-12-26 11:07:04,665][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2018-12-26 11:07:05,505][] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:588 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2cbd766d: startup date [Wed Dec 26 11:06:52 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4684ddb8 
+INFO  [2018-12-26 11:07:05,681][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:549 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+INFO  [2018-12-26 11:07:05,682][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:549 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+INFO  [2018-12-26 11:07:05,888][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2018-12-26 11:07:05,888][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2018-12-26 11:07:08,900][] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:59 - Exposing 2 endpoint(s) beneath base path '/actuator' 
+INFO  [2018-12-26 11:07:08,957][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:549 - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>) 
+INFO  [2018-12-26 11:07:08,962][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:549 - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>) 
+INFO  [2018-12-26 11:07:08,965][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:549 - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+INFO  [2018-12-26 11:07:09,373][] org.springframework.jmx.export.MBeanExporter:433 - Registering beans for JMX exposure on startup 
+INFO  [2018-12-26 11:07:09,380][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure 
+INFO  [2018-12-26 11:07:09,411][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'environmentManager' has been autodetected for JMX exposure 
+INFO  [2018-12-26 11:07:09,413][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'refreshScope' has been autodetected for JMX exposure 
+INFO  [2018-12-26 11:07:09,415][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure 
+INFO  [2018-12-26 11:07:09,420][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager] 
+INFO  [2018-12-26 11:07:09,435][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope] 
+INFO  [2018-12-26 11:07:09,575][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=2cbd766d,type=ConfigurationPropertiesRebinder] 
+INFO  [2018-12-26 11:07:09,589][] org.springframework.jmx.export.MBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource] 
+INFO  [2018-12-26 11:07:11,313][] org.apache.curator.utils.Compatibility:41 - Running in ZooKeeper 3.4.x compatibility mode 
+INFO  [2018-12-26 11:07:11,454][] org.apache.curator.framework.imps.CuratorFrameworkImpl:290 - Starting 
+INFO  [2018-12-26 11:07:11,465][] org.apache.zookeeper.Environment:100 - Client environment:zookeeper.version=3.4.13-2d71af4dbe22557fda74f9a9b4309b15a7487f03, built on 06/29/2018 00:39 GMT 
+INFO  [2018-12-26 11:07:11,465][] org.apache.zookeeper.Environment:100 - Client environment:host.name=10.0.2.69 
+INFO  [2018-12-26 11:07:11,465][] org.apache.zookeeper.Environment:100 - Client environment:java.version=1.8.0_131 
+INFO  [2018-12-26 11:07:11,465][] org.apache.zookeeper.Environment:100 - Client environment:java.vendor=Oracle Corporation 
+INFO  [2018-12-26 11:07:11,465][] org.apache.zookeeper.Environment:100 - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre 
+INFO  [2018-12-26 11:07:11,465][] org.apache.zookeeper.Environment:100 - Client environment:java.class.path=/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar 
+INFO  [2018-12-26 11:07:11,466][] org.apache.zookeeper.Environment:100 - Client environment:java.library.path=/Users/yuanhaohe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:. 
+INFO  [2018-12-26 11:07:11,466][] org.apache.zookeeper.Environment:100 - Client environment:java.io.tmpdir=/var/folders/gp/tgklgs252tl0k2w8d6t3gk400000gn/T/ 
+INFO  [2018-12-26 11:07:11,466][] org.apache.zookeeper.Environment:100 - Client environment:java.compiler=<NA> 
+INFO  [2018-12-26 11:07:11,466][] org.apache.zookeeper.Environment:100 - Client environment:os.name=Mac OS X 
+INFO  [2018-12-26 11:07:11,466][] org.apache.zookeeper.Environment:100 - Client environment:os.arch=x86_64 
+INFO  [2018-12-26 11:07:11,466][] org.apache.zookeeper.Environment:100 - Client environment:os.version=10.13.6 
+INFO  [2018-12-26 11:07:11,466][] org.apache.zookeeper.Environment:100 - Client environment:user.name=yuanhaohe 
+INFO  [2018-12-26 11:07:11,467][] org.apache.zookeeper.Environment:100 - Client environment:user.home=/Users/yuanhaohe 
+INFO  [2018-12-26 11:07:11,467][] org.apache.zookeeper.Environment:100 - Client environment:user.dir=/Users/yuanhaohe/workspace/application/application-console-server 
+INFO  [2018-12-26 11:07:11,468][] org.apache.zookeeper.ZooKeeper:442 - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@4aaa44b1 
+INFO  [2018-12-26 11:07:11,542][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-26 11:07:11,553][] org.apache.zookeeper.ClientCnxn$SendThread:879 - Socket connection established to localhost/127.0.0.1:2181, initiating session 
+INFO  [2018-12-26 11:07:11,556][] org.apache.curator.framework.imps.CuratorFrameworkImpl:332 - Default schema 
+INFO  [2018-12-26 11:07:11,566][] org.apache.zookeeper.ClientCnxn$SendThread:1303 - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x100001888600002, negotiated timeout = 40000 
+INFO  [2018-12-26 11:07:11,579][] org.apache.curator.framework.state.ConnectionStateManager:237 - State change: CONNECTED 
+INFO  [2018-12-26 11:07:11,860][] org.apache.juli.logging.DirectJDKLog:180 - Starting ProtocolHandler ["http-nio-8081"] 
+INFO  [2018-12-26 11:07:11,861][] org.apache.juli.logging.DirectJDKLog:180 - Using a shared selector for servlet write/read 
+INFO  [2018-12-26 11:07:11,883][] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path '' 
+INFO  [2018-12-26 11:07:11,889][] org.springframework.boot.StartupInfoLogger:59 - Started App in 39.496 seconds (JVM running for 49.689) 
+INFO  [2018-12-26 11:10:46,803][] com.zaxxer.hikari.HikariDataSource:110 - HikariPool-1 - Starting... 
+INFO  [2018-12-26 11:10:47,444][] com.zaxxer.hikari.HikariDataSource:123 - HikariPool-1 - Start completed. 
+INFO  [2018-12-26 11:10:48,008][] io.netty.util.internal.logging.Slf4JLogger:101 - Starting without optional epoll library 
+INFO  [2018-12-26 11:10:48,013][] io.netty.util.internal.logging.Slf4JLogger:101 - Starting without optional kqueue library 
