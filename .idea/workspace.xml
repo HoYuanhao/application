@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="626046df-d6b0-4ab6-8f14-9da5268a3dd9" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E:\log/log_debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/E:\log/log_debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/consoleServer-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/consoleServer-dev.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -139,20 +141,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application-console-server/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="248">
+              <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="consoleServer-dev.properties" pinned="false" current-in-tab="true">
+      <file leaf-file-name="consoleServer-dev.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/consoleServer-dev.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+            <state relative-caret-position="218">
+              <caret line="33" selection-start-line="33" selection-end-line="33" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application-console-server/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -189,7 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application-common/src/main/java/com/open/application/common/models/Grid.java" />
         <option value="$PROJECT_DIR$/application-common/src/main/java/com/open/application/common/models/XAxis.java" />
         <option value="$PROJECT_DIR$/application-common/src/main/java/com/open/application/common/models/Axis.java" />
         <option value="$PROJECT_DIR$/application-common/src/main/java/com/open/application/common/models/BarChart.java" />
@@ -204,7 +215,6 @@
         <option value="$PROJECT_DIR$/application-common/src/main/java/com/open/application/common/util/Es.java" />
         <option value="$PROJECT_DIR$/application-console-server/src/main/java/com/open/application/console/server/dao/TaskOperateDao.java" />
         <option value="$PROJECT_DIR$/application-common/pom.xml" />
-        <option value="$PROJECT_DIR$/application-console-server/pom.xml" />
         <option value="$PROJECT_DIR$/application-common/src/main/java/com/open/application/common/util/EsUtil.java" />
         <option value="$PROJECT_DIR$/application-console-server/src/main/java/com/open/application/console/server/util/EsUtil.java" />
         <option value="$PROJECT_DIR$/application-console/src/main/java/com/open/application/console/App.java" />
@@ -239,7 +249,9 @@
         <option value="$PROJECT_DIR$/application-console/pom.xml" />
         <option value="$PROJECT_DIR$/application-console/src/main/resources/logback.xml" />
         <option value="$PROJECT_DIR$/application-console-server/src/main/resources/logback.xml" />
+        <option value="$PROJECT_DIR$/application-console-server/pom.xml" />
         <option value="$PROJECT_DIR$/config/consoleServer-dev.properties" />
+        <option value="$PROJECT_DIR$/application-console-server/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -631,12 +643,12 @@
       <workItem from="1545791502660" duration="4934000" />
       <workItem from="1545920735696" duration="1471000" />
       <workItem from="1546058796798" duration="2511000" />
-      <workItem from="1546859928591" duration="2429000" />
+      <workItem from="1546859928591" duration="2753000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126483000" />
+    <option name="totallyTimeSpent" value="126807000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1516" y="87" width="1325" height="843" extended-state="0" />
@@ -661,11 +673,11 @@
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32885906" />
-      <window_info active="true" anchor="bottom" id="Run" order="15" sideWeight="0.55261105" visible="true" weight="0.37399465" />
+      <window_info anchor="bottom" id="Run" order="15" sideWeight="0.55261105" visible="true" weight="0.37399465" />
       <window_info anchor="bottom" id="Thumbnails" weight="0.3297587" />
       <window_info anchor="bottom" id="Spring" order="14" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.5163983" weight="0.41152814" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49915397" visible="true" weight="0.24395947" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49915397" visible="true" weight="0.24395947" />
       <window_info anchor="right" id="Bean Validation" order="4" sideWeight="0.5082353" side_tool="true" weight="0.14382531" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="right" id="SciView" internal_type="SLIDING" order="3" side_tool="true" weight="0.3297568" />
@@ -961,14 +973,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application-console-server/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="37" column="2" lean-forward="true" selection-start-line="37" selection-start-column="2" selection-end-line="41" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application-console/pom.xml">
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
@@ -1011,13 +1015,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application-console-server/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application-console/src/main/java/com/open/application/console/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1056,10 +1053,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application-console-server/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/consoleServer-dev.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+        <state relative-caret-position="218">
+          <caret line="33" selection-start-line="33" selection-end-line="33" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application-console-server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
         </state>
       </provider>
     </entry>
