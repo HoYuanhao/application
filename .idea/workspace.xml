@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="626046df-d6b0-4ab6-8f14-9da5268a3dd9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E:\log/log_debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/E:\log/log_debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E:\log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/E:\log/log_info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E:\log/log_warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/E:\log/log_warn.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/consoleServer-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/consoleServer-dev.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -103,17 +100,27 @@
       <file leaf-file-name="logback.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application-console/src/main/resources/logback.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="304">
+              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logback.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application-console-server/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+      <file leaf-file-name="logback.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application-console-server/src/main/resources/logback.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="372">
+              <caret line="180" column="21" selection-end-line="188" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -133,7 +140,7 @@
       <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application-console-server/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="-232">
               <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
@@ -148,11 +155,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="consoleServer-dev.properties" pinned="false" current-in-tab="false">
+      <file leaf-file-name="consoleServer-dev.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/consoleServer-dev.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="93" selection-start-line="32" selection-start-column="93" selection-end-line="32" selection-end-column="93" />
+            <state relative-caret-position="167">
+              <caret line="30" column="64" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -235,11 +242,11 @@
         <option value="$PROJECT_DIR$/application-console-server/src/main/java/com/open/application/console/server/druid/DruidStatViewServlet.java" />
         <option value="$PROJECT_DIR$/application-console-server/src/main/java/com/open/application/console/server/druid/DruidConfiguration.java" />
         <option value="$PROJECT_DIR$/application-console/pom.xml" />
+        <option value="$PROJECT_DIR$/application-console-server/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/application-console-server/src/main/resources/logback.xml" />
+        <option value="$PROJECT_DIR$/application-console/src/main/resources/logback.xml" />
         <option value="$PROJECT_DIR$/application-console-server/pom.xml" />
         <option value="$PROJECT_DIR$/config/consoleServer-dev.properties" />
-        <option value="$PROJECT_DIR$/application-console-server/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/application-console/src/main/resources/logback.xml" />
-        <option value="$PROJECT_DIR$/application-console-server/src/main/resources/logback.xml" />
       </list>
     </option>
   </component>
@@ -267,34 +274,13 @@
           <item name="application-console" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="application-console" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="spring-boot" type="36feed69:MavenProjectsStructure$PluginNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="application-console-server" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="application-console-server" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="application-console-server" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="spring-boot" type="36feed69:MavenProjectsStructure$PluginNode" />
-        </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="216" />
-    <option name="y" value="27" />
+    <option name="x" value="87" />
+    <option name="y" value="23" />
     <option name="width" value="1325" />
     <option name="height" value="843" />
   </component>
@@ -374,6 +360,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="application" type="b2602c69:ProjectViewProjectNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="application-console" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="application" type="b2602c69:ProjectViewProjectNode" />
@@ -632,15 +625,15 @@
       <workItem from="1545920735696" duration="1471000" />
       <workItem from="1546058796798" duration="2511000" />
       <workItem from="1546859928591" duration="2946000" />
-      <workItem from="1546867282856" duration="125000" />
+      <workItem from="1546867282856" duration="1091000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127125000" />
+    <option name="totallyTimeSpent" value="128091000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="216" y="27" width="1325" height="843" extended-state="0" />
+    <frame x="87" y="23" width="1325" height="843" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -661,7 +654,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32885906" />
-      <window_info anchor="bottom" id="Run" order="15" sideWeight="0.55261105" weight="0.37399465" />
+      <window_info anchor="bottom" id="Run" order="15" sideWeight="0.55261105" visible="true" weight="0.37399465" />
       <window_info anchor="bottom" id="Spring" order="14" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.5163983" weight="0.41152814" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49915397" visible="true" weight="0.24395947" />
@@ -698,13 +691,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/console-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/consoleServer-dev.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -1021,13 +1007,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/consoleServer-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="93" selection-start-line="32" selection-start-column="93" selection-end-line="32" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/console-dev.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1035,24 +1014,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application-console-server/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/application-console-server/src/main/resources/logback.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="372">
+          <caret line="180" column="21" selection-end-line="188" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application-console/src/main/resources/logback.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="304">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application-console-server/src/main/resources/logback.xml">
+    <entry file="file://$PROJECT_DIR$/application-console-server/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="221">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application-console-server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-232">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/consoleServer-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="30" column="64" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
         </state>
       </provider>
     </entry>
