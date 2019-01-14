@@ -1,0 +1,6 @@
+INFO  [2018-12-30 00:37:27,248][] org.apache.zookeeper.ClientCnxn$SendThread:1160 - Client session timed out, have not heard from server in 27807ms for sessionid 0x1000018f5f50002, closing socket connection and attempting reconnect 
+INFO  [2018-12-30 00:37:27,776][] org.apache.curator.framework.state.ConnectionStateManager:237 - State change: SUSPENDED 
+INFO  [2018-12-30 00:37:28,769][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2018-12-30 00:37:28,773][] org.apache.zookeeper.ClientCnxn$SendThread:879 - Socket connection established to localhost/127.0.0.1:2181, initiating session 
+INFO  [2018-12-30 00:37:29,008][] org.apache.zookeeper.ClientCnxn$SendThread:1303 - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x1000018f5f50002, negotiated timeout = 40000 
+INFO  [2018-12-30 00:37:29,011][] org.apache.curator.framework.state.ConnectionStateManager:237 - State change: RECONNECTED 
