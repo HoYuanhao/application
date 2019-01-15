@@ -36,6 +36,6 @@
 `配置文件，上传至gitlab或github，供配置中心远程拉取以及更新推送`
 
 
-##**console**
+##**vue-console**
 `前端页面基于VUE以及element-UI`
 
