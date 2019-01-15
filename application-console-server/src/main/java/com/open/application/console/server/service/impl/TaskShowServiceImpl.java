@@ -1,6 +1,7 @@
 package com.open.application.console.server.service.impl;
 
 import com.open.application.common.models.Task;
+import com.open.application.common.models.TaskMessage;
 import com.open.application.common.service.TaskShowService;
 import com.open.application.console.server.dao.ExceptionDao;
 import com.open.application.console.server.dao.TaskOperateDao;
@@ -8,6 +9,7 @@ import com.open.application.console.server.dao.TaskShowDao;
 import com.open.application.console.server.es.service.ElasticSearchService;
 import java.io.IOException;
 
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -34,14 +36,21 @@ public class TaskShowServiceImpl implements TaskShowService {
   private ExceptionDao exceptionDao;
 
   @Override
-  public List<Task> showTaskDataByUid(String uid, Integer offSet, Integer limit) {
+  public List<Task> showTaskDataByUid(String uid, Integer offSet, Integer limit,boolean showrun) {
 
-    return taskShowDao.getTaskByUid(uid, offSet, limit);
+    if(showrun){
+    return taskShowDao.getTaskByUid(uid, offSet, limit, Arrays.asList(1,2));
+  }
+    return taskShowDao.getTaskByUid(uid, offSet, limit,null);
   }
 
   @Override
-  public Integer countTaskDataByUid(String uid) {
-    return taskShowDao.getCountTaskDataByUid(uid);
+  public Integer countTaskDataByUid(String uid,boolean showRun) {
+    if(showRun){
+
+      return taskShowDao.getCountTaskDataByUid(uid,Arrays.asList(1,2));
+    }
+    return taskShowDao.getCountTaskDataByUid(uid,null);
   }
 
   @Override
@@ -89,6 +98,11 @@ public class TaskShowServiceImpl implements TaskShowService {
       list.add(iterator.next());
     }
     return list;
+  }
+
+  @Override
+  public List<TaskMessage> getTaskMessageByUid(String uid) {
+    return taskShowDao.getTaskMessageByUid(uid);
   }
 
 

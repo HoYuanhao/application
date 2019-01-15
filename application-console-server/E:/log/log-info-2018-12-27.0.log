@@ -111,7 +111,7 @@ INFO  [2018-12-27 22:35:49,048][] org.apache.curator.framework.state.ConnectionS
 INFO  [2018-12-27 22:35:49,413][] org.apache.juli.logging.DirectJDKLog:180 - Starting ProtocolHandler ["http-nio-8081"] 
 INFO  [2018-12-27 22:35:49,413][] org.apache.juli.logging.DirectJDKLog:180 - Using a shared selector for servlet write/read 
 INFO  [2018-12-27 22:35:49,448][] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path '' 
-INFO  [2018-12-27 22:35:49,457][] org.springframework.boot.StartupInfoLogger:59 - Started App in 39.97 seconds (JVM running for 128.873) 
+INFO  [2018-12-27 22:35:49,457][] org.springframework.boot.StartupInfoLogger:59 - Started com.App in 39.97 seconds (JVM running for 128.873)
 INFO  [2018-12-27 22:39:18,689][] com.zaxxer.hikari.HikariDataSource:110 - HikariPool-1 - Starting... 
 INFO  [2018-12-27 22:39:19,284][] com.zaxxer.hikari.HikariDataSource:123 - HikariPool-1 - Start completed. 
 INFO  [2018-12-27 22:39:20,026][] io.netty.util.internal.logging.Slf4JLogger:101 - Starting without optional epoll library 

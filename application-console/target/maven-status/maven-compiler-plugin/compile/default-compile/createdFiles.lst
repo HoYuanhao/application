@@ -1,5 +1,6 @@
 com/open/application/console/App.class
 com/open/application/console/controller/IndexController$1.class
+com/open/application/console/controller/SpiderController.class
 com/open/application/console/controller/LoginController.class
 com/open/application/console/controller/IndexController$6.class
 com/open/application/console/controller/IndexController.class

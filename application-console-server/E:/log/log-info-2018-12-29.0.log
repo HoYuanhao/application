@@ -105,7 +105,7 @@ INFO  [2018-12-29 12:52:38,268][] org.apache.curator.framework.state.ConnectionS
 INFO  [2018-12-29 12:52:38,420][] org.apache.juli.logging.DirectJDKLog:180 - Starting ProtocolHandler ["http-nio-8081"] 
 INFO  [2018-12-29 12:52:38,420][] org.apache.juli.logging.DirectJDKLog:180 - Using a shared selector for servlet write/read 
 INFO  [2018-12-29 12:52:38,442][] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path '' 
-INFO  [2018-12-29 12:52:38,447][] org.springframework.boot.StartupInfoLogger:59 - Started App in 191.691 seconds (JVM running for 197.121) 
+INFO  [2018-12-29 12:52:38,447][] org.springframework.boot.StartupInfoLogger:59 - Started com.App in 191.691 seconds (JVM running for 197.121)
 INFO  [2018-12-29 12:54:31,421][] com.zaxxer.hikari.HikariDataSource:110 - HikariPool-1 - Starting... 
 INFO  [2018-12-29 12:54:31,944][] com.zaxxer.hikari.HikariDataSource:123 - HikariPool-1 - Start completed. 
 INFO  [2018-12-29 12:54:32,453][] io.netty.util.internal.logging.Slf4JLogger:101 - Starting without optional epoll library 
@@ -206,7 +206,7 @@ INFO  [2018-12-29 18:45:53,611][] org.apache.curator.framework.state.ConnectionS
 INFO  [2018-12-29 18:45:53,725][] org.apache.juli.logging.DirectJDKLog:180 - Starting ProtocolHandler ["http-nio-8081"] 
 INFO  [2018-12-29 18:45:53,726][] org.apache.juli.logging.DirectJDKLog:180 - Using a shared selector for servlet write/read 
 INFO  [2018-12-29 18:45:53,745][] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path '' 
-INFO  [2018-12-29 18:45:53,749][] org.springframework.boot.StartupInfoLogger:59 - Started App in 21.271 seconds (JVM running for 26.919) 
+INFO  [2018-12-29 18:45:53,749][] org.springframework.boot.StartupInfoLogger:59 - Started com.App in 21.271 seconds (JVM running for 26.919)
 INFO  [2018-12-29 18:46:22,239][] com.zaxxer.hikari.HikariDataSource:110 - HikariPool-1 - Starting... 
 INFO  [2018-12-29 18:46:22,486][] com.zaxxer.hikari.HikariDataSource:123 - HikariPool-1 - Start completed. 
 INFO  [2018-12-29 18:46:22,790][] io.netty.util.internal.logging.Slf4JLogger:101 - Starting without optional epoll library 

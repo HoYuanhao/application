@@ -122,7 +122,7 @@ INFO  [2018-12-29 12:52:55,035][] org.springframework.jmx.export.MBeanExporter:6
 INFO  [2018-12-29 12:52:55,092][] org.apache.juli.logging.DirectJDKLog:180 - Starting ProtocolHandler ["http-nio-8088"] 
 INFO  [2018-12-29 12:52:55,095][] org.apache.juli.logging.DirectJDKLog:180 - Using a shared selector for servlet write/read 
 INFO  [2018-12-29 12:52:55,110][] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206 - Tomcat started on port(s): 8088 (http) with context path '' 
-INFO  [2018-12-29 12:52:55,114][] org.springframework.boot.StartupInfoLogger:59 - Started App in 15.109 seconds (JVM running for 27.677) 
+INFO  [2018-12-29 12:52:55,114][] org.springframework.boot.StartupInfoLogger:59 - Started com.App in 15.109 seconds (JVM running for 27.677)
 INFO  [2018-12-29 12:54:08,136][] org.apache.juli.logging.DirectJDKLog:180 - Initializing Spring FrameworkServlet 'dispatcherServlet' 
 INFO  [2018-12-29 12:54:08,136][] org.springframework.web.servlet.FrameworkServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started 
 INFO  [2018-12-29 12:54:08,177][] org.springframework.web.servlet.FrameworkServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms 
@@ -233,7 +233,7 @@ INFO  [2018-12-29 18:46:19,463][] org.springframework.jmx.export.MBeanExporter:6
 INFO  [2018-12-29 18:46:19,511][] org.apache.juli.logging.DirectJDKLog:180 - Starting ProtocolHandler ["http-nio-8088"] 
 INFO  [2018-12-29 18:46:19,514][] org.apache.juli.logging.DirectJDKLog:180 - Using a shared selector for servlet write/read 
 INFO  [2018-12-29 18:46:19,530][] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206 - Tomcat started on port(s): 8088 (http) with context path '' 
-INFO  [2018-12-29 18:46:19,535][] org.springframework.boot.StartupInfoLogger:59 - Started App in 15.706 seconds (JVM running for 20.498) 
+INFO  [2018-12-29 18:46:19,535][] org.springframework.boot.StartupInfoLogger:59 - Started com.App in 15.706 seconds (JVM running for 20.498)
 INFO  [2018-12-29 18:46:21,841][] org.apache.juli.logging.DirectJDKLog:180 - Initializing Spring FrameworkServlet 'dispatcherServlet' 
 INFO  [2018-12-29 18:46:21,842][] org.springframework.web.servlet.FrameworkServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started 
 INFO  [2018-12-29 18:46:21,887][] org.springframework.web.servlet.FrameworkServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms 

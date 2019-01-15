@@ -20,7 +20,9 @@ com/open/application/common/models/Axis$AxisBuilder.class
 com/open/application/common/models/TaskMessage$TaskMessageBuilder.class
 com/open/application/common/models/Grid$GridBuilder.class
 com/open/application/common/models/ExceptionModel.class
+com/open/application/common/service/IndexCountService.class
 com/open/application/common/models/BarChart$BarChartBuilder.class
+com/open/application/common/service/SpiderService.class
 com/open/application/common/models/TaskMessage.class
 com/open/application/common/models/UserInfo.class
 com/open/application/common/models/PieChart$PieChartBuilder.class

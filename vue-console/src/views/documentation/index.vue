@@ -12,7 +12,7 @@
       <el-button v-waves class="filter-item" type="primary" icon="el-icon-search" @click="search">{{ $t('table.search') }}</el-button>
       <el-button class="filter-item" style="margin-left: 10px;" type="primary" icon="el-icon-edit" @click="handleCreate">{{ $t('taskconsole.add') }}</el-button>
       <!-- <el-button v-waves :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('table.export') }}</el-button> -->
-      <el-checkbox v-model="showReviewer" class="filter-item" style="margin-left:15px;" @change="tableKey=tableKey+1">{{ $t('taskconsole.running') }}</el-checkbox>
+      <el-checkbox  class="filter-item" style="margin-left:15px;" @change="showRun">{{ $t('taskconsole.running') }}</el-checkbox>
     </div>
     <el-table
       v-loading="listLoading"
@@ -76,9 +76,9 @@
       </el-table-column>
       <el-table-column :label="$t('taskconsole.action')" align="center" width="160px" class-name="small-padding fixed-width">
         <template slot-scope="scope">
-           <el-button v-if="scope.row.status==0||scope.row.status==3||scope.row.status==4" size="mini" type="success" @click="handleModifyStatus(scope.row,'published')">{{ $t('taskconsole.run') }}</el-button>
-          <el-button v-if="scope.row.status==1||scope.row.status==2" size="mini" type="info" @click="handleModifyStatus(scope.row,'published')">{{ $t('taskconsole.stop') }}</el-button>
-          <el-button type="danger" size="mini" @click="handleUpdate(scope.row)">{{ $t('taskconsole.delete') }}</el-button>
+           <el-button v-if="scope.row.status==0||scope.row.status==3||scope.row.status==4" size="mini" type="success" @click="run(scope.row,scope.row.status)">{{ $t('taskconsole.run') }}</el-button>
+          <el-button v-if="scope.row.status==1||scope.row.status==2" size="mini" type="info" @click="stop(scope.row,scope.row.status)">{{ $t('taskconsole.stop') }}</el-button>
+          <el-button type="danger" size="mini" @click="dele(scope.row,scope.row.status)">{{ $t('taskconsole.delete') }}</el-button>
         </template>
       </el-table-column>
     </el-table>
@@ -145,7 +145,7 @@ import { fetchList, fetchPv, createArticle, updateArticle } from '@/api/article'
 import waves from '@/directive/waves' // Waves directive
 import { formatTime } from '@/utils'
 import Pagination from '@/components/Pagination' // Secondary package based on el-pagination
-import{showTaskData,newTask,searchTask} from '@/api/api'
+import{showTaskData,newTask,searchTask,spiderOperation} from '@/api/api'
 import store from '@/store'
 import JsonEditor from '@/components/JsonEditor'
 const calendarTypeOptions = [
@@ -216,6 +216,7 @@ export default {
       return calendarTypeKeyValue[type]
     }
   },
+
   data() {
     return {
       alarm:false,
@@ -233,6 +234,7 @@ export default {
         status: undefined,
         source:undefined
       },
+      showrun:false,
       importanceOptions: [1, 2, 3],
       calendarTypeOptions,
       statusSelect: [
@@ -253,6 +255,7 @@ export default {
         uid:store.getters.id,
         source:undefined,
       },
+
       dialogFormVisible: false,
       dialogStatus: '',
       textMap: {
@@ -276,13 +279,23 @@ export default {
   handleClick(){
   this.num = this.num.replace('/[^\w]/g', '');
 },
+showRun() {
+if(this.showrun){
+this.showrun=false
+this.getList()
+}else{
+this.showrun=true
+this.getList()
+}
+  },
     getList() {
       this.listLoading = true
         const param={
           id:store.getters.id,
           token:store.getters.token,
           limit:this.listQuery.limit,
-          page:this.listQuery.page
+          page:this.listQuery.page,
+          showrun:this.showrun
         }
           showTaskData(param).then(res=>{
            this.list=res.data.tasks
@@ -291,6 +304,7 @@ export default {
           })
     
     },
+
     alarmChange(){
         if(this.alarm){
          this.temp.alarm=1
@@ -323,6 +337,76 @@ export default {
         this.temp.source=JSON.parse(jsonData);
       }
     },
+    stop(row,status){
+      if(status==1||status==2){
+        const param={
+          taskId:row.tid,
+          token:store.getters.token,
+          operation:1
+        }
+        spiderOperation(param).then(res=>{
+          if(res.data.status==1){
+          row.status=0
+          this.$message({
+        message: '操作成功',
+        type: 'success'
+      })
+      }else{
+            this.$message({
+        message: '操作失败',
+        type: 'error'
+      })
+      }
+        })
+        
+      }
+    },
+
+ run(row,status){
+      if(status==0||status==3||status==4){
+        const param={
+          taskId:row.tid,
+          token:store.getters.token,
+          operation:2
+        }
+        spiderOperation(param).then(res=>{
+          if(res.data.status==1){
+          row.status=1
+          this.$message({
+        message: '操作成功',
+        type: 'success'
+      })
+      }else{
+            this.$message({
+        message: '操作失败',
+        type: 'error'
+      })
+      }
+        })
+        
+      }
+    },
+dele(row,status){
+const param={
+          taskId:row.tid,
+          token:store.getters.token,
+          operation:3
+        }
+        spiderOperation(param).then(res=>{
+          if(res.data.status==1){
+            this.getList();
+          this.$message({
+        message: '操作成功',
+        type: 'success'
+      })
+      }else{
+            this.$message({
+        message: '操作失败',
+        type: 'error'
+      })
+      }
+        })
+},
     handleModifyStatus(row, status) {
       this.$message({
         message: '操作成功',

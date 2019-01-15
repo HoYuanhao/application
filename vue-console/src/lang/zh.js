@@ -4,9 +4,9 @@ export default {
     introduction: '简述',
     documentation: '任务控制台',
     guide: '异常中心',
-    permission: '权限测试页',
-    pagePermission: '页面权限',
-    directivePermission: '指令权限',
+    data: '数据中心',
+    lists: '数据信息',
+    search: '数据搜索',
     icons: '图标',
     components: '组件',
     componentIndex: '介绍',
@@ -62,7 +62,9 @@ export default {
     theme: '换肤',
     clipboardDemo: 'Clipboard',
     i18n: '国际化',
-    externalLink: '外链'
+    externalLink1: '任务调度中心',
+    externalLink2: '搜索控制中心',
+    externalLink3: '消息队列控制中心'
   },
   navbar: {
     logOut: '退出登录',

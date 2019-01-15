@@ -127,7 +127,7 @@ INFO  [2018-12-27 22:36:02,443][] org.springframework.jmx.export.MBeanExporter:6
 INFO  [2018-12-27 22:36:02,535][] org.apache.juli.logging.DirectJDKLog:180 - Starting ProtocolHandler ["http-nio-8088"] 
 INFO  [2018-12-27 22:36:02,537][] org.apache.juli.logging.DirectJDKLog:180 - Using a shared selector for servlet write/read 
 INFO  [2018-12-27 22:36:02,595][] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206 - Tomcat started on port(s): 8088 (http) with context path '' 
-INFO  [2018-12-27 22:36:02,599][] org.springframework.boot.StartupInfoLogger:59 - Started App in 45.089 seconds (JVM running for 133.579) 
+INFO  [2018-12-27 22:36:02,599][] org.springframework.boot.StartupInfoLogger:59 - Started com.App in 45.089 seconds (JVM running for 133.579)
 INFO  [2018-12-27 22:39:17,935][] org.apache.juli.logging.DirectJDKLog:180 - Initializing Spring FrameworkServlet 'dispatcherServlet' 
 INFO  [2018-12-27 22:39:17,937][] org.springframework.web.servlet.FrameworkServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started 
 INFO  [2018-12-27 22:39:18,052][] org.springframework.web.servlet.FrameworkServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 114 ms 

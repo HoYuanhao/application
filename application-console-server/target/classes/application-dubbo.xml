@@ -9,11 +9,17 @@
         ">
     <dubbo:application name="${spring.dubbo.application.name}" />
     <dubbo:registry  protocol="zookeeper" address="${spring.dubbo.registry.address}" />
-    <dubbo:protocol name="${spring.dubbo.protocol.name}" port="${spring.dubbo.protocol.port}" />
-    <bean id="loginService" class="com.open.application.console.server.service.impl.LoginServiceImpl"/>
+  <dubbo:protocol name="${spring.dubbo.protocol.name}" port="${spring.dubbo.protocol.port}" />
+
+  <bean id="loginService" class="com.open.application.console.server.service.impl.LoginServiceImpl"/>
   <bean id="taskShowService" class="com.open.application.console.server.service.impl.TaskShowServiceImpl"/>
   <bean id="exceptionService" class="com.open.application.console.server.service.impl.ExceptionServiceImpl" />
-    <dubbo:service interface="com.open.application.common.service.LoginService"  ref="loginService" />
+  <bean id="spiderService" class="com.open.application.console.server.service.impl.SpiderServiceImpl"/>
+  <bean id="indexCountService" class="com.open.application.console.server.service.impl.IndexCountServiceImpl"/>
+
+  <dubbo:service interface="com.open.application.common.service.SpiderService" ref="spiderService" timeout="3000" retries="1"/>
+    <dubbo:service interface="com.open.application.common.service.LoginService"  ref="loginService" timeout="2000" retries="2"/>
     <dubbo:service interface="com.open.application.common.service.TaskShowService" ref="taskShowService" timeout="3000" retries="0"/>
-  <dubbo:service interface="com.open.application.common.service.ExceptionService" ref="exceptionService" timeout="3000" retries="0"/>
+    <dubbo:service interface="com.open.application.common.service.ExceptionService" ref="exceptionService" timeout="3000" retries="0"/>
+  <dubbo:service interface="com.open.application.common.service.IndexCountService" ref="indexCountService" timeout="5000" retries="1"/>
 </beans>

@@ -86,3 +86,11 @@ export function exceptionSearchS(query) {
     params: query
   })
 }
+
+export function spiderOperation(query) {
+  return request({
+    url: '/spider/operation',
+    method: 'get',
+    params: query
+  })
+}

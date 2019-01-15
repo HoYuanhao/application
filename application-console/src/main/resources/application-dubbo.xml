@@ -13,4 +13,7 @@
   <dubbo:reference id="loginService" interface="com.open.application.common.service.LoginService" />
   <dubbo:reference id="taskShowService" interface="com.open.application.common.service.TaskShowService"/>
   <dubbo:reference id="exceptionService" interface="com.open.application.common.service.ExceptionService"/>
+  <dubbo:reference id="spiderService" interface="com.open.application.common.service.SpiderService"/>
+
+  <dubbo:reference id="indexCountService" interface="com.open.application.common.service.IndexCountService"/>
 </beans>
