@@ -22,4 +22,15 @@ public interface TaskShowService {
   List<String> getExceptionTypeByTidAndUid(String tid,String uid);
 
   List<TaskMessage> getTaskMessageByUid(String uid);
+
+  List<Integer> countDatas(String type);
+
+  List<Integer> countExceptions(String type);
+
+  List<Integer> countProcesses(String type);
+
+  List<Integer> countTasks(String type);
+
+  List<Map<String,String>> groupException();
+
 }

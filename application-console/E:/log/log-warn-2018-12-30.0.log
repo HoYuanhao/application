@@ -1,1 +1,0 @@
-WARN  [2018-12-30 00:37:25,929][] org.apache.zookeeper.ClientCnxn$SendThread:1112 - Client session timed out, have not heard from server in 31045ms for sessionid 0x1000018f5f50003 

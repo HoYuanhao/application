@@ -2,13 +2,9 @@ com/open/application/console/App.class
 com/open/application/console/controller/IndexController$1.class
 com/open/application/console/controller/SpiderController.class
 com/open/application/console/controller/LoginController.class
-com/open/application/console/controller/IndexController$6.class
 com/open/application/console/controller/IndexController.class
 com/open/application/console/controller/IndexController$2.class
-com/open/application/console/controller/IndexController$8.class
+com/open/application/console/controller/SingerController.class
 com/open/application/console/controller/IndexController$3.class
 com/open/application/console/controller/TaskShowController.class
-com/open/application/console/controller/IndexController$7.class
-com/open/application/console/controller/IndexController$4.class
 com/open/application/console/Config.class
-com/open/application/console/controller/IndexController$5.class

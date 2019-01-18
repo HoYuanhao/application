@@ -10,7 +10,7 @@
         <module name="application-config" />
         <module name="application-console" />
         <module name="application-console-server" />
-        <module name="application-index" />
+        <module name="application-job" />
         <module name="application-spider-server" />
       </profile>
     </annotationProcessing>
@@ -21,7 +21,7 @@
       <module name="application-console" target="1.8" />
       <module name="application-console-server" target="1.8" />
       <module name="application-es-server" target="1.8" />
-      <module name="application-index" target="1.8" />
+      <module name="application-job" target="1.8" />
       <module name="application-spider-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>

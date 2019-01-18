@@ -1,6 +1,7 @@
 package com.open.application.spider.operations;
 
-import com.open.application.spider.models.TbAllMusic;
+
+import com.open.application.common.models.TbAllMusic;
 
 /**
  * 音乐插入接口

@@ -1,25 +1,29 @@
 package com.open.application.console.server.es.service.impl;
 
 import com.alibaba.fastjson.JSON;
+import com.google.common.io.Files;
 import com.open.application.common.models.ExceptionModel;
 import com.open.application.common.models.Task;
+import com.open.application.common.util.EsUtil;
+import com.open.application.console.server.dao.TaskShowDao;
 import com.open.application.console.server.es.service.ElasticSearchService;
-import com.open.application.console.server.util.EsUtil;
+
 import java.io.File;
 import java.io.IOException;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
+
 import lombok.extern.slf4j.Slf4j;
+import org.elasticsearch.action.admin.indices.create.CreateIndexRequest;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.RequestOptions;
-import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.common.text.Text;
 import org.elasticsearch.common.xcontent.XContentType;
@@ -31,7 +35,7 @@ import org.elasticsearch.search.builder.SearchSourceBuilder;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightField;
 import org.elasticsearch.search.sort.SortOrder;
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
@@ -40,41 +44,37 @@ import org.springframework.stereotype.Component;
 @Slf4j
 @Component
 public class ElasticSearchServiceImpl implements ElasticSearchService {
+  @Autowired
+  private TaskShowDao taskShowDao;
 
-  @Value("${elasticsearch.address}")
-  private String address;
-  @Value("${elasticsearch.scheme}")
-  private String scheme;
-
+  @Autowired
   private RestHighLevelClient client;
 
-  @PostConstruct
-  public void init() {
-    client = new RestHighLevelClient(RestClient.builder(EsUtil.getHttpHost(address, scheme)));
-  }
 
 
   @Override
   public void insertTask(Task task) throws IOException {
-    IndexRequest indexRequest = new IndexRequest(EsUtil.getIndex(task.getUid(), "task", "index"))
-        .type(EsUtil.getType());
-    indexRequest.source(JSON.toJSONString(task), XContentType.JSON);
+    int count = taskShowDao.getCountTaskByUid(task.getUid());
+    if (count == 0) {
+      CreateIndexRequest request = new CreateIndexRequest(EsUtil.getTaskIndex(task.getUid())).source(Files.toString(new File(
+        this.getClass().getClassLoader().getResource("").getPath() + "/index.json"), Charset.defaultCharset()), XContentType.JSON);
+      client.indices().create(request, RequestOptions.DEFAULT);
+    }
+    IndexRequest indexRequest = new IndexRequest(EsUtil.getTaskIndex(task.getUid())).type(EsUtil.getType());
+    String json=JSON.toJSONString(task);
+    indexRequest.source(json, XContentType.JSON);
     client.index(indexRequest, RequestOptions.DEFAULT);
   }
 
   @Override
-  public Map<String, Object> searchException(String uid, String tid, String type, String key,
-      Integer offset,
-      Integer limit) throws IOException {
+  public Map<String, Object> searchException(String uid, String tid, String type, String key, Integer offset, Integer limit) throws IOException {
     List<ExceptionModel> list = new ArrayList<>();
     Map<String, Object> result = new HashMap<>();
     result.put("exceptions", list);
 
     SearchRequest searchRequest = new SearchRequest("exception_" + uid + "_" + tid + "_index");
     SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
-    BoolQueryBuilder boolQueryBuilder = QueryBuilders.boolQuery()
-        .must(QueryBuilders.termQuery("uid", uid))
-        .must(QueryBuilders.termQuery("tid", tid));
+    BoolQueryBuilder boolQueryBuilder = QueryBuilders.boolQuery().must(QueryBuilders.termQuery("uid", uid)).must(QueryBuilders.termQuery("tid", tid));
     if (type != null && !type.trim().equals("")) {
       boolQueryBuilder.must(QueryBuilders.termQuery("type", type));
     }
@@ -111,34 +111,30 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
             for (Text t : texts) {
               sb.append(t);
             }
-            String h = sb
-                .substring(sb.indexOf("<span style=\"color:red\">") + 24, sb.indexOf("</span>"));
-            String tmp = hit.getSourceAsMap()
-                .get(entry.getKey())
-                .toString()
-                .replaceAll(h, "<span style =\"color:red\">" + h + "</span>");
+            String h = sb.substring(sb.indexOf("<span style=\"color:red\">") + 24, sb.indexOf("</span>"));
+            String tmp = hit.getSourceAsMap().get(entry.getKey()).toString().replaceAll(h, "<span style =\"color:red\">" + h + "</span>");
             hit.getSourceAsMap().put((String) entry.getKey(), tmp);
           }
         }
       }
       Map<String, Object> stringObjectMap = hit.getSourceAsMap();
-      list.add(ExceptionModel.builder()
-          .eid((String) stringObjectMap.get("eid"))
-          .pid((String) stringObjectMap.get("pid"))
-          .detail((String) stringObjectMap.get("detail"))
-          .throwTime(new Date((Long) stringObjectMap.get("throwTime")))
-          .tid((String) stringObjectMap.get("tid"))
-          .type((String) stringObjectMap.get("type"))
-          .uid((String) stringObjectMap.get("uid"))
-          .build());
+      list.add(ExceptionModel
+                 .builder()
+                 .eid((String) stringObjectMap.get("eid"))
+                 .pid((String) stringObjectMap.get("pid"))
+                 .detail((String) stringObjectMap.get("detail"))
+                 .throwTime(new Date((Long) stringObjectMap.get("throwTime")))
+                 .tid((String) stringObjectMap.get("tid"))
+                 .type((String) stringObjectMap.get("type"))
+                 .uid((String) stringObjectMap.get("uid"))
+                 .build());
     }
     return result;
   }
 
   @Override
-  public void insertException(ExceptionModel exceptionModel) throws Exception{
-    IndexRequest indexRequest = new IndexRequest("exception_" + exceptionModel.getUid() + "_" + exceptionModel.getTid() + "_index")
-        .type(EsUtil.getType());
+  public void insertException(ExceptionModel exceptionModel) throws Exception {
+    IndexRequest indexRequest = new IndexRequest("exception_" + exceptionModel.getUid() + "_" + exceptionModel.getTid() + "_index").type(EsUtil.getType());
     indexRequest.source(JSON.toJSONString(exceptionModel), XContentType.JSON);
     client.index(indexRequest, RequestOptions.DEFAULT);
   }
@@ -146,16 +142,19 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
 
   @Override
   public Map<String, Object> searchTaskByLikeNameAndDescribe(String uid,
-      Integer offset,
-      Integer limit, String name, String describe, Integer status, String type) throws IOException {
+                                                             Integer offset,
+                                                             Integer limit,
+                                                             String name,
+                                                             String describe,
+                                                             Integer status,
+                                                             String type) throws IOException {
     List<Task> taskList = new ArrayList<>();
     Map<String, Object> param = new HashMap<>(2);
     param.put("taskList", taskList);
-    SearchRequest searchRequest = new SearchRequest(EsUtil.getIndex(uid, "task", "index"));
+    SearchRequest searchRequest = new SearchRequest(EsUtil.getTaskIndex(uid));
     searchRequest.types(EsUtil.getType());
     SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
-    BoolQueryBuilder boolQueryBuilder = QueryBuilders.boolQuery()
-        .must(QueryBuilders.termQuery("uid", uid));
+    BoolQueryBuilder boolQueryBuilder = QueryBuilders.boolQuery().must(QueryBuilders.termQuery("uid", uid));
     if (status != null) {
       boolQueryBuilder.must(QueryBuilders.matchQuery("status", status));
     }
@@ -181,18 +180,19 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
     for (int i = 0; i < hits.length; i++) {
       SearchHit hit = hits[i];
       Map<String, Object> sourceAsMap = hit.getSourceAsMap();
-      Task.TaskBuilder taskBuilder = Task.builder()
-          .tid((String) sourceAsMap.get("tid"))
-          .name((String) sourceAsMap.get("name"))
-          .describe((String) sourceAsMap.get("describe"))
-          .createTime(new Date((Long) sourceAsMap.get("createTime")))
-          .type((String) sourceAsMap.get("type"))
-          .uid((String) sourceAsMap.get("uid"))
-          .processNum((Integer) sourceAsMap.get("processNum"))
-          .isDelete((Integer) sourceAsMap.get("isDelete"))
-          .status((Integer) sourceAsMap.get("status"))
-          .alarm((Integer) sourceAsMap.get("alarm"))
-          .source((String) sourceAsMap.get("source"));
+      Task.TaskBuilder taskBuilder = Task
+        .builder()
+        .tid((String) sourceAsMap.get("tid"))
+        .name((String) sourceAsMap.get("name"))
+        .describe((String) sourceAsMap.get("describe"))
+        .createTime(new Date((Long) sourceAsMap.get("createTime")))
+        .type((String) sourceAsMap.get("type"))
+        .uid((String) sourceAsMap.get("uid"))
+        .processNum((Integer) sourceAsMap.get("processNum"))
+        .isDelete((Integer) sourceAsMap.get("isDelete"))
+        .status((Integer) sourceAsMap.get("status"))
+        .alarm((Integer) sourceAsMap.get("alarm"))
+        .source((String) sourceAsMap.get("source"));
       Object startTime = sourceAsMap.get("startTime");
       Object endTime = sourceAsMap.get("endTIme");
       if (endTime != null) {
@@ -203,8 +203,7 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
       }
       taskList.add(taskBuilder.build());
     }
-    log.info("uid:{} offset:{} limit:{} name:{} describe:{} status:{} type:{}", uid, offset, limit,
-        name, describe, status, type);
+    log.info("uid:{} offset:{} limit:{} name:{} describe:{} status:{} type:{}", uid, offset, limit, name, describe, status, type);
     return param;
   }
 

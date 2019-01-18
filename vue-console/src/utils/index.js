@@ -38,9 +38,7 @@ export function parseTime(time, cFormat) {
 export function formatTime(time, option) {
   const d = new Date(time)
   const now = Date.now()
-
   const diff = (now - d) / 1000
-
   if (diff < 30) {
     return '刚刚'
   } else if (diff < 3600) {

@@ -3,9 +3,9 @@ package com.open.application.spider.spiders;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.open.application.common.models.TbAllMusic;
+import com.open.application.common.models.TbPlaylist;
 import com.open.application.spider.helper.ClientHelper;
-import com.open.application.spider.models.TbAllMusic;
-import com.open.application.spider.models.TbPlaylist;
 import com.open.application.spider.operations.MusicInsertOperation;
 import com.open.application.spider.operations.PlayInsertOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -84,8 +84,11 @@ public class PlayListSpider {
       Elements element2 = element1.select("a");
       Elements element3 = element1.select("img");
 
-      operation.insert(TbPlaylist.builder().ishot(0).listtitle(element2.attr("title")).photohref(element3.attr("src")).listhref(
-        "https://music.163.com" + element2.attr("href")).playlistid(Long.parseLong(element2.attr("href").replace("/playlist?id=", ""))).build());
+      operation.insert(TbPlaylist.builder().isHot(0)
+                                 .listTitle(element2
+                                              .attr("title"))
+                                 .photoHref(element3.attr("src")).listHref(
+        "https://music.163.com" + element2.attr("href")).playListId(Long.parseLong(element2.attr("href").replace("/playlist?id=", ""))).build());
 
     }
   }
@@ -100,9 +103,9 @@ public class PlayListSpider {
     for (TbPlaylist tbPlaylist : tbPlaylists) {
       ArrayList<String> arrayList = null;
       try {
-        arrayList = getSong(tbPlaylist.getListhref());
+        arrayList = getSong(tbPlaylist.getListHref());
       } catch (IOException e) {
-        log.error("getSong by play list error, url is {}", tbPlaylist.getListhref());
+        log.error("getSong by play list error, url is {}", tbPlaylist.getListHref());
       }
 
       for (String url : arrayList) {
@@ -123,8 +126,8 @@ public class PlayListSpider {
             JSONObject jsonObject2 = jsonArray1.getJSONObject(0);
             String songSinger = jsonObject2.getString("name");
             if (!songName.equals("错误引导")) {
-              operation.insert(TbAllMusic.builder().songid(songId).songname(songName).songsinger(songSinger).songurl(
-                "https://music.163.com/#/song?id=" + songId).outerurl(String.format(outerUrlTemp, songId)).build());
+              operation.insert(TbAllMusic.builder().songId(songId).songName(songName).songSinger(songSinger).songUrl(
+                "https://music.163.com/#/song?id=" + songId).outerUrl(String.format(outerUrlTemp, songId)).build());
             }
           }
 

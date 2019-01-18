@@ -126,7 +126,7 @@ export const asyncRouterMap = [
         component: () => import('@/views/permission/page'),
         name: 'PagePermission',
         meta: {
-          title: 'data',
+          title: 'singer',
           roles: ['admin'] // or you can only set roles in sub nav
         }
       },

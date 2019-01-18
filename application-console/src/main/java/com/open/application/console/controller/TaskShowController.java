@@ -79,7 +79,9 @@ public class TaskShowController {
     task.setStatus(0);
     task.setTid(UUID.randomUUID().toString().replace("-", ""));
     task.setSource(task.getSource().replace(" ", ""));
-    taskShowService.insertTaskToElasticSearchAndDB(task);
+
+      taskShowService.insertTaskToElasticSearchAndDB(task);
+
     JSONObject jsonObject = new JSONObject();
     jsonObject.put("status", 200);
     return jsonObject;

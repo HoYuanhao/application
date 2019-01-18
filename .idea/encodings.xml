@@ -5,8 +5,8 @@
     <file url="file://$PROJECT_DIR$/application-config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/application-console" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/application-console-server" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/application-es-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/application-index" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application-job" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/application-spider-server" charset="UTF-8" />
   </component>
 </project>

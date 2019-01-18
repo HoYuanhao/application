@@ -6,7 +6,7 @@
     <mapping directory="$PROJECT_DIR$/application-config" vcs="svn" />
     <mapping directory="$PROJECT_DIR$/application-console" vcs="svn" />
     <mapping directory="$PROJECT_DIR$/application-console-server" vcs="svn" />
-    <mapping directory="$PROJECT_DIR$/application-index" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/application-job" vcs="svn" />
     <mapping directory="$PROJECT_DIR$/application-spider-server" vcs="svn" />
   </component>
 </project>

@@ -2,8 +2,8 @@ package com.open.application.spider.spiders;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.open.application.common.models.TbComments;
 import com.open.application.spider.helper.EncryptUtils;
-import com.open.application.spider.models.TbComments;
 import com.open.application.spider.operations.CommentInsertOperation;
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
@@ -67,15 +67,15 @@ public class CommentSpider {
           operation.insert(TbComments
                              .builder()
                              .comment(j3.getString("content"))
-                             .commentid(j3.getLong("commentId"))
+                             .commentId(j3.getLong("commentId"))
                              .time(j3.getLong("time"))
-                             .ishotcomments(1)
-                             .songid(songId)
-                             .likedcount(j3.getInteger("likedCount"))
-                             .avatarurl(j4.getString("avatarUrl"))
-                             .userid(j4.getLong("userId"))
-                             .nickname(j4.getString("nickname"))
-                             .commentnum(total)
+                             .isHotComments(1)
+                             .songId(songId)
+                             .likedCount(j3.getInteger("likedCount"))
+                             .avatarUrl(j4.getString("avatarUrl"))
+                             .userId(j4.getLong("userId"))
+                             .nickName(j4.getString("nickname"))
+                             .commentNum(total)
                              .build());
 
         }
@@ -104,15 +104,15 @@ public class CommentSpider {
       operation.insert(TbComments
                          .builder()
                          .comment(j3.getString("content"))
-                         .commentid(j3.getLong("commentId"))
+                         .commentId(j3.getLong("commentId"))
                          .time(j3.getLong("time"))
-                         .ishotcomments(1)
-                         .songid(songId)
-                         .likedcount(j3.getInteger("likedCount"))
-                         .avatarurl(j4.getString("avatarUrl"))
-                         .userid(j4.getLong("userId"))
-                         .nickname(j4.getString("nickname"))
-                         .commentnum(total)
+                         .isHotComments(1)
+                         .songId(songId)
+                         .likedCount(j3.getInteger("likedCount"))
+                         .avatarUrl(j4.getString("avatarUrl"))
+                         .userId(j4.getLong("userId"))
+                         .nickName(j4.getString("nickname"))
+                         .commentNum(total)
                          .build());
     }
   }

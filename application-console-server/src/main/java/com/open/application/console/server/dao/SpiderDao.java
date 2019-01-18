@@ -1,6 +1,7 @@
 package com.open.application.console.server.dao;
 
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
 /**
@@ -14,4 +15,7 @@ public interface SpiderDao {
 
   @Update("update task set is_delete=1 where tid=#{tid}")
   void deleteByTid(@Param("tid")String tid);
+
+  @Select("select uid from task where tid=#{tid}")
+  String getUidByTid(@Param("tid") String tid);
 }

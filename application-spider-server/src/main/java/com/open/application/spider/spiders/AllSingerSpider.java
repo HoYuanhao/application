@@ -1,7 +1,7 @@
 package com.open.application.spider.spiders;
 
+import com.open.application.common.models.TbAllSinger;
 import com.open.application.spider.helper.ClientHelper;
-import com.open.application.spider.models.TbAllSinger;
 import com.open.application.spider.operations.SingerInsertOperation;
 import com.open.application.spider.operations.SingerUpdateOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -16,6 +16,7 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Set;
 
 /**
  * 爬取所有的歌手信息 不包括日韩。
@@ -46,24 +47,30 @@ public class AllSingerSpider {
       Document document = Jsoup.parse(result);
       Elements elements = document.select("#m-artist-box > li > a.nm.nm-icn.f-thide.s-fc0");
       for (Element elements1 : elements) {
+        long singerId=Long.parseLong(elements1.attr("href").replace("/artist?id=", ""));
         String singHref = elements1.attr("href");
-        operation.insert(TbAllSinger
-                           .builder()
-                           .singerhref("https://music.163.com" + singHref)
-                           .singername(elements1.text())
-                           .singerid(Long.parseLong(elements1.attr("href").replace("/artist?id=", "")))
-                           .build());
+        TbAllSinger tbAllSinger=TbAllSinger
+          .builder()
+          .singerHref("https://music.163.com" + singHref)
+          .singerName(elements1.text())
+          .singerId(singerId)
+          .build();
+        updateSinger(singerId,s->tbAllSinger.setSingerDesc(s));
+        operation.insert(tbAllSinger);
       }
 
       Elements elements1 = document.select("#m-artist-box > li > div > a");
       for (Element element : elements1) {
         String singHref = element.attr("href");
-        operation.insert(TbAllSinger
-                           .builder()
-                           .singerhref("https://music.163.com" + singHref)
-                           .singername(element.attr("title").replace("的音乐", ""))
-                           .singerid(Long.parseLong(element.attr("href").replace("/artist?id=", "")))
-                           .build());
+        long singerId=Long.parseLong(element.attr("href").replace("/artist?id=", ""));
+        TbAllSinger tbAllSinger=TbAllSinger
+          .builder()
+          .singerHref("https://music.163.com" + singHref)
+          .singerName(element.attr("title").replace("的音乐", ""))
+          .singerId(singerId)
+          .build();
+        updateSinger(singerId,s->tbAllSinger.setSingerDesc(s));
+        operation.insert(tbAllSinger);
       }
     }
   }
@@ -91,7 +98,7 @@ public class AllSingerSpider {
    *
    * @param initials A-Z
    */
-  public void getMandopopSinger(List<Character> initials, SingerInsertOperation operation) {
+  public void getMandopopSinger(Set<Character> initials, SingerInsertOperation operation) {
     for (Character character : initials) {
       char value = character.charValue();
       if ('A' <= value && value <= 'Z') {
@@ -102,8 +109,7 @@ public class AllSingerSpider {
     }
   }
 
-  public void updateSinger(List<Long> singerIds, SingerUpdateOperation operation) {
-    for (Long singerId : singerIds) {
+  public void updateSinger(Long singerId, SingerUpdateOperation operation) {
       String singerInfo = null;
       try {
         singerInfo = getSingerInfo(String.format(singerUrl, singerId));
@@ -111,11 +117,10 @@ public class AllSingerSpider {
         log.error("updateSinger error singer id is {}", singerId, e);
       }
       if (StringUtils.isNotBlank(singerInfo)) {
-        operation.update(TbAllSinger.builder().singerid(singerId).singerdesc(singerInfo).build());
+        operation.update(singerInfo);
       }
 
 
-    }
 
 
   }

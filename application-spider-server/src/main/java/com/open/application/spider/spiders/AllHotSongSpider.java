@@ -2,12 +2,13 @@ package com.open.application.spider.spiders;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.open.application.common.models.TbAllMusic;
 import com.open.application.spider.helper.ClientHelper;
-import com.open.application.spider.models.TbAllMusic;
+
 import com.open.application.spider.operations.MusicInsertOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
-import org.assertj.core.util.Lists;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
@@ -72,11 +73,11 @@ public class AllHotSongSpider {
           String singer = object2.getString("name");
           operation.insert(TbAllMusic
                              .builder()
-                             .songid(songId)
-                             .songname(songName)
-                             .songsinger(singer)
-                             .songurl(String.format(songUrl, songId))
-                             .outerurl(String.format(outerUrl, songId))
+                             .songId(songId)
+                             .songName(songName)
+                             .songSinger(singer)
+                             .songUrl(String.format(songUrl, songId))
+                             .outerUrl(String.format(outerUrl, songId))
                              .build());
         }
       }

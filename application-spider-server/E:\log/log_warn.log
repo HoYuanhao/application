@@ -1,0 +1,2 @@
+WARN  [2019-01-17 15:28:16,759][] org.mybatis.spring.mapper.ClassPathMapperScanner:166 - No MyBatis mapper was found in '[com.open.application.spider.dao]' package. Please check your configuration. 
+WARN  [2019-01-17 15:28:18,012][] org.mybatis.spring.mapper.ClassPathMapperScanner:166 - No MyBatis mapper was found in '[com]' package. Please check your configuration. 

@@ -10,14 +10,14 @@ import java.util.Map;
  * @date 2019/1/15 下午5:28
  */
 public interface IndexCountDao {
-  @Select("select sum(process_num) from task where uid=#{uid} group by uid ")
-  Integer getProcessNumSum(@Param("uid") String uid);
+  @Select("select sum(process_num) from task")
+  Integer getProcessNumSum();
 
-  @Select("select count(1) from task where uid=#{uid}")
-  Integer getTaskNum(@Param("uid") String uid);
+  @Select("select count(1) from task ")
+  Integer getTaskNum();
 
-  @Select("select count(1) from exception where uid=#{uid}")
-  Integer getExceptionNum(@Param("uid")String uid);
+  @Select("select count(1) from exception,task where task.tid=exception.tid")
+  Integer getExceptionNum();
 
   @Select("select count(1) from tb_all_music")
   Integer getMusicNum();

@@ -82,8 +82,12 @@
         </template>
       </el-table-column>
     </el-table>
+<el-pagination v-show="total>0" :total="total" :page-sizes="[20, 30, 50, 100]" :current-page="listQuery.page" :page-size="listQuery.limit" 
+   @current-change="handleCurrentChange" 
+   @size-change="handleSizeChange"
+   layout="total, sizes, prev, pager, next, jumper"/>
 
-    <pagination v-show="total>0" :total="total" :page.sync="listQuery.page" :limit.sync="listQuery.limit" @pagination="getList" />
+   
 
     <el-dialog :title="textMap[dialogStatus]" :visible.sync="dialogFormVisible">
       <el-form ref="dataForm" :rules="rules" :model="temp" label-position="right" label-width="100px" style="width: 600px; margin-left:0px;">
@@ -224,6 +228,7 @@ export default {
       list: null,
       total: 0,
       listLoading: true,
+      isSearch:false,
       listQuery: {
         id:store.getters.id,
         page: 1,
@@ -272,6 +277,7 @@ export default {
       downloadLoading: false
     }
   },
+
   created() {
     this.getList()
   },
@@ -290,6 +296,10 @@ this.getList()
   },
     getList() {
       this.listLoading = true
+      if(this.isSearch){
+         this.listQuery.page=1
+        this.search();
+      }else{
         const param={
           id:store.getters.id,
           token:store.getters.token,
@@ -300,9 +310,9 @@ this.getList()
           showTaskData(param).then(res=>{
            this.list=res.data.tasks
            this.total=res.data.total
-             this.listLoading = false
+           this.listLoading = false
           })
-    
+    }
     },
 
     alarmChange(){
@@ -321,16 +331,17 @@ this.getList()
         }
     },
     search() {
-      this.listQuery.page = 1
+     this.isSearch=
      searchTask(this.listQuery).then(res=>{
         this.list=res.data.taskList
         this.total=res.data.totalHits
+        this.listLoading=false
      })
     },
     checkType(type){
       this.type=type;
       if(type=='MUSIC'){
-        const jsonData='{"musicID":""}'
+        const jsonData='{"type":"","initialArray":[],"initials":""}'
         this.temp.source=JSON.parse(jsonData);
       }else if(type=='TICKET'){
         const jsonData='{"from":"","to":""}'
@@ -361,7 +372,15 @@ this.getList()
         
       }
     },
-
+ handleSizeChange(val) {
+        this.listQuery.limit=val
+        this.getList()
+      },
+      handleCurrentChange(val) {
+        this.listQuery.page=val
+        this.getList()
+  
+    },
  run(row,status){
       if(status==0||status==3||status==4){
         const param={

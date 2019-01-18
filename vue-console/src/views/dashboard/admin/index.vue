@@ -1,4 +1,5 @@
 <template>
+
   <div class="dashboard-editor-container">
 
     <github-corner style="position: absolute; top: 0px; border: 0; right: 0;"/>
@@ -70,6 +71,11 @@ export default {
     }
   },
    created() {
+      this.$message({
+              type: 'warning',
+              message: `部分数据更新会存在俩分钟左右的延时`,
+              duration:5000
+            });
     this.init()
 
   },

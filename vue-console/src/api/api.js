@@ -94,3 +94,20 @@ export function spiderOperation(query) {
     params: query
   })
 }
+
+export function getSingerLimit(query) {
+  return request({
+    url: '/singer/getSingerLimit',
+    method: 'get',
+    params: query
+  })
+}
+
+export function searchSinger(query) {
+  return request({
+    url: '/singer/searchSinger',
+    method: 'get',
+    params: query
+  })
+}
+

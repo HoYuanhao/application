@@ -3,8 +3,8 @@ package com.open.application.spider.spiders;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.open.application.common.models.TbAllMusic;
 import com.open.application.spider.helper.ClientHelper;
-import com.open.application.spider.models.TbAllMusic;
 import com.open.application.spider.operations.MusicInsertOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -45,11 +45,11 @@ public class MusicSpider {
         if (!songName.equals("错误引导")) {
         operation.insert(TbAllMusic
                            .builder()
-                           .songid(songId)
-                           .songname(songName)
-                           .songsinger(songSinger)
-                           .songurl(url)
-                           .outerurl(String.format(outerUrlTemp, songId))
+                           .songId(songId)
+                           .songName(songName)
+                           .songSinger(songSinger)
+                           .songUrl(url)
+                           .outerUrl(String.format(outerUrlTemp, songId))
                            .build());
         }
       }

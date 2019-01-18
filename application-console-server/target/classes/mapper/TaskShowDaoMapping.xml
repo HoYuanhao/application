@@ -39,7 +39,8 @@ SELECT
 	type,
 	process_num AS processNum,
 	`status`,
-	`alarm`
+	`alarm`,
+	`source`
 FROM
 	task
 WHERE

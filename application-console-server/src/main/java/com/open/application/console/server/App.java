@@ -4,6 +4,7 @@ package com.open.application.console.server;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.ImportResource;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
@@ -13,7 +14,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 public class App {
   public static void main(String[] args){
-    new SpringApplicationBuilder(App.class).run(args);
+   new SpringApplicationBuilder(App.class).run(args);
   }
 
 }

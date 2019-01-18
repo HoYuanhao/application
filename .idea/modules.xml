@@ -7,7 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/application-config/application-config.iml" filepath="$PROJECT_DIR$/application-config/application-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/application-console/application-console.iml" filepath="$PROJECT_DIR$/application-console/application-console.iml" />
       <module fileurl="file://$PROJECT_DIR$/application-console-server/application-console-server.iml" filepath="$PROJECT_DIR$/application-console-server/application-console-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/application-index/application-index.iml" filepath="$PROJECT_DIR$/application-index/application-index.iml" />
+      <module fileurl="file://$PROJECT_DIR$/application-job/application-job.iml" filepath="$PROJECT_DIR$/application-job/application-job.iml" />
       <module fileurl="file://$PROJECT_DIR$/application-spider-server/application-spider-server.iml" filepath="$PROJECT_DIR$/application-spider-server/application-spider-server.iml" />
     </modules>
   </component>

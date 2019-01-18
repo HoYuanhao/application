@@ -1,4 +1,4 @@
-/Users/yuanhaohe/workspace/application/application-console-server/src/main/java/com/open/application/console/server/util/EsUtil.java
+/Users/yuanhaohe/workspace/application/application-console-server/src/main/java/com/open/application/console/server/config/RedisConfig.java
 /Users/yuanhaohe/workspace/application/application-console-server/src/main/java/com/open/application/console/server/dao/ExceptionDao.java
 /Users/yuanhaohe/workspace/application/application-console-server/src/main/java/com/open/application/console/server/service/impl/LoginServiceImpl.java
 /Users/yuanhaohe/workspace/application/application-console-server/src/main/java/com/open/application/console/server/dao/IndexCountDao.java
@@ -11,8 +11,10 @@
 /Users/yuanhaohe/workspace/application/application-console-server/src/main/java/com/open/application/console/server/service/impl/Productor.java
 /Users/yuanhaohe/workspace/application/application-console-server/src/main/java/com/open/application/console/server/service/impl/SpiderServiceImpl.java
 /Users/yuanhaohe/workspace/application/application-console-server/src/main/java/com/open/application/console/server/druid/DruidConfiguration.java
+/Users/yuanhaohe/workspace/application/application-console-server/src/main/java/com/open/application/console/server/dao/SingerDao.java
+/Users/yuanhaohe/workspace/application/application-console-server/src/main/java/com/open/application/console/server/service/impl/SingerServiceImpl.java
+/Users/yuanhaohe/workspace/application/application-console-server/src/main/java/com/open/application/console/server/config/Config.java
 /Users/yuanhaohe/workspace/application/application-console-server/src/main/java/com/open/application/console/server/App.java
 /Users/yuanhaohe/workspace/application/application-console-server/src/main/java/com/open/application/console/server/es/service/ElasticSearchService.java
-/Users/yuanhaohe/workspace/application/application-console-server/src/main/java/com/open/application/console/server/RedisConfig.java
 /Users/yuanhaohe/workspace/application/application-console-server/src/main/java/com/open/application/console/server/dao/SpiderDao.java
 /Users/yuanhaohe/workspace/application/application-console-server/src/main/java/com/open/application/console/server/service/impl/TaskShowServiceImpl.java

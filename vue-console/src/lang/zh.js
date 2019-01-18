@@ -5,6 +5,7 @@ export default {
     documentation: '任务控制台',
     guide: '异常中心',
     data: '数据中心',
+    singer:"歌手数据",
     lists: '数据信息',
     search: '数据搜索',
     icons: '图标',
@@ -65,6 +66,16 @@ export default {
     externalLink1: '任务调度中心',
     externalLink2: '搜索控制中心',
     externalLink3: '消息队列控制中心'
+  },
+  singer:{
+    search:'搜索',
+    singerName:'歌手姓名',
+    singerId:'歌手ID',
+    singerDesc:'歌手描述',
+    singerHref:'地址',
+    getTime:'录入时间',
+    delete:'删除',
+    action:'操作'
   },
   navbar: {
     logOut: '退出登录',

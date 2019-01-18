@@ -6,8 +6,7 @@
   <parent>
     <groupId>org.springframework.cloud</groupId>
     <artifactId>spring-cloud-starter-parent</artifactId>
-    <version>Finchley.SR2</version>
-
+    <version>Finchley.RELEASE</version>
   </parent>
 
   <groupId>com.open</groupId>
@@ -19,8 +18,8 @@
     <module>application-console</module>
     <module>application-spider-server</module>
     <module>application-common</module>
-    <module>application-index</module>
     <module>application-console-server</module>
+    <module>application-job</module>
   </modules>
 
 

@@ -2,8 +2,8 @@ package com.open.application.spider.spiders;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.open.application.common.models.TbAllMusic;
 import com.open.application.spider.helper.ClientHelper;
-import com.open.application.spider.models.TbAllMusic;
 import com.open.application.spider.operations.MusicUpdateOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -41,7 +41,7 @@ public class AllLyricSpider {
         log.error("spider for lyric error, song id is {}", songId, e);
       }
       if (StringUtils.isNotBlank(lyric)) {
-        operation.update(TbAllMusic.builder().songid(songId).lyric(lyric).build());
+        operation.update(TbAllMusic.builder().songId(songId).lyric(lyric).build());
       }
     }
 

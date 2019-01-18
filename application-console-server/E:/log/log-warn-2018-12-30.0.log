@@ -1,5 +1,0 @@
-WARN  [2018-12-30 00:37:25,921][] com.zaxxer.hikari.pool.HikariPool$HouseKeeper:758 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h6s818ms). 
-WARN  [2018-12-30 00:37:25,920][] org.apache.zookeeper.ClientCnxn$SendThread:1112 - Client session timed out, have not heard from server in 27807ms for sessionid 0x1000018f5f50002 
-WARN  [2018-12-30 04:37:41,821][] com.zaxxer.hikari.pool.HikariPool$HouseKeeper:758 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h15s842ms). 
-WARN  [2018-12-30 07:38:18,533][] com.zaxxer.hikari.pool.HikariPool$HouseKeeper:758 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h36s777ms). 
-WARN  [2018-12-30 13:00:57,664][] com.zaxxer.hikari.pool.HikariPool$HouseKeeper:758 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h22m39s128ms). 

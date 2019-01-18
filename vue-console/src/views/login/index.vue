@@ -138,7 +138,7 @@ export default {
             this.loading = false
             if(store.getters.id=='0'){
         this.$message({
-              type: 'warn',
+              type: 'warning',
               message: `用户名或密码错误`
             });
             }else if(store.getters.id=='1'){

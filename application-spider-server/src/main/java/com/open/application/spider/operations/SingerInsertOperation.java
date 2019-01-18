@@ -1,6 +1,6 @@
 package com.open.application.spider.operations;
 
-import com.open.application.spider.models.TbAllSinger;
+import com.open.application.common.models.TbAllSinger;
 
 /**
  * @author HeYuanHao

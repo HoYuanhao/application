@@ -62,6 +62,9 @@ import { formatTime } from '@/utils';
 export default {
   filters: {
     dateFormat(stamp) {
+      if(stamp==null||stamp==''){
+        return '未开始';
+      }
       return formatTime(stamp)
     },
     alarmFilter(stamp){
