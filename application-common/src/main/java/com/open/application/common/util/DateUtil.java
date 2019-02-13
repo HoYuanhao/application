@@ -13,7 +13,7 @@ public class DateUtil {
     return calendar.get(Calendar.DATE);
   }
   public static String getOneDayAfterNowString(){
-     SimpleDateFormat simpleDateFormat=new SimpleDateFormat("YYYY-MM-DD");
+     SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd");
     Calendar calendar=Calendar.getInstance();
     calendar.setTimeInMillis(System.currentTimeMillis());
     calendar.add(Calendar.DATE,1);
@@ -21,7 +21,7 @@ public class DateUtil {
   }
 
   public static String getNowDayString(){
-    SimpleDateFormat simpleDateFormat=new SimpleDateFormat("YYYY-MM-DD");
+    SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd");
     return simpleDateFormat.format(new Date());
   }
 }

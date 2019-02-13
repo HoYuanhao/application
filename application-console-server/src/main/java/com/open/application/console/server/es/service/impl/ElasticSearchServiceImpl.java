@@ -71,8 +71,7 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
     List<ExceptionModel> list = new ArrayList<>();
     Map<String, Object> result = new HashMap<>();
     result.put("exceptions", list);
-
-    SearchRequest searchRequest = new SearchRequest("exception_" + uid + "_" + tid + "_index");
+    SearchRequest searchRequest = new SearchRequest("exception_*");
     SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
     BoolQueryBuilder boolQueryBuilder = QueryBuilders.boolQuery().must(QueryBuilders.termQuery("uid", uid)).must(QueryBuilders.termQuery("tid", tid));
     if (type != null && !type.trim().equals("")) {
@@ -130,13 +129,6 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
                  .build());
     }
     return result;
-  }
-
-  @Override
-  public void insertException(ExceptionModel exceptionModel) throws Exception {
-    IndexRequest indexRequest = new IndexRequest("exception_" + exceptionModel.getUid() + "_" + exceptionModel.getTid() + "_index").type(EsUtil.getType());
-    indexRequest.source(JSON.toJSONString(exceptionModel), XContentType.JSON);
-    client.index(indexRequest, RequestOptions.DEFAULT);
   }
 
 

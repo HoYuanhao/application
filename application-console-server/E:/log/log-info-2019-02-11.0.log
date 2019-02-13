@@ -1,0 +1,922 @@
+INFO  [2019-02-11 11:31:41,359][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2019-02-11 11:31:41,381][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2019-02-11 11:31:42,324][] org.springframework.context.support.AbstractApplicationContext:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@41356c01: startup date [Mon Feb 11 11:31:42 CST 2019]; root of context hierarchy 
+INFO  [2019-02-11 11:31:43,090][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$fbf41429] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 11:31:43,551][] com.alibaba.boot.dubbo.context.event.AwaitingNonWebApplicationListener$1:61 -  [Dubbo] Current Spring Boot Application is await... 
+INFO  [2019-02-11 11:31:43,672][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2019-02-11 11:31:43,674][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2019-02-11 11:31:43,767][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:205 - Fetching config from server at : http://localhost:8888 
+INFO  [2019-02-11 11:34:48,952][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:227 - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available 
+INFO  [2019-02-11 11:34:48,980][] org.springframework.boot.SpringApplication:659 - No active profile set, falling back to default profiles: default 
+INFO  [2019-02-11 11:34:49,027][] org.springframework.context.support.AbstractApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@21dbe63d: startup date [Mon Feb 11 11:34:49 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@41356c01 
+INFO  [2019-02-11 11:34:50,200][] org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-dubbo.xml] 
+INFO  [2019-02-11 11:34:51,411][] org.springframework.data.repository.config.RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode! 
+INFO  [2019-02-11 11:34:53,350][] org.springframework.cloud.context.scope.GenericScope:294 - BeanFactory id=6995adb9-cf78-3baa-863b-56604d36d45e 
+INFO  [2019-02-11 11:35:09,338][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2019-02-11 11:35:09,344][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2019-02-11 11:35:10,103][] org.springframework.context.support.AbstractApplicationContext:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@59b37cbc: startup date [Mon Feb 11 11:35:10 CST 2019]; root of context hierarchy 
+INFO  [2019-02-11 11:35:10,719][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$74f129a6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 11:35:10,953][] com.alibaba.boot.dubbo.context.event.AwaitingNonWebApplicationListener$1:61 -  [Dubbo] Current Spring Boot Application is await... 
+INFO  [2019-02-11 11:35:11,136][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2019-02-11 11:35:11,137][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2019-02-11 11:35:11,212][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:205 - Fetching config from server at : http://localhost:8888 
+INFO  [2019-02-11 11:38:16,438][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:227 - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available 
+INFO  [2019-02-11 11:38:16,448][] org.springframework.boot.SpringApplication:659 - No active profile set, falling back to default profiles: default 
+INFO  [2019-02-11 11:38:16,476][] org.springframework.context.support.AbstractApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3b2427c1: startup date [Mon Feb 11 11:38:16 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@59b37cbc 
+INFO  [2019-02-11 11:38:17,285][] org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-dubbo.xml] 
+INFO  [2019-02-11 11:38:18,377][] org.springframework.data.repository.config.RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode! 
+INFO  [2019-02-11 11:38:19,183][] org.springframework.cloud.context.scope.GenericScope:294 - BeanFactory id=6995adb9-cf78-3baa-863b-56604d36d45e 
+INFO  [2019-02-11 14:50:14,656][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2019-02-11 14:50:14,753][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2019-02-11 14:50:16,362][] org.springframework.context.support.AbstractApplicationContext:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@78dd0aaf: startup date [Mon Feb 11 14:50:16 CST 2019]; root of context hierarchy 
+INFO  [2019-02-11 14:50:17,650][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$65f855b9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 14:50:18,172][] com.alibaba.boot.dubbo.context.event.AwaitingNonWebApplicationListener$1:61 -  [Dubbo] Current Spring Boot Application is await... 
+INFO  [2019-02-11 14:50:18,347][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2019-02-11 14:50:18,348][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2019-02-11 14:50:18,568][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:205 - Fetching config from server at : http://localhost:8888 
+INFO  [2019-02-11 14:50:26,719][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:149 - Located environment: name=consoleServer, profiles=[dev], label=null, version=e57a7e49c0b610f520d97fb2423eb2063b78fcf0, state=null 
+INFO  [2019-02-11 14:50:26,720][] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:98 - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource@1757203482 {name='configClient', properties={config.client.version=e57a7e49c0b610f520d97fb2423eb2063b78fcf0}}, MapPropertySource@1005982922 {name='https://github.com/HoYuanhao/application/config/consoleServer-dev.properties', properties={spring.dubbo.protocol.port=20880, spring.datasource.driver-class-name=com.mysql.jdbc.Driver, spring.redis.timeout=2000, spring.datasource.minEvictableIdleTimeMillis=300000, spring.dubbo.application.name=application-consoleServer-provider, spring.datasource.poolPreparedStatements=true, spring.datasource.filters=stat,wall,log4j,slf4j,mergeStat,config, spring.datasource.connectionProperties=druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000, spring.datasource.minIdle=10, spring.datasource.testOnBorrow=false, spring.datasource.maxWait=60000, elasticsearch.scheme=http, spring.dubbo.application.id=application-consoleServer-provider, rocket.application.topic=task_topic_1, spring.datasource.initialSize=30, dubbo.scan.basePackages=com.open.application.console.server.service.impl, spring.datasource.url=jdbc:mysql://127.0.0.1:3306/application?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true, spring.datasource.maxActive=100, rocketmq.application.name=spider-productor, spring.redis.database=0, spring.dubbo.server=true, spring.redis.pool.max-active=60, spring.redis.pool.min-idle=8, spring.redis.pool.max-wait=-1, spring.redis.port=6379, spring.datasource.password=HeYuanHao1!, spring.datasource.username=root, spring.redis.pool.max-idle=10, spring.dubbo.protocol.name=dubbo, rocket.application.nameSrvAddr=127.0.0.1:9876, spring.datasource.validationQuery=SELECT 1, spring.datasource.testOnReturn=false, elasticsearch.address=127.0.0.1:9200,127.0.0.1:9201, spring.datasource.timeBetweenEvictionRunsMillis=60000, spring.redis.host=127.0.0.1, spring.datasource.maxPoolPreparedStatementPerConnectionSize=20, spring.dubbo.registry.address=zookeeper://127.0.0.1:2181, spring.datasource.testWhileIdle=true}}]} 
+INFO  [2019-02-11 14:50:26,746][] org.springframework.boot.SpringApplication:659 - No active profile set, falling back to default profiles: default 
+INFO  [2019-02-11 14:50:26,791][] org.springframework.context.support.AbstractApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@78606e72: startup date [Mon Feb 11 14:50:26 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@78dd0aaf 
+INFO  [2019-02-11 14:50:28,067][] org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-dubbo.xml] 
+INFO  [2019-02-11 14:50:30,717][] org.springframework.data.repository.config.RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode! 
+INFO  [2019-02-11 14:50:31,759][] org.springframework.cloud.context.scope.GenericScope:294 - BeanFactory id=6f007e06-0f7c-30a5-91a1-96d40dd8c466 
+INFO  [2019-02-11 14:50:32,060][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'redisConfig' of type [com.open.application.console.server.config.RedisConfig$$EnhancerBySpringCGLIB$$4541b271] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 14:50:32,089][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$49de52bc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 14:50:32,258][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$65f855b9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 14:50:32,860][] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http) 
+INFO  [2019-02-11 14:50:32,899][] org.apache.juli.logging.DirectJDKLog:180 - Initializing ProtocolHandler ["http-nio-8081"] 
+INFO  [2019-02-11 14:50:32,920][] org.apache.juli.logging.DirectJDKLog:180 - Starting service [Tomcat] 
+INFO  [2019-02-11 14:50:32,921][] org.apache.juli.logging.DirectJDKLog:180 - Starting Servlet Engine: Apache Tomcat/8.5.31 
+INFO  [2019-02-11 14:50:32,936][] org.apache.juli.logging.DirectJDKLog:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/yuanhaohe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] 
+INFO  [2019-02-11 14:50:33,079][] org.apache.juli.logging.DirectJDKLog:180 - Initializing Spring embedded WebApplicationContext 
+INFO  [2019-02-11 14:50:33,083][] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285 - Root WebApplicationContext: initialization completed in 6292 ms 
+INFO  [2019-02-11 14:50:34,277][] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:56 - Init DruidDataSource 
+INFO  [2019-02-11 14:50:35,082][] com.alibaba.druid.pool.DruidDataSource:947 - {dataSource-1} inited 
+INFO  [2019-02-11 14:50:36,999][] org.springframework.boot.web.servlet.ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*] 
+INFO  [2019-02-11 14:50:37,004][] org.springframework.boot.web.servlet.ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/] 
+INFO  [2019-02-11 14:50:37,005][] org.springframework.boot.web.servlet.ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*] 
+INFO  [2019-02-11 14:50:37,005][] org.springframework.boot.web.servlet.DynamicRegistrationBean:111 - Servlet statViewServlet was not registered (possibly already registered?) 
+INFO  [2019-02-11 14:50:37,017][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*] 
+INFO  [2019-02-11 14:50:37,017][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+INFO  [2019-02-11 14:50:37,018][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+INFO  [2019-02-11 14:50:37,018][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*] 
+INFO  [2019-02-11 14:50:37,018][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'httpTraceFilter' to: [/*] 
+INFO  [2019-02-11 14:50:37,018][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*] 
+INFO  [2019-02-11 14:50:37,018][] org.springframework.boot.web.servlet.DynamicRegistrationBean:111 - Filter webStatFilter was not registered (possibly already registered?) 
+INFO  [2019-02-11 14:50:37,018][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'webMvcMetricsFilter' to: [/*] 
+INFO  [2019-02-11 14:50:38,711][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 14:50:39,564][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2019-02-11 14:50:40,237][] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@78606e72: startup date [Mon Feb 11 14:50:26 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@78dd0aaf 
+INFO  [2019-02-11 14:50:40,403][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+INFO  [2019-02-11 14:50:40,404][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+INFO  [2019-02-11 14:50:40,624][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2019-02-11 14:50:40,624][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2019-02-11 14:50:42,281][] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:59 - Exposing 2 endpoint(s) beneath base path '/actuator' 
+INFO  [2019-02-11 14:50:42,311][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>) 
+INFO  [2019-02-11 14:50:42,312][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>) 
+INFO  [2019-02-11 14:50:42,313][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+INFO  [2019-02-11 14:50:42,421][] org.springframework.jmx.export.MBeanExporter:433 - Registering beans for JMX exposure on startup 
+INFO  [2019-02-11 14:50:42,423][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'statFilter' has been autodetected for JMX exposure 
+INFO  [2019-02-11 14:50:42,424][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure 
+INFO  [2019-02-11 14:50:42,432][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'environmentManager' has been autodetected for JMX exposure 
+INFO  [2019-02-11 14:50:42,434][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'refreshScope' has been autodetected for JMX exposure 
+INFO  [2019-02-11 14:50:42,435][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure 
+INFO  [2019-02-11 14:50:42,439][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager] 
+INFO  [2019-02-11 14:50:42,476][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope] 
+INFO  [2019-02-11 14:50:42,497][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=78606e72,type=ConfigurationPropertiesRebinder] 
+INFO  [2019-02-11 14:50:42,509][] org.springframework.jmx.export.MBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper] 
+INFO  [2019-02-11 14:50:42,512][] org.springframework.jmx.export.MBeanExporter:668 - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter] 
+INFO  [2019-02-11 14:50:43,162][] org.apache.curator.utils.Compatibility:41 - Running in ZooKeeper 3.4.x compatibility mode 
+INFO  [2019-02-11 14:50:43,209][] org.apache.curator.framework.imps.CuratorFrameworkImpl:290 - Starting 
+INFO  [2019-02-11 14:50:43,224][] org.apache.zookeeper.Environment:100 - Client environment:zookeeper.version=3.4.13-2d71af4dbe22557fda74f9a9b4309b15a7487f03, built on 06/29/2018 00:39 GMT 
+INFO  [2019-02-11 14:50:43,224][] org.apache.zookeeper.Environment:100 - Client environment:host.name=10.0.0.124 
+INFO  [2019-02-11 14:50:43,224][] org.apache.zookeeper.Environment:100 - Client environment:java.version=1.8.0_131 
+INFO  [2019-02-11 14:50:43,224][] org.apache.zookeeper.Environment:100 - Client environment:java.vendor=Oracle Corporation 
+INFO  [2019-02-11 14:50:43,224][] org.apache.zookeeper.Environment:100 - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre 
+INFO  [2019-02-11 14:50:43,224][] org.apache.zookeeper.Environment:100 - Client environment:java.class.path=/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar 
+INFO  [2019-02-11 14:50:43,225][] org.apache.zookeeper.Environment:100 - Client environment:java.library.path=/Users/yuanhaohe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:. 
+INFO  [2019-02-11 14:50:43,225][] org.apache.zookeeper.Environment:100 - Client environment:java.io.tmpdir=/var/folders/gp/tgklgs252tl0k2w8d6t3gk400000gn/T/ 
+INFO  [2019-02-11 14:50:43,225][] org.apache.zookeeper.Environment:100 - Client environment:java.compiler=<NA> 
+INFO  [2019-02-11 14:50:43,225][] org.apache.zookeeper.Environment:100 - Client environment:os.name=Mac OS X 
+INFO  [2019-02-11 14:50:43,225][] org.apache.zookeeper.Environment:100 - Client environment:os.arch=x86_64 
+INFO  [2019-02-11 14:50:43,225][] org.apache.zookeeper.Environment:100 - Client environment:os.version=10.13.6 
+INFO  [2019-02-11 14:50:43,226][] org.apache.zookeeper.Environment:100 - Client environment:user.name=yuanhaohe 
+INFO  [2019-02-11 14:50:43,226][] org.apache.zookeeper.Environment:100 - Client environment:user.home=/Users/yuanhaohe 
+INFO  [2019-02-11 14:50:43,226][] org.apache.zookeeper.Environment:100 - Client environment:user.dir=/Users/yuanhaohe/workspace/application/application-console-server 
+INFO  [2019-02-11 14:50:43,227][] org.apache.zookeeper.ZooKeeper:442 - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@61453608 
+INFO  [2019-02-11 14:50:43,252][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:50:43,253][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:50:43,259][] org.apache.curator.framework.imps.CuratorFrameworkImpl:332 - Default schema 
+INFO  [2019-02-11 14:50:44,363][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:50:44,364][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:50:45,470][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:50:45,471][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:50:46,576][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:50:46,577][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:50:47,685][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:50:47,686][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:50:48,792][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:50:48,792][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:50:49,899][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:50:49,900][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:50:51,006][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:50:51,007][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:50:52,113][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:50:52,113][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:50:53,220][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:50:53,221][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:50:54,329][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:50:54,330][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:50:55,437][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:50:55,438][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:50:56,545][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:50:56,546][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:50:57,657][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:50:57,660][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:50:58,763][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:50:58,764][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:50:59,873][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:50:59,873][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:00,980][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:00,981][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:02,091][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:02,091][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:03,198][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:03,199][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:04,306][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:04,308][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:05,416][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:05,417][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:06,525][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:06,525][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:07,634][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:07,635][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:08,528][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 14:51:08,746][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:08,747][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:09,855][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:09,856][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:09,962][] org.apache.juli.logging.DirectJDKLog:180 - Stopping service [Tomcat] 
+INFO  [2019-02-11 14:51:10,011][] org.springframework.context.support.AbstractApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@78606e72: startup date [Mon Feb 11 14:50:26 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@78dd0aaf 
+INFO  [2019-02-11 14:51:10,022][] org.springframework.jmx.export.MBeanExporter:451 - Unregistering JMX-exposed beans on shutdown 
+INFO  [2019-02-11 14:51:10,023][] org.springframework.jmx.support.MBeanRegistrationSupport:183 - Unregistering JMX-exposed beans 
+INFO  [2019-02-11 14:51:10,061][] com.alibaba.druid.pool.DruidDataSource:1863 - {dataSource-1} closed 
+INFO  [2019-02-11 14:51:10,070][] com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor:251 - class com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying! 
+INFO  [2019-02-11 14:51:10,964][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:10,966][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:12,076][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:12,079][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:13,184][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:13,185][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:14,290][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:14,292][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:15,403][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:15,403][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:16,512][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:16,512][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:17,618][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:17,619][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:18,725][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:18,728][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:19,839][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:19,840][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:20,952][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:20,954][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:22,059][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:22,060][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:23,169][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:23,170][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:24,277][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:24,278][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:25,386][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:25,387][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:26,494][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:26,495][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:27,603][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:27,604][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:28,714][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:28,715][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:29,823][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:29,824][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:30,933][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:30,934][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:32,043][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:32,044][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:33,149][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:33,149][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:51:34,258][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:51:34,258][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:55:07,581][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2019-02-11 14:55:07,589][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2019-02-11 14:55:08,860][] org.springframework.context.support.AbstractApplicationContext:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@324ac806: startup date [Mon Feb 11 14:55:08 CST 2019]; root of context hierarchy 
+INFO  [2019-02-11 14:55:09,949][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2fe5d4d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 14:55:10,534][] com.alibaba.boot.dubbo.context.event.AwaitingNonWebApplicationListener$1:61 -  [Dubbo] Current Spring Boot Application is await... 
+INFO  [2019-02-11 14:55:10,720][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2019-02-11 14:55:10,722][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2019-02-11 14:55:10,833][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:205 - Fetching config from server at : http://localhost:8888 
+INFO  [2019-02-11 14:55:29,941][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:149 - Located environment: name=consoleServer, profiles=[dev], label=null, version=e57a7e49c0b610f520d97fb2423eb2063b78fcf0, state=null 
+INFO  [2019-02-11 14:55:29,942][] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:98 - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource@1173500286 {name='configClient', properties={config.client.version=e57a7e49c0b610f520d97fb2423eb2063b78fcf0}}, MapPropertySource@1443025799 {name='https://github.com/HoYuanhao/application/config/consoleServer-dev.properties', properties={spring.dubbo.protocol.port=20880, spring.datasource.driver-class-name=com.mysql.jdbc.Driver, spring.redis.timeout=2000, spring.datasource.minEvictableIdleTimeMillis=300000, spring.dubbo.application.name=application-consoleServer-provider, spring.datasource.poolPreparedStatements=true, spring.datasource.filters=stat,wall,log4j,slf4j,mergeStat,config, spring.datasource.connectionProperties=druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000, spring.datasource.minIdle=10, spring.datasource.testOnBorrow=false, spring.datasource.maxWait=60000, elasticsearch.scheme=http, spring.dubbo.application.id=application-consoleServer-provider, rocket.application.topic=task_topic_1, spring.datasource.initialSize=30, dubbo.scan.basePackages=com.open.application.console.server.service.impl, spring.datasource.url=jdbc:mysql://127.0.0.1:3306/application?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true, spring.datasource.maxActive=100, rocketmq.application.name=spider-productor, spring.redis.database=0, spring.dubbo.server=true, spring.redis.pool.max-active=60, spring.redis.pool.min-idle=8, spring.redis.pool.max-wait=-1, spring.redis.port=6379, spring.datasource.password=HeYuanHao1!, spring.datasource.username=root, spring.redis.pool.max-idle=10, spring.dubbo.protocol.name=dubbo, rocket.application.nameSrvAddr=127.0.0.1:9876, spring.datasource.validationQuery=SELECT 1, spring.datasource.testOnReturn=false, elasticsearch.address=127.0.0.1:9200,127.0.0.1:9201, spring.datasource.timeBetweenEvictionRunsMillis=60000, spring.redis.host=127.0.0.1, spring.datasource.maxPoolPreparedStatementPerConnectionSize=20, spring.dubbo.registry.address=zookeeper://127.0.0.1:2181, spring.datasource.testWhileIdle=true}}]} 
+INFO  [2019-02-11 14:55:29,958][] org.springframework.boot.SpringApplication:659 - No active profile set, falling back to default profiles: default 
+INFO  [2019-02-11 14:55:30,027][] org.springframework.context.support.AbstractApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4a022912: startup date [Mon Feb 11 14:55:30 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@324ac806 
+INFO  [2019-02-11 14:55:32,538][] org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-dubbo.xml] 
+INFO  [2019-02-11 14:55:35,527][] org.springframework.data.repository.config.RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode! 
+INFO  [2019-02-11 14:55:37,571][] org.springframework.cloud.context.scope.GenericScope:294 - BeanFactory id=6f007e06-0f7c-30a5-91a1-96d40dd8c466 
+INFO  [2019-02-11 14:55:38,186][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'redisConfig' of type [com.open.application.console.server.config.RedisConfig$$EnhancerBySpringCGLIB$$f2f318c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 14:55:38,244][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$13cbd1d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 14:55:38,621][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2fe5d4d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 14:55:39,966][] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http) 
+INFO  [2019-02-11 14:55:40,000][] org.apache.juli.logging.DirectJDKLog:180 - Initializing ProtocolHandler ["http-nio-8081"] 
+INFO  [2019-02-11 14:55:40,107][] org.apache.juli.logging.DirectJDKLog:180 - Starting service [Tomcat] 
+INFO  [2019-02-11 14:55:40,107][] org.apache.juli.logging.DirectJDKLog:180 - Starting Servlet Engine: Apache Tomcat/8.5.31 
+INFO  [2019-02-11 14:55:40,144][] org.apache.juli.logging.DirectJDKLog:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/yuanhaohe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] 
+INFO  [2019-02-11 14:55:40,416][] org.apache.juli.logging.DirectJDKLog:180 - Initializing Spring embedded WebApplicationContext 
+INFO  [2019-02-11 14:55:40,418][] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285 - Root WebApplicationContext: initialization completed in 10392 ms 
+INFO  [2019-02-11 14:55:42,369][] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:56 - Init DruidDataSource 
+INFO  [2019-02-11 14:55:43,554][] com.alibaba.druid.pool.DruidDataSource:947 - {dataSource-1} inited 
+INFO  [2019-02-11 14:55:46,575][] org.springframework.boot.web.servlet.ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*] 
+INFO  [2019-02-11 14:55:46,577][] org.springframework.boot.web.servlet.ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/] 
+INFO  [2019-02-11 14:55:46,578][] org.springframework.boot.web.servlet.ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*] 
+INFO  [2019-02-11 14:55:46,578][] org.springframework.boot.web.servlet.DynamicRegistrationBean:111 - Servlet statViewServlet was not registered (possibly already registered?) 
+INFO  [2019-02-11 14:55:46,581][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*] 
+INFO  [2019-02-11 14:55:46,582][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+INFO  [2019-02-11 14:55:46,582][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+INFO  [2019-02-11 14:55:46,582][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*] 
+INFO  [2019-02-11 14:55:46,582][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'httpTraceFilter' to: [/*] 
+INFO  [2019-02-11 14:55:46,582][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*] 
+INFO  [2019-02-11 14:55:46,583][] org.springframework.boot.web.servlet.DynamicRegistrationBean:111 - Filter webStatFilter was not registered (possibly already registered?) 
+INFO  [2019-02-11 14:55:46,583][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'webMvcMetricsFilter' to: [/*] 
+INFO  [2019-02-11 14:55:49,048][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 14:55:50,616][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2019-02-11 14:55:51,778][] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4a022912: startup date [Mon Feb 11 14:55:30 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@324ac806 
+INFO  [2019-02-11 14:55:52,042][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+INFO  [2019-02-11 14:55:52,043][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+INFO  [2019-02-11 14:55:52,353][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2019-02-11 14:55:52,357][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2019-02-11 14:55:55,544][] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:59 - Exposing 2 endpoint(s) beneath base path '/actuator' 
+INFO  [2019-02-11 14:55:55,643][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>) 
+INFO  [2019-02-11 14:55:55,644][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>) 
+INFO  [2019-02-11 14:55:55,645][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+INFO  [2019-02-11 14:55:55,959][] org.springframework.jmx.export.MBeanExporter:433 - Registering beans for JMX exposure on startup 
+INFO  [2019-02-11 14:55:55,964][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'statFilter' has been autodetected for JMX exposure 
+INFO  [2019-02-11 14:55:55,964][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure 
+INFO  [2019-02-11 14:55:55,975][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'environmentManager' has been autodetected for JMX exposure 
+INFO  [2019-02-11 14:55:55,977][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'refreshScope' has been autodetected for JMX exposure 
+INFO  [2019-02-11 14:55:55,980][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure 
+INFO  [2019-02-11 14:55:55,984][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager] 
+INFO  [2019-02-11 14:55:56,021][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope] 
+INFO  [2019-02-11 14:55:56,076][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=4a022912,type=ConfigurationPropertiesRebinder] 
+INFO  [2019-02-11 14:55:56,084][] org.springframework.jmx.export.MBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper] 
+INFO  [2019-02-11 14:55:56,122][] org.springframework.jmx.export.MBeanExporter:668 - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter] 
+INFO  [2019-02-11 14:55:56,995][] org.apache.curator.utils.Compatibility:41 - Running in ZooKeeper 3.4.x compatibility mode 
+INFO  [2019-02-11 14:55:57,049][] org.apache.curator.framework.imps.CuratorFrameworkImpl:290 - Starting 
+INFO  [2019-02-11 14:55:57,063][] org.apache.zookeeper.Environment:100 - Client environment:zookeeper.version=3.4.13-2d71af4dbe22557fda74f9a9b4309b15a7487f03, built on 06/29/2018 00:39 GMT 
+INFO  [2019-02-11 14:55:57,064][] org.apache.zookeeper.Environment:100 - Client environment:host.name=10.0.0.124 
+INFO  [2019-02-11 14:55:57,064][] org.apache.zookeeper.Environment:100 - Client environment:java.version=1.8.0_131 
+INFO  [2019-02-11 14:55:57,064][] org.apache.zookeeper.Environment:100 - Client environment:java.vendor=Oracle Corporation 
+INFO  [2019-02-11 14:55:57,064][] org.apache.zookeeper.Environment:100 - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre 
+INFO  [2019-02-11 14:55:57,064][] org.apache.zookeeper.Environment:100 - Client environment:java.class.path=/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar 
+INFO  [2019-02-11 14:55:57,064][] org.apache.zookeeper.Environment:100 - Client environment:java.library.path=/Users/yuanhaohe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:. 
+INFO  [2019-02-11 14:55:57,064][] org.apache.zookeeper.Environment:100 - Client environment:java.io.tmpdir=/var/folders/gp/tgklgs252tl0k2w8d6t3gk400000gn/T/ 
+INFO  [2019-02-11 14:55:57,065][] org.apache.zookeeper.Environment:100 - Client environment:java.compiler=<NA> 
+INFO  [2019-02-11 14:55:57,065][] org.apache.zookeeper.Environment:100 - Client environment:os.name=Mac OS X 
+INFO  [2019-02-11 14:55:57,065][] org.apache.zookeeper.Environment:100 - Client environment:os.arch=x86_64 
+INFO  [2019-02-11 14:55:57,066][] org.apache.zookeeper.Environment:100 - Client environment:os.version=10.13.6 
+INFO  [2019-02-11 14:55:57,066][] org.apache.zookeeper.Environment:100 - Client environment:user.name=yuanhaohe 
+INFO  [2019-02-11 14:55:57,066][] org.apache.zookeeper.Environment:100 - Client environment:user.home=/Users/yuanhaohe 
+INFO  [2019-02-11 14:55:57,066][] org.apache.zookeeper.Environment:100 - Client environment:user.dir=/Users/yuanhaohe/workspace/application/application-console-server 
+INFO  [2019-02-11 14:55:57,067][] org.apache.zookeeper.ZooKeeper:442 - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@1c9370a7 
+INFO  [2019-02-11 14:55:57,102][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:55:57,102][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:55:57,154][] org.apache.curator.framework.imps.CuratorFrameworkImpl:332 - Default schema 
+INFO  [2019-02-11 14:55:58,210][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:55:58,211][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:55:59,314][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:55:59,314][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:56:00,422][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:56:00,423][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:56:01,530][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:56:01,531][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:56:02,636][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:56:02,636][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:56:03,745][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:56:03,746][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:56:04,854][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:56:04,855][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:56:05,963][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:56:05,963][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:56:07,070][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:56:07,071][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:56:08,175][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:56:08,176][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:56:09,283][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:56:09,283][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:56:10,389][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:56:10,389][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:56:11,497][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:56:11,497][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:56:12,605][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:56:12,605][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:56:13,712][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:56:13,713][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:56:14,820][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:56:14,821][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:56:15,928][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:56:15,929][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:56:17,036][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:56:17,036][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:56:18,143][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:56:18,144][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:56:18,928][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 14:56:19,249][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:56:19,249][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:56:20,358][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:56:20,358][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:56:21,461][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:56:21,462][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:56:22,570][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:56:22,570][] org.apache.zookeeper.ClientCnxn$SendThread:1166 - Socket error occurred: localhost/127.0.0.1:2181: Connection refused 
+INFO  [2019-02-11 14:56:23,677][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:56:23,677][] org.apache.zookeeper.ClientCnxn$SendThread:879 - Socket connection established to localhost/127.0.0.1:2181, initiating session 
+INFO  [2019-02-11 14:56:23,689][] org.apache.zookeeper.ClientCnxn$SendThread:1162 - Unable to read additional data from server sessionid 0x0, likely server has closed socket, closing socket connection and attempting reconnect 
+INFO  [2019-02-11 14:56:23,795][] org.apache.juli.logging.DirectJDKLog:180 - Stopping service [Tomcat] 
+INFO  [2019-02-11 14:56:23,830][] org.springframework.context.support.AbstractApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4a022912: startup date [Mon Feb 11 14:55:30 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@324ac806 
+INFO  [2019-02-11 14:56:23,837][] org.springframework.jmx.export.MBeanExporter:451 - Unregistering JMX-exposed beans on shutdown 
+INFO  [2019-02-11 14:56:23,837][] org.springframework.jmx.support.MBeanRegistrationSupport:183 - Unregistering JMX-exposed beans 
+INFO  [2019-02-11 14:56:23,992][] com.alibaba.druid.pool.DruidDataSource:1863 - {dataSource-1} closed 
+INFO  [2019-02-11 14:56:24,007][] com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor:251 - class com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying! 
+INFO  [2019-02-11 14:56:25,030][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 14:56:25,031][] org.apache.zookeeper.ClientCnxn$SendThread:879 - Socket connection established to localhost/127.0.0.1:2181, initiating session 
+INFO  [2019-02-11 14:56:25,043][] org.apache.zookeeper.ClientCnxn$SendThread:1303 - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x10000e7d9970000, negotiated timeout = 40000 
+INFO  [2019-02-11 14:56:25,048][] org.apache.curator.framework.state.ConnectionStateManager:237 - State change: CONNECTED 
+INFO  [2019-02-11 15:00:40,559][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2019-02-11 15:00:40,586][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2019-02-11 15:00:42,040][] org.springframework.context.support.AbstractApplicationContext:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4f5a46c5: startup date [Mon Feb 11 15:00:42 CST 2019]; root of context hierarchy 
+INFO  [2019-02-11 15:00:43,559][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f1462c43] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 15:00:44,271][] com.alibaba.boot.dubbo.context.event.AwaitingNonWebApplicationListener$1:61 -  [Dubbo] Current Spring Boot Application is await... 
+INFO  [2019-02-11 15:00:44,480][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2019-02-11 15:00:44,481][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2019-02-11 15:00:44,658][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:205 - Fetching config from server at : http://localhost:8888 
+INFO  [2019-02-11 15:01:27,388][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:149 - Located environment: name=consoleServer, profiles=[dev], label=null, version=e57a7e49c0b610f520d97fb2423eb2063b78fcf0, state=null 
+INFO  [2019-02-11 15:01:27,396][] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:98 - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource@395095317 {name='configClient', properties={config.client.version=e57a7e49c0b610f520d97fb2423eb2063b78fcf0}}, MapPropertySource@2017795142 {name='https://github.com/HoYuanhao/application/config/consoleServer-dev.properties', properties={spring.dubbo.protocol.port=20880, spring.datasource.driver-class-name=com.mysql.jdbc.Driver, spring.redis.timeout=2000, spring.datasource.minEvictableIdleTimeMillis=300000, spring.dubbo.application.name=application-consoleServer-provider, spring.datasource.poolPreparedStatements=true, spring.datasource.filters=stat,wall,log4j,slf4j,mergeStat,config, spring.datasource.connectionProperties=druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000, spring.datasource.minIdle=10, spring.datasource.testOnBorrow=false, spring.datasource.maxWait=60000, elasticsearch.scheme=http, spring.dubbo.application.id=application-consoleServer-provider, rocket.application.topic=task_topic_1, spring.datasource.initialSize=30, dubbo.scan.basePackages=com.open.application.console.server.service.impl, spring.datasource.url=jdbc:mysql://127.0.0.1:3306/application?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true, spring.datasource.maxActive=100, rocketmq.application.name=spider-productor, spring.redis.database=0, spring.dubbo.server=true, spring.redis.pool.max-active=60, spring.redis.pool.min-idle=8, spring.redis.pool.max-wait=-1, spring.redis.port=6379, spring.datasource.password=HeYuanHao1!, spring.datasource.username=root, spring.redis.pool.max-idle=10, spring.dubbo.protocol.name=dubbo, rocket.application.nameSrvAddr=127.0.0.1:9876, spring.datasource.validationQuery=SELECT 1, spring.datasource.testOnReturn=false, elasticsearch.address=127.0.0.1:9200,127.0.0.1:9201, spring.datasource.timeBetweenEvictionRunsMillis=60000, spring.redis.host=127.0.0.1, spring.datasource.maxPoolPreparedStatementPerConnectionSize=20, spring.dubbo.registry.address=zookeeper://127.0.0.1:2181, spring.datasource.testWhileIdle=true}}]} 
+INFO  [2019-02-11 15:01:27,461][] org.springframework.boot.SpringApplication:659 - No active profile set, falling back to default profiles: default 
+INFO  [2019-02-11 15:01:27,639][] org.springframework.context.support.AbstractApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e31ae4: startup date [Mon Feb 11 15:01:27 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4f5a46c5 
+INFO  [2019-02-11 15:01:29,290][] org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-dubbo.xml] 
+INFO  [2019-02-11 15:01:31,439][] org.springframework.data.repository.config.RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode! 
+INFO  [2019-02-11 15:01:33,143][] org.springframework.cloud.context.scope.GenericScope:294 - BeanFactory id=6f007e06-0f7c-30a5-91a1-96d40dd8c466 
+INFO  [2019-02-11 15:01:33,854][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'redisConfig' of type [com.open.application.console.server.config.RedisConfig$$EnhancerBySpringCGLIB$$d08f88fb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 15:01:33,916][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d52c2946] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 15:01:34,213][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f1462c43] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 15:01:35,249][] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http) 
+INFO  [2019-02-11 15:01:35,291][] org.apache.juli.logging.DirectJDKLog:180 - Initializing ProtocolHandler ["http-nio-8081"] 
+INFO  [2019-02-11 15:01:35,309][] org.apache.juli.logging.DirectJDKLog:180 - Starting service [Tomcat] 
+INFO  [2019-02-11 15:01:35,310][] org.apache.juli.logging.DirectJDKLog:180 - Starting Servlet Engine: Apache Tomcat/8.5.31 
+INFO  [2019-02-11 15:01:35,392][] org.apache.juli.logging.DirectJDKLog:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/yuanhaohe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] 
+INFO  [2019-02-11 15:01:35,528][] org.apache.juli.logging.DirectJDKLog:180 - Initializing Spring embedded WebApplicationContext 
+INFO  [2019-02-11 15:01:35,549][] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285 - Root WebApplicationContext: initialization completed in 7910 ms 
+INFO  [2019-02-11 15:01:37,146][] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:56 - Init DruidDataSource 
+INFO  [2019-02-11 15:01:38,630][] com.alibaba.druid.pool.DruidDataSource:947 - {dataSource-1} inited 
+INFO  [2019-02-11 15:01:42,508][] org.springframework.boot.web.servlet.ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*] 
+INFO  [2019-02-11 15:01:42,562][] org.springframework.boot.web.servlet.ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/] 
+INFO  [2019-02-11 15:01:42,565][] org.springframework.boot.web.servlet.ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*] 
+INFO  [2019-02-11 15:01:42,565][] org.springframework.boot.web.servlet.DynamicRegistrationBean:111 - Servlet statViewServlet was not registered (possibly already registered?) 
+INFO  [2019-02-11 15:01:42,568][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*] 
+INFO  [2019-02-11 15:01:42,568][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+INFO  [2019-02-11 15:01:42,569][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+INFO  [2019-02-11 15:01:42,569][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*] 
+INFO  [2019-02-11 15:01:42,569][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'httpTraceFilter' to: [/*] 
+INFO  [2019-02-11 15:01:42,569][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*] 
+INFO  [2019-02-11 15:01:42,569][] org.springframework.boot.web.servlet.DynamicRegistrationBean:111 - Filter webStatFilter was not registered (possibly already registered?) 
+INFO  [2019-02-11 15:01:42,569][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'webMvcMetricsFilter' to: [/*] 
+INFO  [2019-02-11 15:01:46,123][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:01:47,670][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2019-02-11 15:01:48,677][] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e31ae4: startup date [Mon Feb 11 15:01:27 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4f5a46c5 
+INFO  [2019-02-11 15:01:48,935][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+INFO  [2019-02-11 15:01:48,967][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+INFO  [2019-02-11 15:01:49,215][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2019-02-11 15:01:49,216][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2019-02-11 15:01:53,544][] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:59 - Exposing 2 endpoint(s) beneath base path '/actuator' 
+INFO  [2019-02-11 15:01:53,594][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>) 
+INFO  [2019-02-11 15:01:53,597][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>) 
+INFO  [2019-02-11 15:01:53,598][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+INFO  [2019-02-11 15:01:54,148][] org.springframework.jmx.export.MBeanExporter:433 - Registering beans for JMX exposure on startup 
+INFO  [2019-02-11 15:01:54,150][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'statFilter' has been autodetected for JMX exposure 
+INFO  [2019-02-11 15:01:54,150][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure 
+INFO  [2019-02-11 15:01:54,230][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'environmentManager' has been autodetected for JMX exposure 
+INFO  [2019-02-11 15:01:54,232][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'refreshScope' has been autodetected for JMX exposure 
+INFO  [2019-02-11 15:01:54,233][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure 
+INFO  [2019-02-11 15:01:54,236][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager] 
+INFO  [2019-02-11 15:01:54,286][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope] 
+INFO  [2019-02-11 15:01:54,307][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=e31ae4,type=ConfigurationPropertiesRebinder] 
+INFO  [2019-02-11 15:01:54,383][] org.springframework.jmx.export.MBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper] 
+INFO  [2019-02-11 15:01:54,392][] org.springframework.jmx.export.MBeanExporter:668 - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter] 
+INFO  [2019-02-11 15:01:56,475][] org.apache.curator.utils.Compatibility:41 - Running in ZooKeeper 3.4.x compatibility mode 
+INFO  [2019-02-11 15:01:56,699][] org.apache.curator.framework.imps.CuratorFrameworkImpl:290 - Starting 
+INFO  [2019-02-11 15:01:56,712][] org.apache.zookeeper.Environment:100 - Client environment:zookeeper.version=3.4.13-2d71af4dbe22557fda74f9a9b4309b15a7487f03, built on 06/29/2018 00:39 GMT 
+INFO  [2019-02-11 15:01:56,713][] org.apache.zookeeper.Environment:100 - Client environment:host.name=10.0.0.124 
+INFO  [2019-02-11 15:01:56,713][] org.apache.zookeeper.Environment:100 - Client environment:java.version=1.8.0_131 
+INFO  [2019-02-11 15:01:56,713][] org.apache.zookeeper.Environment:100 - Client environment:java.vendor=Oracle Corporation 
+INFO  [2019-02-11 15:01:56,713][] org.apache.zookeeper.Environment:100 - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre 
+INFO  [2019-02-11 15:01:56,714][] org.apache.zookeeper.Environment:100 - Client environment:java.class.path=/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar 
+INFO  [2019-02-11 15:01:56,714][] org.apache.zookeeper.Environment:100 - Client environment:java.library.path=/Users/yuanhaohe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:. 
+INFO  [2019-02-11 15:01:56,714][] org.apache.zookeeper.Environment:100 - Client environment:java.io.tmpdir=/var/folders/gp/tgklgs252tl0k2w8d6t3gk400000gn/T/ 
+INFO  [2019-02-11 15:01:56,714][] org.apache.zookeeper.Environment:100 - Client environment:java.compiler=<NA> 
+INFO  [2019-02-11 15:01:56,714][] org.apache.zookeeper.Environment:100 - Client environment:os.name=Mac OS X 
+INFO  [2019-02-11 15:01:56,714][] org.apache.zookeeper.Environment:100 - Client environment:os.arch=x86_64 
+INFO  [2019-02-11 15:01:56,714][] org.apache.zookeeper.Environment:100 - Client environment:os.version=10.13.6 
+INFO  [2019-02-11 15:01:56,714][] org.apache.zookeeper.Environment:100 - Client environment:user.name=yuanhaohe 
+INFO  [2019-02-11 15:01:56,722][] org.apache.zookeeper.Environment:100 - Client environment:user.home=/Users/yuanhaohe 
+INFO  [2019-02-11 15:01:56,723][] org.apache.zookeeper.Environment:100 - Client environment:user.dir=/Users/yuanhaohe/workspace/application/application-console-server 
+INFO  [2019-02-11 15:01:56,724][] org.apache.zookeeper.ZooKeeper:442 - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@36e129d2 
+INFO  [2019-02-11 15:01:56,771][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 15:01:56,772][] org.apache.zookeeper.ClientCnxn$SendThread:879 - Socket connection established to localhost/127.0.0.1:2181, initiating session 
+INFO  [2019-02-11 15:01:56,780][] org.apache.zookeeper.ClientCnxn$SendThread:1303 - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x10000e7d9970004, negotiated timeout = 40000 
+INFO  [2019-02-11 15:01:56,789][] org.apache.curator.framework.imps.CuratorFrameworkImpl:332 - Default schema 
+INFO  [2019-02-11 15:01:56,793][] org.apache.curator.framework.state.ConnectionStateManager:237 - State change: CONNECTED 
+INFO  [2019-02-11 15:01:57,616][] org.apache.juli.logging.DirectJDKLog:180 - Starting ProtocolHandler ["http-nio-8081"] 
+INFO  [2019-02-11 15:01:57,616][] org.apache.juli.logging.DirectJDKLog:180 - Using a shared selector for servlet write/read 
+INFO  [2019-02-11 15:01:57,646][] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path '' 
+INFO  [2019-02-11 15:01:57,661][] org.springframework.boot.StartupInfoLogger:59 - Started App in 78.132 seconds (JVM running for 97.798) 
+INFO  [2019-02-11 15:02:15,970][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:02:45,974][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:03:15,961][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:03:27,010][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:03:27,062][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:03:45,972][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:03:45,977][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:04:15,965][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:04:15,968][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:04:18,855][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:04:18,857][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:04:23,531][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:04:23,533][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:04:45,963][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:04:45,970][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:05:15,965][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:05:15,967][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:05:45,978][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:06:15,964][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:06:15,968][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:06:55,445][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2019-02-11 15:06:55,541][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2019-02-11 15:06:57,167][] org.springframework.context.support.AbstractApplicationContext:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@c45cb10: startup date [Mon Feb 11 15:06:57 CST 2019]; root of context hierarchy 
+INFO  [2019-02-11 15:06:58,637][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$41cf96f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 15:06:59,459][] com.alibaba.boot.dubbo.context.event.AwaitingNonWebApplicationListener$1:61 -  [Dubbo] Current Spring Boot Application is await... 
+INFO  [2019-02-11 15:06:59,802][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2019-02-11 15:06:59,813][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2019-02-11 15:07:00,086][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:205 - Fetching config from server at : http://localhost:8888 
+INFO  [2019-02-11 15:07:16,628][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:149 - Located environment: name=consoleServer, profiles=[dev], label=null, version=e57a7e49c0b610f520d97fb2423eb2063b78fcf0, state=null 
+INFO  [2019-02-11 15:07:16,647][] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:98 - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource@1872026226 {name='configClient', properties={config.client.version=e57a7e49c0b610f520d97fb2423eb2063b78fcf0}}, MapPropertySource@574531204 {name='https://github.com/HoYuanhao/application/config/consoleServer-dev.properties', properties={spring.dubbo.protocol.port=20880, spring.datasource.driver-class-name=com.mysql.jdbc.Driver, spring.redis.timeout=2000, spring.datasource.minEvictableIdleTimeMillis=300000, spring.dubbo.application.name=application-consoleServer-provider, spring.datasource.poolPreparedStatements=true, spring.datasource.filters=stat,wall,log4j,slf4j,mergeStat,config, spring.datasource.connectionProperties=druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000, spring.datasource.minIdle=10, spring.datasource.testOnBorrow=false, spring.datasource.maxWait=60000, elasticsearch.scheme=http, spring.dubbo.application.id=application-consoleServer-provider, rocket.application.topic=task_topic_1, spring.datasource.initialSize=30, dubbo.scan.basePackages=com.open.application.console.server.service.impl, spring.datasource.url=jdbc:mysql://127.0.0.1:3306/application?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true, spring.datasource.maxActive=100, rocketmq.application.name=spider-productor, spring.redis.database=0, spring.dubbo.server=true, spring.redis.pool.max-active=60, spring.redis.pool.min-idle=8, spring.redis.pool.max-wait=-1, spring.redis.port=6379, spring.datasource.password=HeYuanHao1!, spring.datasource.username=root, spring.redis.pool.max-idle=10, spring.dubbo.protocol.name=dubbo, rocket.application.nameSrvAddr=127.0.0.1:9876, spring.datasource.validationQuery=SELECT 1, spring.datasource.testOnReturn=false, elasticsearch.address=127.0.0.1:9200,127.0.0.1:9201, spring.datasource.timeBetweenEvictionRunsMillis=60000, spring.redis.host=127.0.0.1, spring.datasource.maxPoolPreparedStatementPerConnectionSize=20, spring.dubbo.registry.address=zookeeper://127.0.0.1:2181, spring.datasource.testWhileIdle=true}}]} 
+INFO  [2019-02-11 15:07:16,691][] org.springframework.boot.SpringApplication:659 - No active profile set, falling back to default profiles: default 
+INFO  [2019-02-11 15:07:16,866][] org.springframework.context.support.AbstractApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7d3db2ee: startup date [Mon Feb 11 15:07:16 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@c45cb10 
+INFO  [2019-02-11 15:07:19,671][] org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-dubbo.xml] 
+INFO  [2019-02-11 15:07:23,705][] org.springframework.data.repository.config.RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode! 
+INFO  [2019-02-11 15:07:26,394][] org.springframework.cloud.context.scope.GenericScope:294 - BeanFactory id=6f007e06-0f7c-30a5-91a1-96d40dd8c466 
+INFO  [2019-02-11 15:07:27,236][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'redisConfig' of type [com.open.application.console.server.config.RedisConfig$$EnhancerBySpringCGLIB$$2118f3ae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 15:07:27,412][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$25b593f9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 15:07:27,964][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$41cf96f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 15:07:29,709][] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http) 
+INFO  [2019-02-11 15:07:29,769][] org.apache.juli.logging.DirectJDKLog:180 - Initializing ProtocolHandler ["http-nio-8081"] 
+INFO  [2019-02-11 15:07:29,863][] org.apache.juli.logging.DirectJDKLog:180 - Starting service [Tomcat] 
+INFO  [2019-02-11 15:07:29,864][] org.apache.juli.logging.DirectJDKLog:180 - Starting Servlet Engine: Apache Tomcat/8.5.31 
+INFO  [2019-02-11 15:07:29,904][] org.apache.juli.logging.DirectJDKLog:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/yuanhaohe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] 
+INFO  [2019-02-11 15:07:30,474][] org.apache.juli.logging.DirectJDKLog:180 - Initializing Spring embedded WebApplicationContext 
+INFO  [2019-02-11 15:07:30,478][] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285 - Root WebApplicationContext: initialization completed in 13612 ms 
+INFO  [2019-02-11 15:07:33,997][] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:56 - Init DruidDataSource 
+INFO  [2019-02-11 15:07:36,082][] com.alibaba.druid.pool.DruidDataSource:947 - {dataSource-1} inited 
+INFO  [2019-02-11 15:07:40,355][] org.springframework.boot.web.servlet.ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*] 
+INFO  [2019-02-11 15:07:40,357][] org.springframework.boot.web.servlet.ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/] 
+INFO  [2019-02-11 15:07:40,357][] org.springframework.boot.web.servlet.ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*] 
+INFO  [2019-02-11 15:07:40,358][] org.springframework.boot.web.servlet.DynamicRegistrationBean:111 - Servlet statViewServlet was not registered (possibly already registered?) 
+INFO  [2019-02-11 15:07:40,435][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*] 
+INFO  [2019-02-11 15:07:40,435][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+INFO  [2019-02-11 15:07:40,436][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+INFO  [2019-02-11 15:07:40,436][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*] 
+INFO  [2019-02-11 15:07:40,436][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'httpTraceFilter' to: [/*] 
+INFO  [2019-02-11 15:07:40,437][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*] 
+INFO  [2019-02-11 15:07:40,437][] org.springframework.boot.web.servlet.DynamicRegistrationBean:111 - Filter webStatFilter was not registered (possibly already registered?) 
+INFO  [2019-02-11 15:07:40,437][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'webMvcMetricsFilter' to: [/*] 
+INFO  [2019-02-11 15:07:43,918][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:07:46,182][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2019-02-11 15:07:47,964][] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7d3db2ee: startup date [Mon Feb 11 15:07:16 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@c45cb10 
+INFO  [2019-02-11 15:07:48,425][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+INFO  [2019-02-11 15:07:48,426][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+INFO  [2019-02-11 15:07:48,981][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2019-02-11 15:07:48,981][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2019-02-11 15:07:54,155][] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:59 - Exposing 2 endpoint(s) beneath base path '/actuator' 
+INFO  [2019-02-11 15:07:54,248][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>) 
+INFO  [2019-02-11 15:07:54,249][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>) 
+INFO  [2019-02-11 15:07:54,250][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+INFO  [2019-02-11 15:07:54,637][] org.springframework.jmx.export.MBeanExporter:433 - Registering beans for JMX exposure on startup 
+INFO  [2019-02-11 15:07:54,640][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'statFilter' has been autodetected for JMX exposure 
+INFO  [2019-02-11 15:07:54,640][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure 
+INFO  [2019-02-11 15:07:54,657][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'environmentManager' has been autodetected for JMX exposure 
+INFO  [2019-02-11 15:07:54,663][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'refreshScope' has been autodetected for JMX exposure 
+INFO  [2019-02-11 15:07:54,664][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure 
+INFO  [2019-02-11 15:07:54,667][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager] 
+INFO  [2019-02-11 15:07:54,709][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope] 
+INFO  [2019-02-11 15:07:54,749][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=7d3db2ee,type=ConfigurationPropertiesRebinder] 
+INFO  [2019-02-11 15:07:54,831][] org.springframework.jmx.export.MBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper] 
+INFO  [2019-02-11 15:07:54,841][] org.springframework.jmx.export.MBeanExporter:668 - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter] 
+INFO  [2019-02-11 15:07:56,140][] org.apache.curator.utils.Compatibility:41 - Running in ZooKeeper 3.4.x compatibility mode 
+INFO  [2019-02-11 15:07:56,247][] org.apache.curator.framework.imps.CuratorFrameworkImpl:290 - Starting 
+INFO  [2019-02-11 15:07:56,275][] org.apache.zookeeper.Environment:100 - Client environment:zookeeper.version=3.4.13-2d71af4dbe22557fda74f9a9b4309b15a7487f03, built on 06/29/2018 00:39 GMT 
+INFO  [2019-02-11 15:07:56,275][] org.apache.zookeeper.Environment:100 - Client environment:host.name=10.0.0.124 
+INFO  [2019-02-11 15:07:56,275][] org.apache.zookeeper.Environment:100 - Client environment:java.version=1.8.0_131 
+INFO  [2019-02-11 15:07:56,275][] org.apache.zookeeper.Environment:100 - Client environment:java.vendor=Oracle Corporation 
+INFO  [2019-02-11 15:07:56,275][] org.apache.zookeeper.Environment:100 - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre 
+INFO  [2019-02-11 15:07:56,276][] org.apache.zookeeper.Environment:100 - Client environment:java.class.path=/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar 
+INFO  [2019-02-11 15:07:56,276][] org.apache.zookeeper.Environment:100 - Client environment:java.library.path=/Users/yuanhaohe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:. 
+INFO  [2019-02-11 15:07:56,276][] org.apache.zookeeper.Environment:100 - Client environment:java.io.tmpdir=/var/folders/gp/tgklgs252tl0k2w8d6t3gk400000gn/T/ 
+INFO  [2019-02-11 15:07:56,276][] org.apache.zookeeper.Environment:100 - Client environment:java.compiler=<NA> 
+INFO  [2019-02-11 15:07:56,276][] org.apache.zookeeper.Environment:100 - Client environment:os.name=Mac OS X 
+INFO  [2019-02-11 15:07:56,276][] org.apache.zookeeper.Environment:100 - Client environment:os.arch=x86_64 
+INFO  [2019-02-11 15:07:56,276][] org.apache.zookeeper.Environment:100 - Client environment:os.version=10.13.6 
+INFO  [2019-02-11 15:07:56,280][] org.apache.zookeeper.Environment:100 - Client environment:user.name=yuanhaohe 
+INFO  [2019-02-11 15:07:56,280][] org.apache.zookeeper.Environment:100 - Client environment:user.home=/Users/yuanhaohe 
+INFO  [2019-02-11 15:07:56,281][] org.apache.zookeeper.Environment:100 - Client environment:user.dir=/Users/yuanhaohe/workspace/application/application-console-server 
+INFO  [2019-02-11 15:07:56,282][] org.apache.zookeeper.ZooKeeper:442 - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@4edc7041 
+INFO  [2019-02-11 15:07:56,336][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 15:07:56,337][] org.apache.zookeeper.ClientCnxn$SendThread:879 - Socket connection established to localhost/127.0.0.1:2181, initiating session 
+INFO  [2019-02-11 15:07:56,347][] org.apache.zookeeper.ClientCnxn$SendThread:1303 - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x10000e7d9970006, negotiated timeout = 40000 
+INFO  [2019-02-11 15:07:56,347][] org.apache.curator.framework.imps.CuratorFrameworkImpl:332 - Default schema 
+INFO  [2019-02-11 15:07:56,358][] org.apache.curator.framework.state.ConnectionStateManager:237 - State change: CONNECTED 
+INFO  [2019-02-11 15:07:57,165][] org.apache.juli.logging.DirectJDKLog:180 - Starting ProtocolHandler ["http-nio-8081"] 
+INFO  [2019-02-11 15:07:57,166][] org.apache.juli.logging.DirectJDKLog:180 - Using a shared selector for servlet write/read 
+INFO  [2019-02-11 15:07:57,242][] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path '' 
+INFO  [2019-02-11 15:07:57,251][] org.springframework.boot.StartupInfoLogger:59 - Started App in 63.221 seconds (JVM running for 80.657) 
+INFO  [2019-02-11 15:08:13,749][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:08:43,745][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:09:13,745][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:09:43,745][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:10:13,747][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:10:43,745][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:10:51,978][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:10:51,981][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:11:13,745][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:11:13,748][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:11:43,745][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:11:43,754][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:12:13,747][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 15:17:34,056][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[10.0.0.124:10909] result: true 
+INFO  [2019-02-11 15:26:07,033][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[10.0.0.124:10909] result: true 
+INFO  [2019-02-11 15:34:03,393][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[10.0.0.124:10909] result: true 
+INFO  [2019-02-11 15:37:28,877][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[10.0.0.124:10909] result: true 
+INFO  [2019-02-11 15:41:02,411][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[10.0.0.124:10909] result: true 
+INFO  [2019-02-11 15:46:47,636][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[10.0.0.124:10909] result: true 
+INFO  [2019-02-11 15:49:26,180][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[10.0.0.124:10909] result: true 
+INFO  [2019-02-11 15:53:00,070][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[10.0.0.124:10909] result: true 
+INFO  [2019-02-11 15:55:07,446][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[10.0.0.124:10909] result: true 
+INFO  [2019-02-11 16:31:07,358][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2019-02-11 16:31:07,383][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2019-02-11 16:31:08,628][] org.springframework.context.support.AbstractApplicationContext:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1aeebb44: startup date [Mon Feb 11 16:31:08 CST 2019]; root of context hierarchy 
+INFO  [2019-02-11 16:31:09,764][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1dfc44ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 16:31:10,423][] com.alibaba.boot.dubbo.context.event.AwaitingNonWebApplicationListener$1:61 -  [Dubbo] Current Spring Boot Application is await... 
+INFO  [2019-02-11 16:31:10,621][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2019-02-11 16:31:10,622][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2019-02-11 16:31:10,803][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:205 - Fetching config from server at : http://localhost:8888 
+INFO  [2019-02-11 16:31:30,559][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:149 - Located environment: name=consoleServer, profiles=[dev], label=null, version=e57a7e49c0b610f520d97fb2423eb2063b78fcf0, state=null 
+INFO  [2019-02-11 16:31:30,562][] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:98 - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource@2009380343 {name='configClient', properties={config.client.version=e57a7e49c0b610f520d97fb2423eb2063b78fcf0}}, MapPropertySource@1375453449 {name='https://github.com/HoYuanhao/application/config/consoleServer-dev.properties', properties={spring.dubbo.protocol.port=20880, spring.datasource.driver-class-name=com.mysql.jdbc.Driver, spring.redis.timeout=2000, spring.datasource.minEvictableIdleTimeMillis=300000, spring.dubbo.application.name=application-consoleServer-provider, spring.datasource.poolPreparedStatements=true, spring.datasource.filters=stat,wall,log4j,slf4j,mergeStat,config, spring.datasource.connectionProperties=druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000, spring.datasource.minIdle=10, spring.datasource.testOnBorrow=false, spring.datasource.maxWait=60000, elasticsearch.scheme=http, spring.dubbo.application.id=application-consoleServer-provider, rocket.application.topic=task_topic_1, spring.datasource.initialSize=30, dubbo.scan.basePackages=com.open.application.console.server.service.impl, spring.datasource.url=jdbc:mysql://127.0.0.1:3306/application?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true, spring.datasource.maxActive=100, rocketmq.application.name=spider-productor, spring.redis.database=0, spring.dubbo.server=true, spring.redis.pool.max-active=60, spring.redis.pool.min-idle=8, spring.redis.pool.max-wait=-1, spring.redis.port=6379, spring.datasource.password=HeYuanHao1!, spring.datasource.username=root, spring.redis.pool.max-idle=10, spring.dubbo.protocol.name=dubbo, rocket.application.nameSrvAddr=127.0.0.1:9876, spring.datasource.validationQuery=SELECT 1, spring.datasource.testOnReturn=false, elasticsearch.address=127.0.0.1:9200,127.0.0.1:9201, spring.datasource.timeBetweenEvictionRunsMillis=60000, spring.redis.host=127.0.0.1, spring.datasource.maxPoolPreparedStatementPerConnectionSize=20, spring.dubbo.registry.address=zookeeper://127.0.0.1:2181, spring.datasource.testWhileIdle=true}}]} 
+INFO  [2019-02-11 16:31:30,636][] org.springframework.boot.SpringApplication:659 - No active profile set, falling back to default profiles: default 
+INFO  [2019-02-11 16:31:30,735][] org.springframework.context.support.AbstractApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3256eefe: startup date [Mon Feb 11 16:31:30 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1aeebb44 
+INFO  [2019-02-11 16:31:33,387][] org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-dubbo.xml] 
+INFO  [2019-02-11 16:31:35,629][] org.springframework.data.repository.config.RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode! 
+INFO  [2019-02-11 16:31:39,974][] org.springframework.cloud.context.scope.GenericScope:294 - BeanFactory id=6f007e06-0f7c-30a5-91a1-96d40dd8c466 
+INFO  [2019-02-11 16:31:40,360][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'redisConfig' of type [com.open.application.console.server.config.RedisConfig$$EnhancerBySpringCGLIB$$fd45a182] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 16:31:40,375][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1e241cd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 16:31:40,750][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1dfc44ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 16:31:42,081][] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http) 
+INFO  [2019-02-11 16:31:42,124][] org.apache.juli.logging.DirectJDKLog:180 - Initializing ProtocolHandler ["http-nio-8081"] 
+INFO  [2019-02-11 16:31:42,162][] org.apache.juli.logging.DirectJDKLog:180 - Starting service [Tomcat] 
+INFO  [2019-02-11 16:31:42,163][] org.apache.juli.logging.DirectJDKLog:180 - Starting Servlet Engine: Apache Tomcat/8.5.31 
+INFO  [2019-02-11 16:31:42,190][] org.apache.juli.logging.DirectJDKLog:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/yuanhaohe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] 
+INFO  [2019-02-11 16:31:42,314][] org.apache.juli.logging.DirectJDKLog:180 - Initializing Spring embedded WebApplicationContext 
+INFO  [2019-02-11 16:31:42,315][] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285 - Root WebApplicationContext: initialization completed in 11580 ms 
+INFO  [2019-02-11 16:31:44,930][] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:56 - Init DruidDataSource 
+INFO  [2019-02-11 16:31:46,023][] com.alibaba.druid.pool.DruidDataSource:947 - {dataSource-1} inited 
+INFO  [2019-02-11 16:31:49,564][] org.springframework.boot.web.servlet.ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*] 
+INFO  [2019-02-11 16:31:49,568][] org.springframework.boot.web.servlet.ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/] 
+INFO  [2019-02-11 16:31:49,569][] org.springframework.boot.web.servlet.ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*] 
+INFO  [2019-02-11 16:31:49,569][] org.springframework.boot.web.servlet.DynamicRegistrationBean:111 - Servlet statViewServlet was not registered (possibly already registered?) 
+INFO  [2019-02-11 16:31:49,599][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*] 
+INFO  [2019-02-11 16:31:49,600][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+INFO  [2019-02-11 16:31:49,600][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+INFO  [2019-02-11 16:31:49,600][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*] 
+INFO  [2019-02-11 16:31:49,600][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'httpTraceFilter' to: [/*] 
+INFO  [2019-02-11 16:31:49,600][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*] 
+INFO  [2019-02-11 16:31:49,600][] org.springframework.boot.web.servlet.DynamicRegistrationBean:111 - Filter webStatFilter was not registered (possibly already registered?) 
+INFO  [2019-02-11 16:31:49,600][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'webMvcMetricsFilter' to: [/*] 
+INFO  [2019-02-11 16:31:55,002][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2019-02-11 16:31:56,777][] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3256eefe: startup date [Mon Feb 11 16:31:30 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1aeebb44 
+INFO  [2019-02-11 16:31:57,105][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+INFO  [2019-02-11 16:31:57,154][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+INFO  [2019-02-11 16:31:57,465][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2019-02-11 16:31:57,465][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2019-02-11 16:32:03,590][] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:59 - Exposing 2 endpoint(s) beneath base path '/actuator' 
+INFO  [2019-02-11 16:32:03,689][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>) 
+INFO  [2019-02-11 16:32:03,690][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>) 
+INFO  [2019-02-11 16:32:03,691][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+INFO  [2019-02-11 16:32:04,128][] org.springframework.jmx.export.MBeanExporter:433 - Registering beans for JMX exposure on startup 
+INFO  [2019-02-11 16:32:04,130][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'statFilter' has been autodetected for JMX exposure 
+INFO  [2019-02-11 16:32:04,131][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure 
+INFO  [2019-02-11 16:32:04,141][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'environmentManager' has been autodetected for JMX exposure 
+INFO  [2019-02-11 16:32:04,144][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'refreshScope' has been autodetected for JMX exposure 
+INFO  [2019-02-11 16:32:04,225][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure 
+INFO  [2019-02-11 16:32:04,231][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager] 
+INFO  [2019-02-11 16:32:04,332][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope] 
+INFO  [2019-02-11 16:32:04,352][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=3256eefe,type=ConfigurationPropertiesRebinder] 
+INFO  [2019-02-11 16:32:04,445][] org.springframework.jmx.export.MBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper] 
+INFO  [2019-02-11 16:32:04,451][] org.springframework.jmx.export.MBeanExporter:668 - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter] 
+INFO  [2019-02-11 16:32:05,552][] org.apache.curator.utils.Compatibility:41 - Running in ZooKeeper 3.4.x compatibility mode 
+INFO  [2019-02-11 16:32:05,667][] org.apache.curator.framework.imps.CuratorFrameworkImpl:290 - Starting 
+INFO  [2019-02-11 16:32:05,684][] org.apache.zookeeper.Environment:100 - Client environment:zookeeper.version=3.4.13-2d71af4dbe22557fda74f9a9b4309b15a7487f03, built on 06/29/2018 00:39 GMT 
+INFO  [2019-02-11 16:32:05,684][] org.apache.zookeeper.Environment:100 - Client environment:host.name=10.0.0.124 
+INFO  [2019-02-11 16:32:05,684][] org.apache.zookeeper.Environment:100 - Client environment:java.version=1.8.0_131 
+INFO  [2019-02-11 16:32:05,684][] org.apache.zookeeper.Environment:100 - Client environment:java.vendor=Oracle Corporation 
+INFO  [2019-02-11 16:32:05,685][] org.apache.zookeeper.Environment:100 - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre 
+INFO  [2019-02-11 16:32:05,685][] org.apache.zookeeper.Environment:100 - Client environment:java.class.path=/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar 
+INFO  [2019-02-11 16:32:05,685][] org.apache.zookeeper.Environment:100 - Client environment:java.library.path=/Users/yuanhaohe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:. 
+INFO  [2019-02-11 16:32:05,685][] org.apache.zookeeper.Environment:100 - Client environment:java.io.tmpdir=/var/folders/gp/tgklgs252tl0k2w8d6t3gk400000gn/T/ 
+INFO  [2019-02-11 16:32:05,685][] org.apache.zookeeper.Environment:100 - Client environment:java.compiler=<NA> 
+INFO  [2019-02-11 16:32:05,685][] org.apache.zookeeper.Environment:100 - Client environment:os.name=Mac OS X 
+INFO  [2019-02-11 16:32:05,685][] org.apache.zookeeper.Environment:100 - Client environment:os.arch=x86_64 
+INFO  [2019-02-11 16:32:05,686][] org.apache.zookeeper.Environment:100 - Client environment:os.version=10.13.6 
+INFO  [2019-02-11 16:32:05,686][] org.apache.zookeeper.Environment:100 - Client environment:user.name=yuanhaohe 
+INFO  [2019-02-11 16:32:05,686][] org.apache.zookeeper.Environment:100 - Client environment:user.home=/Users/yuanhaohe 
+INFO  [2019-02-11 16:32:05,686][] org.apache.zookeeper.Environment:100 - Client environment:user.dir=/Users/yuanhaohe/workspace/application/application-console-server 
+INFO  [2019-02-11 16:32:05,687][] org.apache.zookeeper.ZooKeeper:442 - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@3076a5d5 
+INFO  [2019-02-11 16:32:05,711][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 16:32:05,711][] org.apache.zookeeper.ClientCnxn$SendThread:879 - Socket connection established to localhost/127.0.0.1:2181, initiating session 
+INFO  [2019-02-11 16:32:05,717][] org.apache.curator.framework.imps.CuratorFrameworkImpl:332 - Default schema 
+INFO  [2019-02-11 16:32:05,780][] org.apache.zookeeper.ClientCnxn$SendThread:1303 - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x10000e7d9970009, negotiated timeout = 40000 
+INFO  [2019-02-11 16:32:05,792][] org.apache.curator.framework.state.ConnectionStateManager:237 - State change: CONNECTED 
+INFO  [2019-02-11 16:32:06,432][] org.apache.juli.logging.DirectJDKLog:180 - Starting ProtocolHandler ["http-nio-8081"] 
+INFO  [2019-02-11 16:32:06,432][] org.apache.juli.logging.DirectJDKLog:180 - Using a shared selector for servlet write/read 
+INFO  [2019-02-11 16:32:06,534][] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path '' 
+INFO  [2019-02-11 16:32:06,539][] org.springframework.boot.StartupInfoLogger:59 - Started App in 60.803 seconds (JVM running for 86.706) 
+INFO  [2019-02-11 16:36:05,502][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2019-02-11 16:36:05,578][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2019-02-11 16:36:07,207][] org.springframework.context.support.AbstractApplicationContext:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7b295247: startup date [Mon Feb 11 16:36:07 CST 2019]; root of context hierarchy 
+INFO  [2019-02-11 16:36:09,368][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d9404e19] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 16:36:10,529][] com.alibaba.boot.dubbo.context.event.AwaitingNonWebApplicationListener$1:61 -  [Dubbo] Current Spring Boot Application is await... 
+INFO  [2019-02-11 16:36:10,904][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2019-02-11 16:36:10,906][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2019-02-11 16:36:11,032][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:205 - Fetching config from server at : http://localhost:8888 
+INFO  [2019-02-11 16:36:42,986][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:149 - Located environment: name=consoleServer, profiles=[dev], label=null, version=e57a7e49c0b610f520d97fb2423eb2063b78fcf0, state=null 
+INFO  [2019-02-11 16:36:42,987][] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:98 - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource@1199209085 {name='configClient', properties={config.client.version=e57a7e49c0b610f520d97fb2423eb2063b78fcf0}}, MapPropertySource@1961541028 {name='https://github.com/HoYuanhao/application/config/consoleServer-dev.properties', properties={spring.dubbo.protocol.port=20880, spring.datasource.driver-class-name=com.mysql.jdbc.Driver, spring.redis.timeout=2000, spring.datasource.minEvictableIdleTimeMillis=300000, spring.dubbo.application.name=application-consoleServer-provider, spring.datasource.poolPreparedStatements=true, spring.datasource.filters=stat,wall,log4j,slf4j,mergeStat,config, spring.datasource.connectionProperties=druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000, spring.datasource.minIdle=10, spring.datasource.testOnBorrow=false, spring.datasource.maxWait=60000, elasticsearch.scheme=http, spring.dubbo.application.id=application-consoleServer-provider, rocket.application.topic=task_topic_1, spring.datasource.initialSize=30, dubbo.scan.basePackages=com.open.application.console.server.service.impl, spring.datasource.url=jdbc:mysql://127.0.0.1:3306/application?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true, spring.datasource.maxActive=100, rocketmq.application.name=spider-productor, spring.redis.database=0, spring.dubbo.server=true, spring.redis.pool.max-active=60, spring.redis.pool.min-idle=8, spring.redis.pool.max-wait=-1, spring.redis.port=6379, spring.datasource.password=HeYuanHao1!, spring.datasource.username=root, spring.redis.pool.max-idle=10, spring.dubbo.protocol.name=dubbo, rocket.application.nameSrvAddr=127.0.0.1:9876, spring.datasource.validationQuery=SELECT 1, spring.datasource.testOnReturn=false, elasticsearch.address=127.0.0.1:9200,127.0.0.1:9201, spring.datasource.timeBetweenEvictionRunsMillis=60000, spring.redis.host=127.0.0.1, spring.datasource.maxPoolPreparedStatementPerConnectionSize=20, spring.dubbo.registry.address=zookeeper://127.0.0.1:2181, spring.datasource.testWhileIdle=true}}]} 
+INFO  [2019-02-11 16:36:43,231][] org.springframework.boot.SpringApplication:659 - No active profile set, falling back to default profiles: default 
+INFO  [2019-02-11 16:36:43,418][] org.springframework.context.support.AbstractApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@259b6e1e: startup date [Mon Feb 11 16:36:43 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7b295247 
+INFO  [2019-02-11 16:36:46,786][] org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-dubbo.xml] 
+INFO  [2019-02-11 16:36:51,550][] org.springframework.data.repository.config.RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode! 
+INFO  [2019-02-11 16:36:57,558][] org.springframework.cloud.context.scope.GenericScope:294 - BeanFactory id=6f007e06-0f7c-30a5-91a1-96d40dd8c466 
+INFO  [2019-02-11 16:36:58,607][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'redisConfig' of type [com.open.application.console.server.config.RedisConfig$$EnhancerBySpringCGLIB$$b889aad1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 16:36:58,629][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bd264b1c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 16:36:59,228][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d9404e19] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 16:37:01,085][] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http) 
+INFO  [2019-02-11 16:37:01,234][] org.apache.juli.logging.DirectJDKLog:180 - Initializing ProtocolHandler ["http-nio-8081"] 
+INFO  [2019-02-11 16:37:01,279][] org.apache.juli.logging.DirectJDKLog:180 - Starting service [Tomcat] 
+INFO  [2019-02-11 16:37:01,279][] org.apache.juli.logging.DirectJDKLog:180 - Starting Servlet Engine: Apache Tomcat/8.5.31 
+INFO  [2019-02-11 16:37:01,316][] org.apache.juli.logging.DirectJDKLog:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/yuanhaohe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] 
+INFO  [2019-02-11 16:37:01,582][] org.apache.juli.logging.DirectJDKLog:180 - Initializing Spring embedded WebApplicationContext 
+INFO  [2019-02-11 16:37:01,586][] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285 - Root WebApplicationContext: initialization completed in 18168 ms 
+INFO  [2019-02-11 16:37:05,663][] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:56 - Init DruidDataSource 
+INFO  [2019-02-11 16:37:06,761][] com.alibaba.druid.pool.DruidDataSource:947 - {dataSource-1} inited 
+INFO  [2019-02-11 16:37:12,192][] org.springframework.boot.web.servlet.ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*] 
+INFO  [2019-02-11 16:37:12,194][] org.springframework.boot.web.servlet.ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/] 
+INFO  [2019-02-11 16:37:12,195][] org.springframework.boot.web.servlet.ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*] 
+INFO  [2019-02-11 16:37:12,195][] org.springframework.boot.web.servlet.DynamicRegistrationBean:111 - Servlet statViewServlet was not registered (possibly already registered?) 
+INFO  [2019-02-11 16:37:12,206][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*] 
+INFO  [2019-02-11 16:37:12,207][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+INFO  [2019-02-11 16:37:12,210][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+INFO  [2019-02-11 16:37:12,210][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*] 
+INFO  [2019-02-11 16:37:12,210][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'httpTraceFilter' to: [/*] 
+INFO  [2019-02-11 16:37:12,210][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*] 
+INFO  [2019-02-11 16:37:12,210][] org.springframework.boot.web.servlet.DynamicRegistrationBean:111 - Filter webStatFilter was not registered (possibly already registered?) 
+INFO  [2019-02-11 16:37:12,210][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'webMvcMetricsFilter' to: [/*] 
+INFO  [2019-02-11 16:37:19,954][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2019-02-11 16:37:22,277][] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@259b6e1e: startup date [Mon Feb 11 16:36:43 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7b295247 
+INFO  [2019-02-11 16:37:22,889][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+INFO  [2019-02-11 16:37:22,914][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+INFO  [2019-02-11 16:37:23,800][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2019-02-11 16:37:23,800][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2019-02-11 16:37:31,026][] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:59 - Exposing 2 endpoint(s) beneath base path '/actuator' 
+INFO  [2019-02-11 16:37:31,055][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>) 
+INFO  [2019-02-11 16:37:31,057][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>) 
+INFO  [2019-02-11 16:37:31,058][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+INFO  [2019-02-11 16:37:31,505][] org.springframework.jmx.export.MBeanExporter:433 - Registering beans for JMX exposure on startup 
+INFO  [2019-02-11 16:37:31,569][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'statFilter' has been autodetected for JMX exposure 
+INFO  [2019-02-11 16:37:31,570][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure 
+INFO  [2019-02-11 16:37:31,671][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'environmentManager' has been autodetected for JMX exposure 
+INFO  [2019-02-11 16:37:31,672][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'refreshScope' has been autodetected for JMX exposure 
+INFO  [2019-02-11 16:37:31,673][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure 
+INFO  [2019-02-11 16:37:31,677][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager] 
+INFO  [2019-02-11 16:37:31,690][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope] 
+INFO  [2019-02-11 16:37:31,778][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=259b6e1e,type=ConfigurationPropertiesRebinder] 
+INFO  [2019-02-11 16:37:31,794][] org.springframework.jmx.export.MBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper] 
+INFO  [2019-02-11 16:37:31,796][] org.springframework.jmx.export.MBeanExporter:668 - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter] 
+INFO  [2019-02-11 16:37:33,803][] org.apache.curator.utils.Compatibility:41 - Running in ZooKeeper 3.4.x compatibility mode 
+INFO  [2019-02-11 16:37:33,919][] org.apache.curator.framework.imps.CuratorFrameworkImpl:290 - Starting 
+INFO  [2019-02-11 16:37:33,941][] org.apache.zookeeper.Environment:100 - Client environment:zookeeper.version=3.4.13-2d71af4dbe22557fda74f9a9b4309b15a7487f03, built on 06/29/2018 00:39 GMT 
+INFO  [2019-02-11 16:37:33,941][] org.apache.zookeeper.Environment:100 - Client environment:host.name=10.0.0.124 
+INFO  [2019-02-11 16:37:33,942][] org.apache.zookeeper.Environment:100 - Client environment:java.version=1.8.0_131 
+INFO  [2019-02-11 16:37:33,942][] org.apache.zookeeper.Environment:100 - Client environment:java.vendor=Oracle Corporation 
+INFO  [2019-02-11 16:37:33,943][] org.apache.zookeeper.Environment:100 - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre 
+INFO  [2019-02-11 16:37:33,997][] org.apache.zookeeper.Environment:100 - Client environment:java.class.path=/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar 
+INFO  [2019-02-11 16:37:33,998][] org.apache.zookeeper.Environment:100 - Client environment:java.library.path=/Users/yuanhaohe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:. 
+INFO  [2019-02-11 16:37:33,998][] org.apache.zookeeper.Environment:100 - Client environment:java.io.tmpdir=/var/folders/gp/tgklgs252tl0k2w8d6t3gk400000gn/T/ 
+INFO  [2019-02-11 16:37:33,998][] org.apache.zookeeper.Environment:100 - Client environment:java.compiler=<NA> 
+INFO  [2019-02-11 16:37:33,998][] org.apache.zookeeper.Environment:100 - Client environment:os.name=Mac OS X 
+INFO  [2019-02-11 16:37:33,998][] org.apache.zookeeper.Environment:100 - Client environment:os.arch=x86_64 
+INFO  [2019-02-11 16:37:33,998][] org.apache.zookeeper.Environment:100 - Client environment:os.version=10.13.6 
+INFO  [2019-02-11 16:37:33,999][] org.apache.zookeeper.Environment:100 - Client environment:user.name=yuanhaohe 
+INFO  [2019-02-11 16:37:34,002][] org.apache.zookeeper.Environment:100 - Client environment:user.home=/Users/yuanhaohe 
+INFO  [2019-02-11 16:37:34,003][] org.apache.zookeeper.Environment:100 - Client environment:user.dir=/Users/yuanhaohe/workspace/application/application-console-server 
+INFO  [2019-02-11 16:37:34,007][] org.apache.zookeeper.ZooKeeper:442 - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@3662a40 
+INFO  [2019-02-11 16:37:34,046][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 16:37:34,047][] org.apache.zookeeper.ClientCnxn$SendThread:879 - Socket connection established to localhost/127.0.0.1:2181, initiating session 
+INFO  [2019-02-11 16:37:34,089][] org.apache.zookeeper.ClientCnxn$SendThread:1303 - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x10000e7d997000a, negotiated timeout = 40000 
+INFO  [2019-02-11 16:37:34,150][] org.apache.curator.framework.state.ConnectionStateManager:237 - State change: CONNECTED 
+INFO  [2019-02-11 16:37:34,161][] org.apache.curator.framework.imps.CuratorFrameworkImpl:332 - Default schema 
+INFO  [2019-02-11 16:37:35,531][] org.apache.juli.logging.DirectJDKLog:180 - Starting ProtocolHandler ["http-nio-8081"] 
+INFO  [2019-02-11 16:37:35,531][] org.apache.juli.logging.DirectJDKLog:180 - Using a shared selector for servlet write/read 
+INFO  [2019-02-11 16:37:35,667][] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path '' 
+INFO  [2019-02-11 16:37:35,689][] org.springframework.boot.StartupInfoLogger:59 - Started App in 92.312 seconds (JVM running for 136.138) 
+INFO  [2019-02-11 16:38:30,471][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2019-02-11 16:38:30,515][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2019-02-11 16:38:32,320][] org.springframework.context.support.AbstractApplicationContext:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6989f48: startup date [Mon Feb 11 16:38:32 CST 2019]; root of context hierarchy 
+INFO  [2019-02-11 16:38:34,011][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c1f80cb0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 16:38:34,771][] com.alibaba.boot.dubbo.context.event.AwaitingNonWebApplicationListener$1:61 -  [Dubbo] Current Spring Boot Application is await... 
+INFO  [2019-02-11 16:38:34,905][] com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener:53 - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+ 
+INFO  [2019-02-11 16:38:34,907][] com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener:68 - Dubbo Config was overridden by externalized configuration {} 
+INFO  [2019-02-11 16:38:35,074][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:205 - Fetching config from server at : http://localhost:8888 
+INFO  [2019-02-11 16:38:50,548][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:149 - Located environment: name=consoleServer, profiles=[dev], label=null, version=e57a7e49c0b610f520d97fb2423eb2063b78fcf0, state=null 
+INFO  [2019-02-11 16:38:50,549][] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:98 - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource@1792799949 {name='configClient', properties={config.client.version=e57a7e49c0b610f520d97fb2423eb2063b78fcf0}}, MapPropertySource@733251468 {name='https://github.com/HoYuanhao/application/config/consoleServer-dev.properties', properties={spring.dubbo.protocol.port=20880, spring.datasource.driver-class-name=com.mysql.jdbc.Driver, spring.redis.timeout=2000, spring.datasource.minEvictableIdleTimeMillis=300000, spring.dubbo.application.name=application-consoleServer-provider, spring.datasource.poolPreparedStatements=true, spring.datasource.filters=stat,wall,log4j,slf4j,mergeStat,config, spring.datasource.connectionProperties=druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000, spring.datasource.minIdle=10, spring.datasource.testOnBorrow=false, spring.datasource.maxWait=60000, elasticsearch.scheme=http, spring.dubbo.application.id=application-consoleServer-provider, rocket.application.topic=task_topic_1, spring.datasource.initialSize=30, dubbo.scan.basePackages=com.open.application.console.server.service.impl, spring.datasource.url=jdbc:mysql://127.0.0.1:3306/application?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true, spring.datasource.maxActive=100, rocketmq.application.name=spider-productor, spring.redis.database=0, spring.dubbo.server=true, spring.redis.pool.max-active=60, spring.redis.pool.min-idle=8, spring.redis.pool.max-wait=-1, spring.redis.port=6379, spring.datasource.password=HeYuanHao1!, spring.datasource.username=root, spring.redis.pool.max-idle=10, spring.dubbo.protocol.name=dubbo, rocket.application.nameSrvAddr=127.0.0.1:9876, spring.datasource.validationQuery=SELECT 1, spring.datasource.testOnReturn=false, elasticsearch.address=127.0.0.1:9200,127.0.0.1:9201, spring.datasource.timeBetweenEvictionRunsMillis=60000, spring.redis.host=127.0.0.1, spring.datasource.maxPoolPreparedStatementPerConnectionSize=20, spring.dubbo.registry.address=zookeeper://127.0.0.1:2181, spring.datasource.testWhileIdle=true}}]} 
+INFO  [2019-02-11 16:38:50,576][] org.springframework.boot.SpringApplication:659 - No active profile set, falling back to default profiles: default 
+INFO  [2019-02-11 16:38:50,635][] org.springframework.context.support.AbstractApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@22eac2d3: startup date [Mon Feb 11 16:38:50 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6989f48 
+INFO  [2019-02-11 16:38:52,156][] org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-dubbo.xml] 
+INFO  [2019-02-11 16:38:55,432][] org.springframework.data.repository.config.RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode! 
+INFO  [2019-02-11 16:38:58,004][] org.springframework.cloud.context.scope.GenericScope:294 - BeanFactory id=6f007e06-0f7c-30a5-91a1-96d40dd8c466 
+INFO  [2019-02-11 16:38:58,561][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'redisConfig' of type [com.open.application.console.server.config.RedisConfig$$EnhancerBySpringCGLIB$$a1416968] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 16:38:58,577][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a5de09b3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 16:38:58,994][] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c1f80cb0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+INFO  [2019-02-11 16:39:00,300][] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http) 
+INFO  [2019-02-11 16:39:00,333][] org.apache.juli.logging.DirectJDKLog:180 - Initializing ProtocolHandler ["http-nio-8081"] 
+INFO  [2019-02-11 16:39:00,361][] org.apache.juli.logging.DirectJDKLog:180 - Starting service [Tomcat] 
+INFO  [2019-02-11 16:39:00,362][] org.apache.juli.logging.DirectJDKLog:180 - Starting Servlet Engine: Apache Tomcat/8.5.31 
+INFO  [2019-02-11 16:39:00,375][] org.apache.juli.logging.DirectJDKLog:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/yuanhaohe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] 
+INFO  [2019-02-11 16:39:00,500][] org.apache.juli.logging.DirectJDKLog:180 - Initializing Spring embedded WebApplicationContext 
+INFO  [2019-02-11 16:39:00,500][] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285 - Root WebApplicationContext: initialization completed in 9865 ms 
+INFO  [2019-02-11 16:39:02,847][] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:56 - Init DruidDataSource 
+INFO  [2019-02-11 16:39:03,911][] com.alibaba.druid.pool.DruidDataSource:947 - {dataSource-1} inited 
+INFO  [2019-02-11 16:39:07,431][] org.springframework.boot.web.servlet.ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*] 
+INFO  [2019-02-11 16:39:07,440][] org.springframework.boot.web.servlet.ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/] 
+INFO  [2019-02-11 16:39:07,440][] org.springframework.boot.web.servlet.ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*] 
+INFO  [2019-02-11 16:39:07,441][] org.springframework.boot.web.servlet.DynamicRegistrationBean:111 - Servlet statViewServlet was not registered (possibly already registered?) 
+INFO  [2019-02-11 16:39:07,444][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*] 
+INFO  [2019-02-11 16:39:07,444][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+INFO  [2019-02-11 16:39:07,444][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+INFO  [2019-02-11 16:39:07,444][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*] 
+INFO  [2019-02-11 16:39:07,445][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'httpTraceFilter' to: [/*] 
+INFO  [2019-02-11 16:39:07,445][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*] 
+INFO  [2019-02-11 16:39:07,445][] org.springframework.boot.web.servlet.DynamicRegistrationBean:111 - Filter webStatFilter was not registered (possibly already registered?) 
+INFO  [2019-02-11 16:39:07,445][] org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245 - Mapping filter: 'webMvcMetricsFilter' to: [/*] 
+INFO  [2019-02-11 16:39:12,822][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2019-02-11 16:39:14,684][] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@22eac2d3: startup date [Mon Feb 11 16:38:50 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6989f48 
+INFO  [2019-02-11 16:39:15,013][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+INFO  [2019-02-11 16:39:15,036][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+INFO  [2019-02-11 16:39:15,411][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2019-02-11 16:39:15,411][] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+INFO  [2019-02-11 16:39:19,047][] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:59 - Exposing 2 endpoint(s) beneath base path '/actuator' 
+INFO  [2019-02-11 16:39:19,089][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>) 
+INFO  [2019-02-11 16:39:19,118][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>) 
+INFO  [2019-02-11 16:39:19,119][] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547 - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+INFO  [2019-02-11 16:39:19,390][] org.springframework.jmx.export.MBeanExporter:433 - Registering beans for JMX exposure on startup 
+INFO  [2019-02-11 16:39:19,392][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'statFilter' has been autodetected for JMX exposure 
+INFO  [2019-02-11 16:39:19,393][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure 
+INFO  [2019-02-11 16:39:19,430][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'environmentManager' has been autodetected for JMX exposure 
+INFO  [2019-02-11 16:39:19,432][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'refreshScope' has been autodetected for JMX exposure 
+INFO  [2019-02-11 16:39:19,433][] org.springframework.jmx.export.MBeanExporter:895 - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure 
+INFO  [2019-02-11 16:39:19,436][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager] 
+INFO  [2019-02-11 16:39:19,454][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope] 
+INFO  [2019-02-11 16:39:19,518][] org.springframework.jmx.export.MBeanExporter:675 - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=22eac2d3,type=ConfigurationPropertiesRebinder] 
+INFO  [2019-02-11 16:39:19,528][] org.springframework.jmx.export.MBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper] 
+INFO  [2019-02-11 16:39:19,535][] org.springframework.jmx.export.MBeanExporter:668 - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter] 
+INFO  [2019-02-11 16:39:20,585][] org.apache.curator.utils.Compatibility:41 - Running in ZooKeeper 3.4.x compatibility mode 
+INFO  [2019-02-11 16:39:20,665][] org.apache.curator.framework.imps.CuratorFrameworkImpl:290 - Starting 
+INFO  [2019-02-11 16:39:20,675][] org.apache.zookeeper.Environment:100 - Client environment:zookeeper.version=3.4.13-2d71af4dbe22557fda74f9a9b4309b15a7487f03, built on 06/29/2018 00:39 GMT 
+INFO  [2019-02-11 16:39:20,675][] org.apache.zookeeper.Environment:100 - Client environment:host.name=10.0.0.124 
+INFO  [2019-02-11 16:39:20,675][] org.apache.zookeeper.Environment:100 - Client environment:java.version=1.8.0_131 
+INFO  [2019-02-11 16:39:20,675][] org.apache.zookeeper.Environment:100 - Client environment:java.vendor=Oracle Corporation 
+INFO  [2019-02-11 16:39:20,675][] org.apache.zookeeper.Environment:100 - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre 
+INFO  [2019-02-11 16:39:20,675][] org.apache.zookeeper.Environment:100 - Client environment:java.class.path=/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar 
+INFO  [2019-02-11 16:39:20,676][] org.apache.zookeeper.Environment:100 - Client environment:java.library.path=/Users/yuanhaohe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:. 
+INFO  [2019-02-11 16:39:20,676][] org.apache.zookeeper.Environment:100 - Client environment:java.io.tmpdir=/var/folders/gp/tgklgs252tl0k2w8d6t3gk400000gn/T/ 
+INFO  [2019-02-11 16:39:20,676][] org.apache.zookeeper.Environment:100 - Client environment:java.compiler=<NA> 
+INFO  [2019-02-11 16:39:20,676][] org.apache.zookeeper.Environment:100 - Client environment:os.name=Mac OS X 
+INFO  [2019-02-11 16:39:20,676][] org.apache.zookeeper.Environment:100 - Client environment:os.arch=x86_64 
+INFO  [2019-02-11 16:39:20,676][] org.apache.zookeeper.Environment:100 - Client environment:os.version=10.13.6 
+INFO  [2019-02-11 16:39:20,676][] org.apache.zookeeper.Environment:100 - Client environment:user.name=yuanhaohe 
+INFO  [2019-02-11 16:39:20,676][] org.apache.zookeeper.Environment:100 - Client environment:user.home=/Users/yuanhaohe 
+INFO  [2019-02-11 16:39:20,677][] org.apache.zookeeper.Environment:100 - Client environment:user.dir=/Users/yuanhaohe/workspace/application/application-console-server 
+INFO  [2019-02-11 16:39:20,678][] org.apache.zookeeper.ZooKeeper:442 - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@1c361c00 
+INFO  [2019-02-11 16:39:20,770][] org.apache.zookeeper.ClientCnxn$SendThread:1029 - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) 
+INFO  [2019-02-11 16:39:20,771][] org.apache.zookeeper.ClientCnxn$SendThread:879 - Socket connection established to localhost/127.0.0.1:2181, initiating session 
+INFO  [2019-02-11 16:39:20,775][] org.apache.curator.framework.imps.CuratorFrameworkImpl:332 - Default schema 
+INFO  [2019-02-11 16:39:20,783][] org.apache.zookeeper.ClientCnxn$SendThread:1303 - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x10000e7d997000b, negotiated timeout = 40000 
+INFO  [2019-02-11 16:39:20,790][] org.apache.curator.framework.state.ConnectionStateManager:237 - State change: CONNECTED 
+INFO  [2019-02-11 16:39:21,391][] org.apache.juli.logging.DirectJDKLog:180 - Starting ProtocolHandler ["http-nio-8081"] 
+INFO  [2019-02-11 16:39:21,392][] org.apache.juli.logging.DirectJDKLog:180 - Using a shared selector for servlet write/read 
+INFO  [2019-02-11 16:39:21,458][] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path '' 
+INFO  [2019-02-11 16:39:21,477][] org.springframework.boot.StartupInfoLogger:59 - Started App in 53.058 seconds (JVM running for 73.069) 
+INFO  [2019-02-11 18:29:43,895][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 
+INFO  [2019-02-11 18:30:10,757][] org.apache.rocketmq.logging.Slf4jLoggerFactory$Slf4jLogger:95 - closeChannel: close the connection to remote address[] result: true 

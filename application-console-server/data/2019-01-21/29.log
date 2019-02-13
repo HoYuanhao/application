@@ -1,0 +1,8 @@
+2019-01-21 14:40:33 [com.xxl.job.core.thread.JobThread#run]-[124]-[Thread-34] <br>----------- xxl-job job execute start -----------<br>----------- Param:
+2019-01-21 14:40:33 [com.xxl.job.core.thread.JobThread#run]-[167]-[Thread-34] <br>----------- JobThread toStop, stopReason:null
+2019-01-21 14:40:33 [com.xxl.job.core.thread.JobThread#run]-[175]-[Thread-34] <br>----------- JobThread Exception:java.lang.InterruptedException
+	at java.util.concurrent.FutureTask.awaitDone(FutureTask.java:404)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.xxl.job.core.thread.JobThread.run(JobThread.java:140)
+<br>----------- xxl-job job execute end(error) -----------
+2019-01-21 14:40:33 [com.xxl.job.core.thread.TriggerCallbackThread#callbackLog]-[176]-[Thread-8] <br>----------- xxl-job job callback finish.

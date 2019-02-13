@@ -16,6 +16,4 @@ public interface ElasticSearchService {
   Map<String, Object> searchException(String uid,String tid, String type, String key,
       Integer offset, Integer limit) throws IOException;
 
-  void insertException(ExceptionModel exceptionModel)throws Exception;
-
 }

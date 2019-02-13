@@ -30,7 +30,7 @@
       </el-table-column>
       <el-table-column :label="$t('taskconsole.name')" width="100px" align="center">
         <template slot-scope="scope">
-          <span>{{ scope.row.name}}</span>
+          <span @click="edit(scope.row)">{{ scope.row.name}}</span>
         </template>
       </el-table-column>
       <el-table-column :label="$t('taskconsole.description')" min-width="140px">
@@ -82,7 +82,7 @@
         </template>
       </el-table-column>
     </el-table>
-<el-pagination v-show="total>0" :total="total" :page-sizes="[20, 30, 50, 100]" :current-page="listQuery.page" :page-size="listQuery.limit" 
+<el-pagination v-show="total>0" :total="total" :page-sizes="[5, 20, 50, 100]" :current-page="listQuery.page" :page-size="listQuery.limit" 
    @current-change="handleCurrentChange" 
    @size-change="handleSizeChange"
    layout="total, sizes, prev, pager, next, jumper"/>
@@ -127,20 +127,9 @@
       </el-form>
       <div slot="footer" class="dialog-footer">
         <el-button @click="dialogFormVisible = false">{{ $t('table.cancel') }}</el-button>
-        <el-button type="primary" @click="dialogStatus==='create'?createData():updateData()">{{ $t('table.confirm') }}</el-button>
+        <el-button type="primary" @click="dialogStatus==='create'?createData():updateData()">新建</el-button>
       </div>
     </el-dialog>
-
-    <el-dialog :visible.sync="dialogPvVisible" title="Reading statistics">
-      <el-table :data="pvData" border fit highlight-current-row style="width: 100%">
-        <el-table-column prop="key" label="Channel"/>
-        <el-table-column prop="pv" label="Pv"/>
-      </el-table>
-      <span slot="footer" class="dialog-footer">
-        <el-button type="primary" @click="dialogPvVisible = false">{{ $t('table.confirm') }}</el-button>
-      </span>
-    </el-dialog>
-
   </div>
 </template>
 
@@ -171,7 +160,7 @@ export default {
   filters: {
       dateFormat(stamp) {
         if(stamp==null||stamp==''){
-          return '未开始'
+          return 'N/A'
         }
       return formatTime(stamp)
     },
@@ -251,6 +240,15 @@ export default {
          
       statusOptions: ['published', 'draft', 'deleted'],
       showReviewer: false,
+      edit:{
+        type: '',
+        name: '',
+        processNum: '',
+        alarm: '0',
+        describe: '',
+        uid:store.getters.id,
+        source:undefined,
+      },
       temp: {
         type: '',
         name: '',
@@ -264,7 +262,7 @@ export default {
       dialogFormVisible: false,
       dialogStatus: '',
       textMap: {
-        update: 'Edit',
+        edit: '更新',
         create: '新建任务'
       },
       dialogPvVisible: false,
@@ -273,11 +271,11 @@ export default {
         type: [{ required: true, message: '必须选择类型', trigger: 'change' }],
         name: [{ required: true, message: '必须输入名称', trigger: 'change' }],
         processNum: [{ required: true,type:'number', message: '必须输入进程数,切必须为数字',trigger: 'change' }]
-      },
-      downloadLoading: false
+      }
     }
   },
-
+    
+      downloadLoading: false,
   created() {
     this.getList()
   },
@@ -349,7 +347,12 @@ this.getList()
       }
     },
     stop(row,status){
-      if(status==1||status==2){
+     this.$confirm('是否停止该任务？', '提示', {
+          confirmButtonText: '停止',
+          cancelButtonText: '取消',
+          type: 'warning'
+        }).then(() => {
+          if(status==1||status==2){
         const param={
           taskId:row.tid,
           token:store.getters.token,
@@ -371,6 +374,14 @@ this.getList()
         })
         
       }
+        }).catch(() => {
+          this.$message({
+            type: 'info',
+            message: '已取消'
+          });          
+        });
+
+    
     },
  handleSizeChange(val) {
         this.listQuery.limit=val
@@ -382,7 +393,12 @@ this.getList()
   
     },
  run(row,status){
-      if(status==0||status==3||status==4){
+        this.$confirm('是否运行此任务?', '提示', {
+          confirmButtonText: '运行',
+          cancelButtonText: '取消',
+          type: 'warning'
+        }).then(() => {
+             if(status==0||status==3||status==4){
         const param={
           taskId:row.tid,
           token:store.getters.token,
@@ -402,11 +418,23 @@ this.getList()
       })
       }
         })
-        
       }
+        }).catch(() => {
+          this.$message({
+            type: 'info',
+            message: '已取消'
+          });          
+        });
+
+  
     },
 dele(row,status){
-const param={
+     this.$confirm('是否删除此任务？', '提示', {
+          confirmButtonText: '删除',
+          cancelButtonText: '取消',
+          type: 'warning'
+        }).then(() => {
+        const param={
           taskId:row.tid,
           token:store.getters.token,
           operation:3
@@ -425,6 +453,14 @@ const param={
       })
       }
         })
+        }).catch(() => {
+          this.$message({
+            type: 'info',
+            message: '已取消删除'
+          });          
+        });
+
+
 },
     handleModifyStatus(row, status) {
       this.$message({
@@ -467,8 +503,21 @@ const param={
         this.$refs['dataForm'].clearValidate()
       })
     },
+      edit(row) {
+      this.temp=row
+      this.dialogStatus = 'edit'
+      this.dialogFormVisible = true
+      this.$nextTick(() => {
+        this.$refs['dataForm'].clearValidate()
+      })
+    },
     createData() {
-      this.$refs['dataForm'].validate((valid) => {
+           this.$confirm('是否新建任务？', '提示', {
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
+          type: 'warning'
+        }).then(() => {
+            this.$refs['dataForm'].validate((valid) => {
         if (valid) {
     
           newTask(this.temp).then(res=>{
@@ -483,6 +532,14 @@ const param={
           });
         }
       })
+        }).catch(() => {
+          this.$message({
+            type: 'info',
+            message: '已取消'
+          });          
+        });
+
+  
     },
     handleUpdate(row) {
       this.temp = Object.assign({}, row) // copy obj

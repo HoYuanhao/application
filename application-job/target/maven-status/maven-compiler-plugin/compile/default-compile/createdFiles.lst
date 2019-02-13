@@ -1,6 +1,8 @@
+com/open/application/job/UpdateTaskStatusJob.class
 com/open/application/job/EsForceMergeJob.class
 com/open/application/dao/EsSingerDao.class
 com/open/application/job/EsIndexAutoCreateJob.class
 com/open/application/job/EsInsertJob.class
 com/open/application/es/EsConfig.class
 com/open/application/App.class
+com/open/application/dao/TaskJobDao.class

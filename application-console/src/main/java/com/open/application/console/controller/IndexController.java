@@ -1,7 +1,7 @@
 package com.open.application.console.controller;
 
 import com.alibaba.fastjson.JSONObject;
-import com.google.common.collect.Lists;
+
 import com.open.application.common.models.Axis;
 import com.open.application.common.models.BarChart;
 import com.open.application.common.models.Grid;
@@ -16,11 +16,10 @@ import com.open.application.common.util.DateUtil;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.UUID;
+
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -59,7 +58,6 @@ public class IndexController {
       jsonObject.put("music", taskShowService.countProcesses("music"));
       jsonObject.put("ticket", list2);
     } else if (type.equals("tasks")) {
-
       List<Integer> list2 = Arrays.asList(0, 0, 0, 0, 0, 0, 0);
       jsonObject.put("music", taskShowService.countTasks("music"));
       jsonObject.put("ticket", list2);

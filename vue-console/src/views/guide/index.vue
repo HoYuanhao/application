@@ -16,23 +16,25 @@
           :disabled="showEditBtn"
           :placeholder="$t('guide.taskID')"
           @change="getExceptionType"
+          filterable
           >
           <el-option v-for="taskID in taskIDs" :key="taskID" :label="taskID" :value="taskID" />
         </el-select>
          </el-form-item>
               </el-col>
               <el-col :span="5" >
-             <el-form-item :label="$t('guide.type')">
+             <el-form-item label="类型">
         <el-select
           v-model="search.type"
           :disabled="showEditBtn"
+          filterable
           :placeholder="$t('guide.type')">
           <el-option v-for="item in objectNames" :key="item" :label="item" :value="item" />
         </el-select>
          </el-form-item>
               </el-col>
                  <el-col :span="5" >
-             <el-form-item :label="$t('guide.key')">
+             <el-form-item label="关键字">
         <el-input
           v-model="search.keyword"
           class="search"

@@ -5,8 +5,10 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.google.common.collect.Sets;
 import com.google.common.util.concurrent.Uninterruptibles;
+import com.open.application.common.models.ExceptionModel;
 import com.open.application.spider.dao.SingerDao;
 import com.open.application.spider.elasticsearch.ElasticSearchService;
+import com.open.application.spider.service.ExceptionService;
 import com.open.application.spider.spiders.AllSingerSpider;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -34,6 +36,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 import java.util.Set;
+import java.util.UUID;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
@@ -66,9 +69,12 @@ public class SpiderConsumer implements ApplicationListener<ContextRefreshedEvent
   private SingerDao singerDao;
   @Autowired
   private ElasticSearchService elasticSearchService;
+  @Autowired
+  private ExceptionService exceptionService;
 
   @PostConstruct
   public void init() {
+
     defaultMQPushConsumer = new DefaultMQPushConsumer(consumerGroup);
     defaultMQPushConsumer.setConsumeMessageBatchMaxSize(consumeMessageBatchMaxSize);
     defaultMQPushConsumer.setConsumeThreadMax(consumeThreadMax);
@@ -77,7 +83,7 @@ public class SpiderConsumer implements ApplicationListener<ContextRefreshedEvent
     try {
       defaultMQPushConsumer.subscribe(topic, "*");
     } catch (MQClientException e) {
-      log.error("subscribe topic error!", e);
+      log.info("consumer topic error", e);
     }
     defaultMQPushConsumer.registerMessageListener((MessageListenerOrderly) (messages, context) -> {
       messages.forEach(msg -> {
@@ -93,6 +99,8 @@ public class SpiderConsumer implements ApplicationListener<ContextRefreshedEvent
         String tid = jsonObject.getString("tid");
         Integer processNum = jsonObject.getInteger("processNum");
         String sourceString = jsonObject.getString("source");
+        String uid = jsonObject.getString("uid");
+        redisTemplate.expire("status_" + tid, 60, TimeUnit.SECONDS);
         if (!StringUtils.isBlank(sourceString)) {
           JSONObject source = JSON.parseObject(sourceString);
           String type = source.getString("type");
@@ -130,17 +138,30 @@ public class SpiderConsumer implements ApplicationListener<ContextRefreshedEvent
                 }
               }
               executor.execute(() -> {
-                Uninterruptibles.sleepUninterruptibly((long)(Math.random()*5000),TimeUnit.MILLISECONDS);
-                String status = redisTemplate.opsForValue().get("status_" + tid);
-                if (!StringUtils.isBlank(status)) {
-                  singerSpider.getMandopopSinger(characters, singer -> {
-                    log.info(JSONObject.toJSONString(singer));
-                    singer.setGetTime(new Date());
-                    elasticSearchService.insertSingerToEs(singer);
-                    singerDao.insertTbAllSinger(singer);
-                  });
-                  redisTemplate.expire("status_" + tid, 30, TimeUnit.DAYS);
-
+                try {
+                  Uninterruptibles.sleepUninterruptibly((long) (Math.random() * 5000), TimeUnit.MILLISECONDS);
+                  singerDao.updateTaskStartTime(tid, new Date());
+                  String status = redisTemplate.opsForValue().get("status_" + tid);
+                  if (!StringUtils.isBlank(status)) {
+                    singerSpider.getMandopopSinger(characters, singer -> {
+                      log.info(JSONObject.toJSONString(singer));
+                      singer.setGetTime(new Date());
+                      elasticSearchService.insertSingerToEs(singer);
+                      singerDao.insertTbAllSinger(singer);
+                    });
+                    redisTemplate.expire("status_" + tid, 60, TimeUnit.SECONDS);
+                  }
+                } catch (Exception e) {
+                  log.error("spider error", e);
+                  exceptionService.insertExceptionIntoEsAndDB(ExceptionModel
+                                                                .builder()
+                                                                .eid(UUID.randomUUID().toString().replace("-", ""))
+                                                                .tid(tid)
+                                                                .throwTime(new Date())
+                                                                .type(e.getClass().getName())
+                                                                .uid(uid)
+                                                                .detail(e.getMessage())
+                                                                .build());
                 }
               });
             }

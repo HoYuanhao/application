@@ -58,13 +58,13 @@ public class SingerServiceImpl implements SingerService {
     SearchSourceBuilder searchSourceBuilder = SearchSourceBuilder.searchSource().query(queryBuilder);
     searchRequest.source(searchSourceBuilder);
     if (!StringUtils.isBlank(singerName)) {
-      queryBuilder.must(QueryBuilders.matchQuery("singerName", singerName));
+      queryBuilder.must(QueryBuilders.matchPhraseQuery("singerName", singerName));
     }
     if (!StringUtils.isBlank(stringerDesc)) {
-      queryBuilder.must(QueryBuilders.matchQuery("singerDesc", stringerDesc));
+      queryBuilder.must(QueryBuilders.matchPhraseQuery("singerDesc", stringerDesc));
     }
     if (!StringUtils.isBlank(singerId)) {
-      queryBuilder.must(QueryBuilders.matchQuery("singerId", singerId));
+      queryBuilder.must(QueryBuilders.matchPhraseQuery("singerId", singerId));
     }
     searchSourceBuilder.from(offSet);
     searchSourceBuilder.size(limit);

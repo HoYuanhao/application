@@ -27,7 +27,7 @@ public interface TaskShowDao {
   int getCountTaskByUid(@Param("uid") String uid);
 
   @Select("select tid as id, type, name, `describe`, create_time as createTime, end_time as endTime, " +
-            "status,process_num as processNum,alarm,start_time as startTime" + " from task where uid=#{uid}")
+            "status,process_num as processNum,alarm,start_time as startTime  from task where uid=#{uid} order by create_time desc limit 0,100")
   List<TaskMessage> getTaskMessageByUid(@Param("uid") String uid);
 
   @Select("select count(1) from  tb_all_music where CURDATE()<= getTime and getTime <=DATE_ADD(CURDATE(),INTERVAL 1 day)\n" + "UNION ALL\n" +
@@ -139,9 +139,9 @@ public interface TaskShowDao {
             "select count(1)  from  task where DATE_SUB(CURDATE(),INTERVAL 1 day)<= create_time and create_time <=CURDATE()\n" + "and type=#{type}\n" +
             "UNION ALL\n" + "select count(1)  from  task where CURDATE()<= create_time and create_time <=DATE_ADD(CURDATE(),INTERVAL 1 day)\n" +
             "and type=#{type}")
-  List<Integer> countTaskNearWeek(@Param("type")String type);
+  List<Integer> countTaskNearWeek(@Param("type") String type);
 
-  @Select("select count(1) as value,type as name from exception group by type order by value limit 0,10")
-  List<Map<String,String>> groupException();
+  @Select("select count(1) as value,type as name from exception where DATE_SUB(CURDATE(),INTERVAL 6 day)<= throw_time and throw_time <= DATE_ADD(CURDATE(),INTERVAL 1 day) group by type order by value")
+  List<Map<String, String>> groupException();
 
 }

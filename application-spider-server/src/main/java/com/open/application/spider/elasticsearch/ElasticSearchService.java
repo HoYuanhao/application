@@ -1,6 +1,8 @@
 package com.open.application.spider.elasticsearch;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import com.open.application.common.models.ExceptionModel;
 import com.open.application.common.models.TbAllSinger;
 import com.open.application.common.util.DateUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -27,22 +29,27 @@ public class ElasticSearchService {
   @Autowired
   private RestHighLevelClient client;
 
-  public void insertSingerToEs(TbAllSinger tbAllSinger){
+  public void insertSingerToEs(TbAllSinger tbAllSinger) {
     try {
       SearchRequest searchRequest = new SearchRequest("singer_*").types("_doc").source(SearchSourceBuilder
                                                                                          .searchSource()
                                                                                          .query(QueryBuilders.termQuery("singerId", tbAllSinger.getSingerId())));
       SearchResponse searchResponse = client.search(searchRequest, RequestOptions.DEFAULT);
-      if(searchResponse.getHits().totalHits==0) {
+      if (searchResponse.getHits().totalHits == 0) {
         IndexRequest indexRequest = new IndexRequest("singer_" + DateUtil.getNowDayString());
         indexRequest.type("_doc");
         indexRequest.source(JSON.toJSONString(tbAllSinger), XContentType.JSON);
         client.index(indexRequest, RequestOptions.DEFAULT);
       }
     } catch (IOException e) {
-      log.error("insert singer error",e);
+      log.error("insert singer error", e);
     }
+  }
 
+  public void insertException(ExceptionModel exceptionModel) throws IOException {
+    IndexRequest indexRequest = new IndexRequest("exception_" + DateUtil.getNowDayString()).type("_doc");
+    indexRequest.source(JSONObject.toJSONString(exceptionModel), XContentType.JSON);
+    client.index(indexRequest, RequestOptions.DEFAULT);
   }
 
 }

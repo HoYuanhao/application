@@ -1,0 +1,54 @@
+{
+  "settings":{
+    "number_of_shards":6,
+    "number_of_replicas":1,
+    "index":{
+      "analysis":{
+        "analyzer":{
+          "default":{
+            "tokenizer":"ik_max_word",
+            "filter":[
+              "asciifolding",
+              "lowercase",
+              "ourEnglishFilter"
+            ]
+          }
+        },
+        "filter":{
+          "ourEnglishFilter":{
+            "type":"kstem"
+          }
+        }
+      }
+    }
+  },
+  "mappings":{
+    "_doc":{
+      "properties":{
+        "eid":{
+          "type":"keyword"
+        },
+        "type":{
+          "type":"keyword"
+        },
+        "detail":{
+          "type":"text",
+          "analyzer": "ik_max_word"
+        },"pid":{
+          "type":"keyword"
+        },
+        "tid":{
+          "type":"keyword"
+
+        },
+        "uid":{
+          "type":"keyword"
+        },
+        "throwTime":{
+          "type":"date"
+        }
+
+      }
+    }
+  }
+}

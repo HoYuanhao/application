@@ -170,6 +170,15 @@ export const asyncRouterMap = [
         meta: { title: 'externalLink3', icon: 'example' }
       }
     ]
+  },{
+    path: 'external-link4',
+    component: Layout,
+    children: [
+      {
+        path: 'http://localhost:10001',
+        meta: { title: 'externalLink4', icon: 'message' }
+      }
+    ]
   },
   { path: '*', redirect: '/404', hidden: true }
 ]

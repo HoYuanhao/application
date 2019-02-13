@@ -1,0 +1,3 @@
+2019-02-12 18:50:00 [com.xxl.job.core.thread.JobThread#run]-[124]-[Thread-32] <br>----------- xxl-job job execute start -----------<br>----------- Param:
+2019-02-12 18:50:00 [com.xxl.job.core.thread.JobThread#run]-[158]-[Thread-32] <br>----------- xxl-job job execute end(finish) -----------<br>----------- ReturnT:ReturnT [code=200, msg=0, content=null]
+2019-02-12 18:50:00 [com.xxl.job.core.thread.TriggerCallbackThread#callbackLog]-[176]-[Thread-8] <br>----------- xxl-job job callback finish.

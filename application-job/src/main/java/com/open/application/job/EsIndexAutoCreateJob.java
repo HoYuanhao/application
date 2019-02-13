@@ -32,10 +32,17 @@ public class EsIndexAutoCreateJob extends IJobHandler {
   @Override
   public ReturnT<String> execute(String s) throws Exception {
     try {
-      CreateIndexRequest createIndexRequest = new CreateIndexRequest("singer_" + DateUtil.getOneDayAfterNowString());
-      String json = Files.toString(new File(this.getClass().getClassLoader().getResource("").getPath()+"/tbAllSinger.json"), Charset.defaultCharset());
-      createIndexRequest.source(json, XContentType.JSON);
-      client.indices().create(createIndexRequest, RequestOptions.DEFAULT);
+      String date = DateUtil.getOneDayAfterNowString();
+      CreateIndexRequest createSingerIndexRequest = new CreateIndexRequest("singer_" + date);
+      CreateIndexRequest createExceptionIndexRequest = new CreateIndexRequest("exception_" + date);
+      String singerIndexJson = Files.toString(new File(
+        this.getClass().getClassLoader().getResource("").getPath() + "/tbAllSinger.json"), Charset.defaultCharset());
+      String exceptionIndexJson = Files.toString(new File(
+        this.getClass().getClassLoader().getResource("").getPath() + "/exception.json"), Charset.defaultCharset());
+      createSingerIndexRequest.source(singerIndexJson, XContentType.JSON);
+      createExceptionIndexRequest.source(exceptionIndexJson, XContentType.JSON);
+      client.indices().create(createSingerIndexRequest, RequestOptions.DEFAULT);
+      client.indices().create(createExceptionIndexRequest, RequestOptions.DEFAULT);
     } catch (Exception e) {
       log.error("job error", e);
       return ReturnT.FAIL;

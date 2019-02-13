@@ -20,6 +20,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.io.IOException;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
@@ -47,6 +48,7 @@ public class SpiderServiceImpl implements SpiderService {
   @Transactional(rollbackFor = Exception.class)
   public void stopSpider(String taskId) {
     changeStatus(taskId, 0);
+    spiderDao.updateTaskEndTime(taskId,new Date(System.currentTimeMillis()-60000));
     redisTemplate.delete("status_" + taskId);
   }
 
@@ -58,7 +60,8 @@ public class SpiderServiceImpl implements SpiderService {
     redisTemplate.expire("status_" + taskId, 30, TimeUnit.DAYS);
     Task task = taskShowDao.getTaskByTid(taskId);
     if (task != null) {
-        productor.sendMessage(new Message(topic, JSON.toJSONString(task).getBytes()));
+      spiderDao.resetTaskEndTime(taskId);
+      productor.sendMessage(new Message(topic, JSON.toJSONString(task).getBytes()));
     }
 
   }
@@ -80,6 +83,7 @@ public class SpiderServiceImpl implements SpiderService {
     redisTemplate.delete("status_" + taskId);
     spiderDao.changeStatusByTid(taskId, 0);
     spiderDao.deleteByTid(taskId);
+    spiderDao.updateTaskEndTime(taskId,new Date(System.currentTimeMillis()-60000));
   }
 
   private void changeStatus(String taskId, int status) {

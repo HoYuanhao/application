@@ -43,7 +43,7 @@ public class TaskShowController {
                                  @RequestParam(value = "limit", defaultValue = "20") Integer limit,
                                  @RequestParam(value = "page", defaultValue = "1") Integer page,
                                  @RequestParam(value = "showrun") boolean showrun) {
-    List<Task> taskList = taskShowService.showTaskDataByUid(id, limit * (page - 1), limit,showrun);
+    List<Task> taskList = taskShowService.showTaskDataByUid(id, limit * (page - 1), limit, showrun);
     taskList = taskList.parallelStream().sorted((task1, task2) -> {
       if (task1.getCreateTime().after(task2.getCreateTime())) {
         return -1;
@@ -53,7 +53,7 @@ public class TaskShowController {
         return 0;
       }
     }).collect(Collectors.toList());
-    Integer total = taskShowService.countTaskDataByUid(id,showrun);
+    Integer total = taskShowService.countTaskDataByUid(id, showrun);
     JSONObject jsonObject = new JSONObject();
     jsonObject.put("tasks", taskList);
     jsonObject.put("total", total);
@@ -80,7 +80,7 @@ public class TaskShowController {
     task.setTid(UUID.randomUUID().toString().replace("-", ""));
     task.setSource(task.getSource().replace(" ", ""));
 
-      taskShowService.insertTaskToElasticSearchAndDB(task);
+    taskShowService.insertTaskToElasticSearchAndDB(task);
 
     JSONObject jsonObject = new JSONObject();
     jsonObject.put("status", 200);
@@ -108,28 +108,8 @@ public class TaskShowController {
                                  @RequestParam(value = "key", required = false) String key,
                                  @RequestParam(value = "offset", defaultValue = "0") Integer offset,
                                  @RequestParam(value = "limit", defaultValue = "10") Integer limit) {
-    //    Map<String, Object> map = exceptionService.searchExceptions(id, tid, type, key, offset, limit);
-    Map<String, Object> map = new HashMap<>();
-    map.put("totalHits", 20);
-    List<ExceptionModel> list = new ArrayList<ExceptionModel>();
-    map.put("exceptions", list);
-    for (int i = 0; i < 10; i++) {
-      try {
-        int z = 1 / 0;
-      } catch (Exception e) {
-
-        list.add(ExceptionModel
-                   .builder()
-                   .uid(id)
-                   .type(e.getClass().getTypeName())
-                   .tid(tid)
-                   .throwTime(new Date())
-                   .detail(e.toString())
-                   .pid("b6852c97119c41a8a519eeaae50f10f7")
-                   .eid(UUID.randomUUID().toString().replace("-", ""))
-                   .build());
-      }
-    }
+    Map<String, Object> map = exceptionService.searchExceptions(id, tid, type, key, offset, limit);
+    
     return map;
   }
 

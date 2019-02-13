@@ -1,44 +1,60 @@
-ERROR [2019-01-17 17:34:31,130][] com.open.application.job.EsIndexAutoCreateJob:40 - job error 
-java.lang.NullPointerException: null
-	at com.open.application.job.EsIndexAutoCreateJob.execute(EsIndexAutoCreateJob.java:36)
-	at com.xxl.job.core.thread.JobThread.run(JobThread.java:152)
-ERROR [2019-01-17 17:34:57,261][] com.open.application.job.EsIndexAutoCreateJob:40 - job error 
-java.lang.NullPointerException: null
-	at com.open.application.job.EsIndexAutoCreateJob.execute(EsIndexAutoCreateJob.java:36)
-	at com.xxl.job.core.thread.JobThread.run(JobThread.java:152)
-ERROR [2019-01-17 23:00:02,314][] com.open.application.job.EsIndexAutoCreateJob:40 - job error 
-org.elasticsearch.ElasticsearchStatusException: Elasticsearch exception [type=resource_already_exists_exception, reason=index [singer_2019-01-18/F-pivSmyS1u0zGipD45pxg] already exists]
-	at org.elasticsearch.rest.BytesRestResponse.errorFromXContent(BytesRestResponse.java:177)
-	at org.elasticsearch.client.RestHighLevelClient.parseEntity(RestHighLevelClient.java:1793)
-	at org.elasticsearch.client.RestHighLevelClient.parseResponseException(RestHighLevelClient.java:1769)
-	at org.elasticsearch.client.RestHighLevelClient.internalPerformRequest(RestHighLevelClient.java:1606)
-	at org.elasticsearch.client.RestHighLevelClient.performRequest(RestHighLevelClient.java:1563)
-	at org.elasticsearch.client.RestHighLevelClient.performRequestAndParseEntity(RestHighLevelClient.java:1525)
-	at org.elasticsearch.client.IndicesClient.create(IndicesClient.java:146)
-	at com.open.application.job.EsIndexAutoCreateJob.execute(EsIndexAutoCreateJob.java:38)
-	at com.xxl.job.core.thread.JobThread.run(JobThread.java:152)
-	Suppressed: org.elasticsearch.client.ResponseException: method [PUT], host [http://127.0.0.1:9201], URI [/singer_2019-01-18?master_timeout=30s&timeout=30s], status line [HTTP/1.1 400 Bad Request]
-{"error":{"root_cause":[{"type":"resource_already_exists_exception","reason":"index [singer_2019-01-18/F-pivSmyS1u0zGipD45pxg] already exists","index_uuid":"F-pivSmyS1u0zGipD45pxg","index":"singer_2019-01-18"}],"type":"resource_already_exists_exception","reason":"index [singer_2019-01-18/F-pivSmyS1u0zGipD45pxg] already exists","index_uuid":"F-pivSmyS1u0zGipD45pxg","index":"singer_2019-01-18"},"status":400}
-		at org.elasticsearch.client.RestClient$SyncResponseListener.get(RestClient.java:926)
-		at org.elasticsearch.client.RestClient.performRequest(RestClient.java:229)
-		at org.elasticsearch.client.RestHighLevelClient.internalPerformRequest(RestHighLevelClient.java:1593)
-		... 5 common frames omitted
-	Caused by: org.elasticsearch.client.ResponseException: method [PUT], host [http://127.0.0.1:9201], URI [/singer_2019-01-18?master_timeout=30s&timeout=30s], status line [HTTP/1.1 400 Bad Request]
-{"error":{"root_cause":[{"type":"resource_already_exists_exception","reason":"index [singer_2019-01-18/F-pivSmyS1u0zGipD45pxg] already exists","index_uuid":"F-pivSmyS1u0zGipD45pxg","index":"singer_2019-01-18"}],"type":"resource_already_exists_exception","reason":"index [singer_2019-01-18/F-pivSmyS1u0zGipD45pxg] already exists","index_uuid":"F-pivSmyS1u0zGipD45pxg","index":"singer_2019-01-18"},"status":400}
-		at org.elasticsearch.client.RestClient$1.completed(RestClient.java:546)
-		at org.elasticsearch.client.RestClient$1.completed(RestClient.java:531)
-		at org.apache.http.concurrent.BasicFuture.completed(BasicFuture.java:123)
-		at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.responseCompleted(DefaultClientExchangeHandlerImpl.java:181)
-		at org.apache.http.nio.protocol.HttpAsyncRequestExecutor.processResponse(HttpAsyncRequestExecutor.java:439)
-		at org.apache.http.nio.protocol.HttpAsyncRequestExecutor.inputReady(HttpAsyncRequestExecutor.java:329)
-		at org.apache.http.impl.nio.DefaultNHttpClientConnection.consumeInput(DefaultNHttpClientConnection.java:265)
-		at org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:81)
-		at org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:39)
-		at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:114)
-		at org.apache.http.impl.nio.reactor.BaseIOReactor.readable(BaseIOReactor.java:162)
-		at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:337)
-		at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:315)
-		at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:276)
-		at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104)
-		at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:588)
-		at java.lang.Thread.run(Thread.java:748)
+ERROR [2019-02-12 15:01:34,379][] org.springframework.boot.web.embedded.tomcat.TomcatStarter:62 - Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'servletEndpointRegistrar' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar]: Factory method 'servletEndpointRegistrar' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'healthEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.health.HealthEndpoint]: Factory method 'healthEndpoint' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.actuate.autoconfigure.jdbc.DataSourceHealthIndicatorAutoConfiguration': Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.autoconfigure.jdbc.DataSourceHealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$6feb891f]: Constructor threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class 
+ERROR [2019-02-12 15:01:34,708][] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+ 
+ERROR [2019-02-12 15:05:45,235][] org.springframework.boot.web.embedded.tomcat.TomcatStarter:62 - Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'servletEndpointRegistrar' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar]: Factory method 'servletEndpointRegistrar' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'healthEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.health.HealthEndpoint]: Factory method 'healthEndpoint' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.actuate.autoconfigure.jdbc.DataSourceHealthIndicatorAutoConfiguration': Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.autoconfigure.jdbc.DataSourceHealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$cf967c5b]: Constructor threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class 
+ERROR [2019-02-12 15:05:45,549][] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+ 
+ERROR [2019-02-12 15:14:49,835][] org.springframework.boot.web.embedded.tomcat.TomcatStarter:62 - Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'servletEndpointRegistrar' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar]: Factory method 'servletEndpointRegistrar' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'healthEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.health.HealthEndpoint]: Factory method 'healthEndpoint' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.actuate.autoconfigure.jdbc.DataSourceHealthIndicatorAutoConfiguration': Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.autoconfigure.jdbc.DataSourceHealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$f6652b0e]: Constructor threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class 
+ERROR [2019-02-12 15:14:50,070][] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+ 

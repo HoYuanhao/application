@@ -65,7 +65,8 @@ export default {
     i18n: '国际化',
     externalLink1: '任务调度中心',
     externalLink2: '搜索控制中心',
-    externalLink3: '消息队列控制中心'
+    externalLink3: '消息队列控制中心',
+    externalLink4:'服务负载监控中心'
   },
   singer:{
     search:'搜索',
