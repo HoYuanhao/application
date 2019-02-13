@@ -1,8 +1,0 @@
-/Users/yuanhaohe/workspace/application/application-job/src/main/java/com/open/application/job/EsInsertJob.java
-/Users/yuanhaohe/workspace/application/application-job/src/main/java/com/open/application/dao/TaskJobDao.java
-/Users/yuanhaohe/workspace/application/application-job/src/main/java/com/open/application/job/EsIndexAutoCreateJob.java
-/Users/yuanhaohe/workspace/application/application-job/src/main/java/com/open/application/dao/EsSingerDao.java
-/Users/yuanhaohe/workspace/application/application-job/src/main/java/com/open/application/es/EsConfig.java
-/Users/yuanhaohe/workspace/application/application-job/src/main/java/com/open/application/job/UpdateTaskStatusJob.java
-/Users/yuanhaohe/workspace/application/application-job/src/main/java/com/open/application/job/EsForceMergeJob.java
-/Users/yuanhaohe/workspace/application/application-job/src/main/java/com/open/application/App.java

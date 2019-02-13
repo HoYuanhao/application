@@ -1,6 +1,0 @@
-WARN  [2019-01-21 11:12:59,290][] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator:140 - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/spiderServer/dev": Read timed out; nested exception is java.net.SocketTimeoutException: Read timed out 
-WARN  [2019-01-21 11:14:28,168][] org.apache.juli.logging.DirectJDKLog:180 - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.lang.Object.wait(Native Method)
- java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
- com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43) 
-WARN  [2019-01-21 11:14:28,228][] org.springframework.context.support.AbstractApplicationContext:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat 
